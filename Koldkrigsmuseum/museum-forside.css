@@ -75,15 +75,6 @@ body {
 /***************************************************** HEADER START ********************************************************/
 
 
-#logo-koldkrig {
-	background-image: url(billeder/logo-koldkrig-mobile.svg);
-	background-repeat: no-repeat;
-	background-size: 70%;
-	height: 3.5em;
-	z-index: 2;
-
-}
-
 
 /*burgermenu start*/
 
@@ -155,7 +146,7 @@ body {
 
 #menu {
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.99);
+	background-color: #F25C05;
 	top: -1em;
 	list-style-type: None;
 	width: 100%;
@@ -189,15 +180,10 @@ body {
 /***************************************************** HEADER SLUT ********************************************************/
 
 /***************************************************** FOOTER START ********************************************************/
-#logo-koldkrig-footer {
-	background-image: url(billeder/logo-koldkrig-footer.svg);
+.logo-footer {
 	margin-left: 25%;
-	background-repeat: no-repeat;
-	background-size: 100%;
 	height: 3em;
 	margin-top: 1em;
-	z-index: 2;
-
 }
 
 .footer p {

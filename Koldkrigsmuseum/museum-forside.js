@@ -18,7 +18,7 @@ function toggleMenu() {
 		document.querySelector("#menuknap").textContent = "☰";
 	} else {
 		//menuen er nu vist - ændr menuknap til x
-		document.querySelector("#menuknap").textContent = "X"
+		document.querySelector("#menuknap").textContent = "☰"
 	}
 }
 
