@@ -1,0 +1,252 @@
+img {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.hide {
+	display: none;
+}
+
+/***************************************************** GRID CONTAINER START ********************************************************/
+
+
+.grid_skabelon {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.header {
+	grid-column: 1/5;
+	background-color: antiquewhite;
+	background-image: url(billeder/koldkrig-forside.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 12em;
+	z-index: 1;
+}
+
+.content {
+	grid-column: 1/5;
+	background-color: gold;
+}
+
+.footer {
+	grid-column: 1/5;
+	background-color: #38728D;
+	color: white;
+}
+
+.container > div {
+	padding: 3rem;
+}
+
+@media only screen and (max-width:600px) {
+	.grid_skabelon {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	.header,
+	.content,
+	.footer {
+		grid-column: 1/2;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media only screen and (min-width:600px) {
+
+	.header {
+		grid-column: 1/5;
+		height: 50em;
+	}
+}
+
+
+/***************************************************** GRID CONTAINER SLUT ********************************************************/
+
+
+
+
+/***************************************************** HEADER START ********************************************************/
+
+
+#logo-koldkrig {
+	background-image: url(billeder/logo-koldkrig-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	height: 3.5em;
+	z-index: 2;
+
+}
+
+
+/*burgermenu start*/
+
+.hidden {
+	transform: scale(0);
+}
+
+.menu {
+	position: absolute;
+}
+
+#sidebox1 {
+	background-image: url(billeder/kold-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 10em;
+	left: 0em;
+	height: 8em;
+	width: 8em;
+	background-color: #387288;
+}
+
+#sidebox2 {
+	background-image: url(billeder/stevns-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 18em;
+	left: 0em;
+	height: 8em;
+	width: 8em;
+	background-color: #0082AD;
+}
+
+#sidebox3 {
+	background-image: url(billeder/geo-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 26em;
+	left: 0em;
+	height: 8em;
+	width: 8em;
+	background-color: #19A6A2;
+}
+
+#sidebox4 {
+	position: absolute;
+	top: 34em;
+	left: 0em;
+	height: 8em;
+	width: 8em;
+	background-color: #88B52D;
+}
+
+#menuknap {
+	display: inline-block;
+	position: fixed;
+	right: 0em;
+	font-size: 1.3em;
+	top: 0em;
+	padding: 0.7em;
+	padding-top: 0.3em;
+	color: white;
+	z-index: 2;
+
+}
+
+#menu {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.99);
+	top: -1em;
+	list-style-type: None;
+	width: 100%;
+	height: 100%;
+	box-shadow: 1px 1px 3px #6d5050;
+	font-family: limestone;
+	z-index: 1;
+
+}
+
+.undermenu {
+	position: absolute;
+	top: 8em;
+	right: 3em;
+	text-align: right;
+	line-height: 5em;
+}
+
+#menu a {
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+	text-transform: uppercase;
+
+}
+
+
+/*burgermenu slut*/
+
+/***************************************************** HEADER SLUT ********************************************************/
+
+/***************************************************** FOOTER START ********************************************************/
+#logo-koldkrig-footer {
+	background-image: url(billeder/logo-koldkrig-footer.svg);
+	margin-left: 25%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 3em;
+	margin-top: 1em;
+	z-index: 2;
+
+}
+
+.footer p {
+	font-family: limestone;
+	text-align: center;
+	color: #f7fbff;
+
+}
+
+.footer p:nth-child(1) {
+	font-family: limestone;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.footer p:nth-child(2) {
+	font-family: limestone;
+	font-weight: 100;
+	font-size: 0.6em;
+}
+
+.footer p:nth-child(3) {
+	font-weight: 100;
+	font-size: 0.8em;
+
+}
+
+
+
+.fa {
+	padding: 0.5em;
+	width: 15px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0em 0em 1em;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	color: white;
+	margin-left: 40%;
+}
+
+.fa-instagram {
+	color: white;
+}
+
+/***************************************************** FOOTER SLUT ********************************************************/
