@@ -18,16 +18,41 @@ HEADER START
 -->
 		<div class="header">
 
-			<a href="museum-forside.html">
-				<div id="logo-koldkrig"></div>
-			</a>
+			<div class="item item1">
+
+
+				<div class="siteheader">
+					<div class="siteheaderflexcontainer">
+						<div class="logo"><a href="museum-forside.html"><img src="billeder/logo-koldkrig-mobile.svg" alt="logo"></a></div>
+
+
+						<div class="burgerknap">&#9776</div>
+						<div class="menu">
+							<a href="index.html">DET SKER</a>
+							<a href="index.html">OM OS</a>
+							<a href="index.html">KONTAKT</a>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<div class="mainnav">
+						<ul>
+							<li class="menuitem"><a href="index.html">Det sker</a></li>
+							<li class="menuitem"><a href="index.html">Om os</a></li>
+							<li class="menuitem"><a href="index.html">Kontakt</a></li>
+						</ul>
+					</div>
+				</nav>
+
+
+			</div>
+			<!--
 
 			<div class="logo"><a href="museum-forside.html"><img src="billeder/logo-koldkrig-mobile.svg" alt="logo"></a></div>
 
 			<nav class="burgermenu">
 				<div id="menuknap">☰</div>
 				<ul id="menu" class="hidden">
-					<div class="logo2"><a href="/Kalklandet/kalklandet.html"><img src="billeder/kalklogo-kalklandet.svg" alt="logo2"></a></div>
 					<div class="sidebox">
 						<div id="sidebox11"><a href="#"></a></div>
 						<div id="sidebox1"><a href="#"></a></div>
@@ -37,6 +62,7 @@ HEADER START
 					</div>
 
 					<div class="undermenu">
+						<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Søg her..." title="Type in a category">
 						<li><a class="menupunkter" href="">Om Koldkrigsmuseum Stevnsfort</a></li>
 						<li><a class="menupunkter" href="">Undervisning</a></li>
 						<li><a class="menupunkter2" href="">Folkeskole 0.-3. klasse</a></li>
@@ -45,9 +71,15 @@ HEADER START
 						<li><a class="menupunkter" href="">Praktisk information</a></li>
 						<li><a class="menupunkter" href="">Kontakt</a></li>
 					</div>
+					<div class="some-burger">
+						<a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
+						<a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
+					</div>
 				</ul>
 
+
 			</nav>
+-->
 
 
 		</div>
@@ -62,12 +94,15 @@ CONTENT START
 -->
 		<div class="content">
 
-			<h1 class="overskrift">Retter</h1>
-			<main class="retter"></main>
+			<main class="statiske_sider"></main>
+
 			<template>
-				<section class="ret">
-					<h2></h2>
-					<div></div>
+				<section class="statiske_sider">
+					<h2 class="titel"></h2>
+					<div class="beskrivelse"></div>
+					<img src="" class="foto">
+					<div class="pris"></div>
+					<div class="kategori"></div>
 				</section>
 			</template>
 
