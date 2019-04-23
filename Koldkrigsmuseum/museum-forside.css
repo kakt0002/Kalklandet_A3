@@ -86,15 +86,16 @@ body {
 	position: absolute;
 }
 
-.logo2 {
-	position: absolute;
-	width: 40em;
-	top: 1.4em;
-	left: -1em;
+#mySearch {
+	width: 100%;
+	font-size: 0.5em;
+	padding: 8px;
+	border: 1px solid #ddd;
+	color: #387288;
 }
 
 #sidebox11 {
-	background-image: ;
+	background-image: url(billeder/kalklandet-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
@@ -102,7 +103,6 @@ body {
 	left: 0em;
 	height: 8em;
 	width: 8em;
-	background-color: orange;
 	box-shadow: 1px 1px 4px #255060;
 }
 
