@@ -74,6 +74,112 @@ body {
 
 /***************************************************** HEADER START ********************************************************/
 
+/*header*/
+.siteheader {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 10vh;
+	width: 100%;
+}
+
+.siteheaderflexcontainer {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+
+/*Navigationsmenuen*/
+nav {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	top: 75px;
+	left: 0;
+	background-color: transparent;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+}
+
+.logo img {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	top: 10px;
+	left: 10px;
+
+}
+
+.logo,
+.burgerknap,
+.mainnav li,
+ul {
+	padding: 0vw 0vw 0vw 0vw;
+	line-height: 10vh;
+	cursor: pointer;
+	list-style-type: none;
+}
+
+.burgerknap {
+	font-size: 30px;
+	margin-right: 5vw;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+
+.menu {
+	display: none;
+}
+
+.menuitem {
+
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0;
+}
+
+.menuitem:hover {
+	background-color: #fe6400;
+}
+
+.menuitem a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 10px 20px 10px 20px;
+
+}
+
+
+@media only screen and (min-width: 700px) {
+
+	.menu {
+		display: block;
+		text-decoration: none;
+		line-height: 10vh;
+		padding-right: 8vw;
+	}
+
+	.menu a {
+		text-decoration: none;
+		padding: 0 2vw 0 2vw;
+		display: inline-block;
+		color: black;
+	}
+
+	.menu a:hover {
+		background-color: #fe6400;
+	}
+
+	.burgerknap {
+		display: none;
+	}
+}
 
 
 /*burgermenu start*/
@@ -197,15 +303,22 @@ body {
 .menupunkter {
 	line-height: 6.5;
 	font-size: 0.8em;
-	text-transform: uppercase;
 }
 
 .menupunkter2 {
 	position: absolute;
 	font-size: 0.7em;
 	line-height: 1.7;
-	top: -.4em;
+	top: -2.5em;
+	font-family: limestone;
 }
+
+.some-burger {
+	position: relative;
+	top: 40.5em;
+	left: 7em;
+}
+
 
 /*burgermenu slut*/
 
