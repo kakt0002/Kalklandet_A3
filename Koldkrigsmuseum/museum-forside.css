@@ -86,6 +86,26 @@ body {
 	position: absolute;
 }
 
+.logo2 {
+	position: absolute;
+	width: 40em;
+	top: 1.4em;
+	left: -1em;
+}
+
+#sidebox11 {
+	background-image: ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 2em;
+	left: 0em;
+	height: 8em;
+	width: 8em;
+	background-color: orange;
+	box-shadow: 1px 1px 4px #255060;
+}
+
 #sidebox1 {
 	background-image: url(billeder/kold-sidebar.svg);
 	background-repeat: no-repeat;
@@ -96,6 +116,7 @@ body {
 	height: 8em;
 	width: 8em;
 	background-color: #387288;
+
 }
 
 #sidebox2 {
@@ -108,6 +129,7 @@ body {
 	height: 8em;
 	width: 8em;
 	background-color: #0082AD;
+	box-shadow: 1px 1px 4px #016383;
 }
 
 #sidebox3 {
@@ -120,6 +142,7 @@ body {
 	height: 8em;
 	width: 8em;
 	background-color: #19A6A2;
+	box-shadow: 1px 1px 4px #0c6966;
 }
 
 #sidebox4 {
@@ -129,6 +152,7 @@ body {
 	height: 8em;
 	width: 8em;
 	background-color: #88B52D;
+	box-shadow: 1px 1px 4px #506c17;
 }
 
 #menuknap {
@@ -146,7 +170,7 @@ body {
 
 #menu {
 	position: fixed;
-	background-color: #F25C05;
+	background-color: #387288;
 	top: -1em;
 	list-style-type: None;
 	width: 100%;
@@ -162,18 +186,26 @@ body {
 	top: 8em;
 	right: 3em;
 	text-align: right;
-	line-height: 5em;
 }
 
 #menu a {
 	position: relative;
 	text-decoration: none;
 	color: white;
-	font-size: 0.8em;
-	text-transform: uppercase;
-
 }
 
+.menupunkter {
+	line-height: 6.5;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.menupunkter2 {
+	position: absolute;
+	font-size: 0.7em;
+	line-height: 1.7;
+	top: -.4em;
+}
 
 /*burgermenu slut*/
 
