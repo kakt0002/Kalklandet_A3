@@ -77,9 +77,9 @@ body {
 
 .logo img {
 	position: absolute;
-	width: 350px;
+	width: 450px;
 	height: auto;
-	top: 20px;
+	top: 35px;
 	left: 15px;
 	position: fixed;
 
@@ -364,9 +364,9 @@ body {
 	.basic_info {
 		position: relative;
 		color: white;
-		left: 30vh;
+		left: 42vh;
 		font-family: 'Assistant', sans-serif;
-		top: 18em;
+		top: 30em;
 
 	}
 
@@ -418,12 +418,13 @@ body {
 	}
 
 	.mainnav {
+		position: fixed;
 		display: block;
 		text-align: right;
 		line-height: 3vh;
-		padding-right: 0vw;
+		right: 0vw;
 		z-index: 2;
-		padding-top: 2vw;
+		padding-top: 2.5vw;
 
 	}
 
@@ -507,7 +508,7 @@ body {
 	}
 
 	#btn1 {
-		top: 100px;
+		top: 151px;
 		background-image: url(billeder/kalklandet-sidebar-desktop.svg);
 		background-size: cover;
 
@@ -515,7 +516,7 @@ body {
 	}
 
 	#btn2 {
-		top: 225px;
+		top: 276px;
 		background-image: url(billeder/kold-sidebar-desktop.svg);
 		background-size: cover;
 		/*    border: 5px solid #387288;*/
@@ -524,14 +525,14 @@ body {
 	}
 
 	#btn3 {
-		top: 349px;
+		top: 401px;
 		background-image: url(billeder/geo-sidebar-desktop.svg);
 		background-size: cover;
 
 	}
 
 	#btn4 {
-		top: 474px;
+		top: 526px;
 		background-image: url(billeder/stevns-sidebar-desktop.svg);
 		background-size: cover;
 		/*    border: 5px solid #0182AD;*/
@@ -540,7 +541,7 @@ body {
 	}
 
 	#btn5 {
-		top: 599px;
+		top: 651px;
 
 	}
 
