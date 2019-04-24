@@ -1,3 +1,43 @@
+
+/*--------- OM TEKST WORDPRESS ----------*/
+
+.tekst {
+    margin: 0 auto;
+    width: 100vw;
+
+}
+
+.om_titel{
+    color: white;
+    font-family: 'limestoneregular';
+    font-size: 1.8em;
+    margin: 1em 2em;
+
+
+}
+
+.om_tekst {
+     color: white;
+    font-family: 'limestoneregular';
+    font-size: 1em;
+    margin: 1em 2em;
+
+}
+
+.om_foto1 {
+    text-align: center;
+
+}
+
+.om_foto1 img {
+width: 80%;
+     margin: 1em 0;
+
+}
+
+/*--------- OM TEKST WORDPRESS SLUT----------*/
+
+
 body {
 	margin: 0;
 	background-color: #8C8A87;
@@ -648,6 +688,42 @@ body {
 		height: 100%;
 
 	}
+
+    /*--- OM TEKST ---*/
+
+    .tekst {
+    margin: 0 auto;
+    width: 40vw;
+
+}
+
+.om_titel{
+    color: white;
+    font-family: 'limestoneregular';
+    font-size: 2.2em;
+    margin: 1em 0em;
+
+
+}
+
+.om_tekst {
+     color: white;
+    font-family: 'limestoneregular';
+    font-size: 1em;
+    margin: 1em 0em;
+
+}
+
+.om_foto1 {
+    text-align: center;
+
+}
+
+.om_foto1 img {
+width: 140%;
+     margin: 1em 1em;
+
+}
 
 
 }

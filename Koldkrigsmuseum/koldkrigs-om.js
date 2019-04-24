@@ -1,57 +1,57 @@
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
-	console.log("siden vises!");
-	// registrer klik på menu-knap
-	document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-	document.querySelector("#knap_laes_mere").addEventListener("click", down);
+    console.log("siden vises!");
+    // registrer klik på menu-knap
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    document.querySelector("#knap_laes_mere").addEventListener("click", down);
 }
 
 function toggleMenu() {
-	console.log("Toggle menu");
-	document.querySelector("#menu").classList.toggle("hidden");
+    console.log("Toggle menu");
+    document.querySelector("#menu").classList.toggle("hidden");
 
-	let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 
-	if (erSkjult == true) {
-		//menuen er nu skjult - ændr menuknap til lll
-		document.querySelector("#menuknap").textContent = "☰";
-	} else {
-		//menuen er nu vist - ændr menuknap til x
-		document.querySelector("#menuknap").textContent = "☰"
-	}
+    if (erSkjult == true) {
+        //menuen er nu skjult - ændr menuknap til lll
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        //menuen er nu vist - ændr menuknap til x
+        document.querySelector("#menuknap").textContent = "☰"
+    }
 }
 
+  "use strict"
+        let indhold = [];
 
-"use strict"
-let ForsideTekst = [];
-let boksTekst = [];
-let detSker = [];
-
-document.addEventListener("DOMContentLoaded", start);
+        document.addEventListener("DOMContentLoaded", start);
 
 
-function start() {
-	async function hentJson1() {
+        function start() {
+            async function hentJson() {
 
-		console.log("hent json 1");
+                console.log("hent json 1");
 
-		let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/131";
+                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/194";
 
-		let myJson = await fetch(url);
+                let myJson = await fetch(url);
 
-		ForsideTekst = await myJson.json();
+                indhold = await myJson.json();
 
-		visForsideTekst();
-	}
-
-
-	function visForsideTekst() {
-		console.log("VIS FORSIDE TEKST");
+                visIndhold();
+            }
 
 
-		document.querySelector(".item2 p").innerHTML = ForsideTekst.content.rendered;
+            function visIndhold() {
+                console.log("VIS TEKST");
 
-	}
 
-	hentJson1();
+                document.querySelector(".om_titel").innerHTML = indhold.title.rendered;
+                document.querySelector(".om_tekst").innerHTML = indhold.content.rendered;
+
+            }
+
+            hentJson();
+
+        }

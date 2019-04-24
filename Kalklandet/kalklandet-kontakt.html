@@ -14,12 +14,12 @@
 
     <div class="grid-container">
 
-        <div class="item item1">
+        <div class="item1">
 
 
             <div class="siteheader">
                 <div class="siteheaderflexcontainer">
-                    <div class="logo"><a href="/Kalklandet/kalklandet.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-kalklandet.svg" alt="logo"></a></div>
+                    <div class="logo"><a href="/Kalklandet/index.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-kalklandet.svg" alt="logo"></a></div>
 
                     <div class="burgerknap">&#9776</div>
                     <div class="menu">
@@ -42,7 +42,7 @@
 
         </div>
 
-        <div class="item item2">
+        <div class="item2">
 
             <div class="nested">
 
@@ -52,6 +52,9 @@
                     <br>
                     <p class="text"></p>
                     <br>
+
+                    <p class="firmanavn"></p>
+
                     <p class="adresse"></p>
                     <br>
 
@@ -101,36 +104,7 @@
 
 
 
-        <div class="item item9">
-            <div>
-                <a href="index.html">
-                    <p>Lorem ipsum dolor</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-            </div>
-            <div>
-                <a href="index.html">
-                    <p>Lorem ipsum dolor</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-            </div>
-        </div>
+
 
 
 
@@ -169,10 +143,11 @@
 
             document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
             document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
-            document.querySelector(".adresse").innerHTML = kontaktInformationer.firmaets_navn;
-            document.querySelector(".tlf").innerHTML = kontaktInformationer.adresse;
-            document.querySelector(".åbningstider").innerHTML = kontaktInformationer.tlf;
-            document.querySelector(".mail").innerHTML = kontaktInformationer.mail;
+            document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
+            document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
+            document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
+            document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
+            document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
 
 
             hentJson();
