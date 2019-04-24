@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="koldkrigs-om.css">
+    <link rel="stylesheet" href="koldkrigs-undervisning.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
 </head>
@@ -117,8 +117,11 @@ CONTENT START
 
 
 
+        
 
-        <main class="undervisningsforløb"></main>
+        <main class="undervisningsforløb">
+     
+        </main>
 
 
 
@@ -131,8 +134,19 @@ CONTENT SLUT
 
     <template>
         <section class="undervisningsforløb">
-            <h1 class="undervisningsforløb_title"></h1>
-            <p class="undervisningsforløb_niveau"></p>
+     <div class="undervisningsforløb_box">
+              <h1 class="undervisningsforløb_title"></h1> 
+                <p class="undervisningsforløb_niveau"></p>
+         
+         
+         <a href="#">
+         <button class="undervisningsforløb_knap">LÆS MERE
+         </button>
+         </a>
+         
+            </div>
+            
+    
         </section>
     </template>
 
@@ -140,57 +154,6 @@ CONTENT SLUT
 
 
 </body>
-
-<script>
-    "use strict"
-    let undervisningForlob = [];
-
-    document.addEventListener("DOMContentLoaded", start);
-
-
-    function start() {
-
-        
-        async function hentJson() {
-
-            console.log("hent json");
-
-            let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/undervisningsforlob";
-
-            let myJson = await fetch(url);
-
-            undervisningForlob = await myJson.json();
-
-            visUndervisning();
-        }
-
-
-        function visUndervisning() {
-            console.log("VIS UNDERVISNINGSFORLØB");
-
-
-            let dest = document.querySelector(".undervisningsforløb");
-            let temp = document.querySelector("template");
-
-
-
-            undervisningForlob.forEach(undervisningForlob => {
-                let klon = temp.cloneNode(true).content;
-
-                klon.querySelector(".undervisningsforløb h1").innerHTML = undervisningForlob.title.rendered;
-                klon.querySelector(".undervisningsforløb p").innerHTML = undervisningForlob.title.rendered;
-
-
-                dest.appendChild(klon);
-            })
-
-        }
-        
-        
-        hentJson();
-        
-    }
-</script>
 
 
 <script src="koldkrigs-undervisning.js"></script>

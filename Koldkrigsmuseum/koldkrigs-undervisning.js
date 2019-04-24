@@ -31,3 +31,53 @@ function down() {
     document.querySelector(".viewport").classList.remove(".overflow");
 
 }
+
+
+"use strict"
+    let undervisningForlob = [];
+
+    document.addEventListener("DOMContentLoaded", start);
+
+
+    function start() {
+
+        
+        async function hentJson() {
+
+            console.log("hent json");
+
+            let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/undervisningsforlob/?categories=5";
+
+            let myJson = await fetch(url);
+
+            undervisningForlob = await myJson.json();
+
+            visUndervisning();
+        }
+
+
+        function visUndervisning() {
+            console.log("VIS UNDERVISNINGSFORLØB");
+
+
+            let dest = document.querySelector(".undervisningsforløb");
+            let temp = document.querySelector("template");
+
+
+
+            undervisningForlob.forEach(undervisningForlob => {
+                let klon = temp.cloneNode(true).content;
+
+                klon.querySelector(".undervisningsforløb h1").innerHTML = undervisningForlob.title.rendered;
+                klon.querySelector(".undervisningsforløb p").innerHTML = undervisningForlob.maalgruppe;
+
+
+                dest.appendChild(klon);
+            })
+
+        }
+        
+        
+        hentJson();
+        
+    }
