@@ -109,20 +109,17 @@ body {
 
 
 .grid_skabelon {
-<<<<<<< HEAD
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-=======
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
->>>>>>> origin/master
 }
 
 
 .header {
-<<<<<<< HEAD
 	grid-column: 1/5;
 	height: 180vh;
 	z-index: 1;

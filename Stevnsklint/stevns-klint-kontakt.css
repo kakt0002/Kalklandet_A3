@@ -1,3 +1,33 @@
+
+/*---- STYLING TEKST KONTAKT ----*/
+
+
+.kontakt_tekst {
+    width: 100vw;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'limestoneregular';
+    font-size: 1.8em;
+    margin: 0 1em;
+}
+
+
+p {
+    color: white;
+    font-family: 'limestoneregular';
+    font-size: 1em;
+    margin: 1em 1em;
+}
+
+
+/*---- STYLING TEKST KONTAKT SLUT ----*/
+
+
+
+
 body {
 	margin: 0;
 	background-color: #8C8A87;
@@ -57,6 +87,8 @@ body {
 }
 
 /* ------ FONT SLUT ------*/
+
+
 
 
 

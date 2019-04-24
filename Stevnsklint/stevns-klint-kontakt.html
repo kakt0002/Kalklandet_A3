@@ -121,7 +121,50 @@ HEADER START
 
 
 
-        </div>
+
+
+
+
+
+
+        <div class="kontakt_tekst">
+
+            <h1 class="titel"></h1>
+                    <br>
+                    <p class="text"></p>
+                    <br>
+
+                    <p class="firmanavn"></p>
+
+                    <p class="adresse"></p>
+                    <br>
+
+                    <p class="tlf">
+                    </p>
+
+
+                    <p class="åbningstider"></p>
+                    <br>
+                    <p class="mail"></p>
+                    <br>
+
+
+
+
+            </div>
+
+
+
+
+    </div>
+
+
+
+              </div>
+
+
+
+<!--
 
           <footer>
          <div class="footer">
@@ -137,8 +180,51 @@ HEADER START
         </div>
     </footer>
 
+-->
 
-    </div>
+
+
+
+    <script>
+        "use strict"
+        let kontaktInformationer = [];
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        console.log("hent json  - test");
+
+        async function hentJson() {
+
+            console.log("hent json");
+
+            let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/75";
+
+            let myJson = await fetch(url);
+
+            kontaktInformationer = await myJson.json();
+
+            visKontaktInformationer();
+        }
+
+
+        function visKontaktInformationer() {
+            console.log("VIS KONTAKTINFORMATIONER");
+
+
+            document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
+            document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
+            document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
+            document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
+            document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
+            document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
+            document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
+
+
+            hentJson();
+
+
+        }
+    </script>
 
 
 
