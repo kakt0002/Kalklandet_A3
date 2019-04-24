@@ -17,13 +17,13 @@
 
             <div class="siteheader">
                 <div class="siteheaderflexcontainer">
-                    <div class="logo"><a href="index.html"><img src="Kalklandet_logo.png" alt="logo"></a></div>
+                    <div class="logo"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-kalklandet.svg" alt="logo"></a></div>
 
                     <div class="burgerknap">&#9776</div>
                     <div class="menu">
-                        <a href="index.html">DET SKER</a>
-                        <a href="index.html">OM OS</a>
-                        <a href="index.html">KONTAKT</a>
+                        <a href="#det_sker">DET SKER</a>
+                        <a href="#om_os">OM OS</a>
+                        <a href="kalklandet-kontakt.html">KONTAKT</a>
                     </div>
                 </div>
             </div>
@@ -51,38 +51,53 @@
         <div class="item item6">6 NY LOKATION</div>
         <div class="item item7">
 
-            <div class="om-os-nested">
 
-                <div class="nested-item1">
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                        <button class="btn-hover color-11">LÆS MERE</button>
+            <section id="om_os">
+
+                <div class="om-os-nested">
+
+                    <div class="nested-item1">
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <button class="btn-hover color-11">LÆS MERE</button>
+                        </div>
                     </div>
-                </div>
-                <div class="nested-item2"></div>
+                    <div class="nested-item2"></div>
 
-            </div>
+                </div>
+
+            </section>
 
         </div>
+
+
+
         <div class="item item8">
 
-            <div class="nested-item3">
-                <h2>Det sker</h2>
-            </div>
+            <section id="det_sker">
 
-            <button class="btn-hover color-11">STEVNSFORT</button>
-            <button class="btn-hover color-11">GEOMUSEUM FAXE</button>
-            <button class="btn-hover color-11">STEVNS KLINT</button>
-            <button class="btn-hover color-11">NYERE TIDS KULTUR</button>
+                <div class="det-sker-nested">
 
-            <div class="det-sker-nested">
+                    <div class="nested-item3">
+                        <h2>Det sker</h2>
+                    </div>
 
 
+                    <div class="filtrering">
 
-                <main class="begivenhed"></main>
+                        <button class="btn-hover color-11 ">STEVNSFORT</button>
+                        <button class="btn-hover color-11">GEOMUSEUM FAXE</button>
+                        <button class="btn-hover color-11">STEVNS KLINT</button>
+                        <button class="btn-hover color-11">NYERE TIDS KULTUR</button>
 
-                <!--
+                    </div>
+
+
+
+                    <main class="begivenhed"></main>
+
+                    <!--
                 <div class="nested-item4 begivenhed">
                     <div class="dato">
                         <p>21 apr</p>
@@ -117,37 +132,48 @@
                 </div>
 -->
 
-            </div>
+                </div>
+
+            </section>
 
         </div>
+
+
+
+
+
         <div class="item item9">
-            <div>
-                <a href="index.html">
-                    <p>Lorem ipsum dolor</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
+            <div class="footer_tekst">
+
+                <h1 class="titel"></h1>
+
+                <p class="text"></p>
+
+
+                <p class="firmanavn"></p>
+
+                <p class="adresse"></p>
+
+
+                <p class="tlf">
+
+
+                    <p class="åbningstider"></p>
+
+                    <p class="mail"></p>
+
             </div>
-            <div>
-                <a href="index.html">
-                    <p>Lorem ipsum dolor</p>
+
+            <div class="footer_social_media">
+                <a href="https://www.facebook.com/stevnsklint/">
+                    <img src="https://image.flaticon.com/icons/png/512/33/33702.png" alt="facebook">
+
                 </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
+                <a href="https://www.instagram.com/oestsjaellandsmuseum/">
+                    <img src="https://image.flaticon.com/icons/png/512/87/87390.png" alt="instagram">
+
                 </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
-                <a href="index.html">
-                    <p>Lorem ipsum</p>
-                </a>
+
             </div>
         </div>
 
@@ -176,6 +202,7 @@
         let ForsideTekst = [];
         let boksTekst = [];
         let detSker = [];
+        let kontaktInformationer = [];
 
         document.addEventListener("DOMContentLoaded", start);
 
@@ -224,7 +251,6 @@
                 console.log("VIS BOKS TEKST");
 
                 document.querySelector(".nested-item1 h2").innerHTML = boksTekst.title.rendered;
-
                 document.querySelector(".nested-item1 p").innerHTML = boksTekst.content.rendered;
 
             }
@@ -250,13 +276,13 @@
 
                 let dest = document.querySelector(".begivenhed");
                 let temp = document.querySelector("template");
-                
+
 
 
                 detSker.forEach(begivenhed => {
                     let klon = temp.cloneNode(true).content;
 
-                    klon.querySelector(".dato p").innerHTML = begivenhed.dato.rendered;
+                    klon.querySelector(".dato p").innerHTML = begivenhed.dato;
                     klon.querySelector(".det-sker-text").innerHTML = begivenhed.title.rendered;
 
 
@@ -266,6 +292,37 @@
             }
 
             hentJson3();
+
+
+
+            async function hentJson4() {
+
+                console.log("hent json 4");
+
+                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
+
+                let myJson = await fetch(url);
+                kontaktInformationer = await myJson.json();
+
+                visFooter();
+            }
+
+
+            function visFooter() {
+                console.log("VIS footer");
+
+
+
+                document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
+                document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
+                document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
+                document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
+                document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
+
+
+            }
+
+            hentJson4();
 
 
 
