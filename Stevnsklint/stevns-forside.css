@@ -59,6 +59,7 @@ body {
 /* ------ FONT SLUT ------*/
 
 
+
 /***************************************************** GRID CONTAINER START ********************************************************/
 
 
@@ -71,7 +72,7 @@ body {
 
 .header {
 	grid-column: 1/5;
-	background-image: url(billeder/koldkrigtunnel.jpg);
+	background-image: url(billeder/baggrund.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 180vh;
@@ -118,6 +119,8 @@ body {
 
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
+
+
 .logo img {
 	position: absolute;
 	width: 1200px;
@@ -127,6 +130,7 @@ body {
 	position: fixed;
 
 }
+
 
 
 /***************************************************** HEADER START ********************************************************/
@@ -270,12 +274,8 @@ body {
 }
 
 
-
 /*burgermenu slut*/
 
-.mainnav {
-	display: none;
-}
 
 
 /***************************************************** HEADER SLUT ********************************************************/
@@ -384,6 +384,7 @@ body {
 }
 
 /***************************************************** FOOTER SLUT ********************************************************/
+
 @media only screen and (min-width: 700px) {
 
 
