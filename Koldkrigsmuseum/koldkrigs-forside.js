@@ -1,3 +1,5 @@
+window.addEventListener("load", sidenVises);
+
 function sidenVises() {
 	console.log("siden vises!");
 	// registrer klik på menu-knap
