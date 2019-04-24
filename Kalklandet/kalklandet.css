@@ -397,6 +397,7 @@ h2 {
 /* ------- HOVER EFFEKTER -------- */
 
 
+
 .begivenhed:hover {
     transform: scale(1.02);
     cursor: pointer;

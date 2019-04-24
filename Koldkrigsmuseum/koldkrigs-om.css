@@ -18,6 +18,9 @@ body {
 
 .header {
 	grid-column: 1/5;
+	background-image: url(billeder/Den_kolde_krig.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: white;
 	height: 180vh;
 	z-index: 1;
