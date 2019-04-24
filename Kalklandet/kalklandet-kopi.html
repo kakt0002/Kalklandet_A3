@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="kalklandet.css">
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+
+        <div class="item item1">
+
+
+            <div class="siteheader">
+                <div class="siteheaderflexcontainer">
+                    <div class="logo"><a href="index.html"><img src="Kalklandet_logo.png" alt="logo"></a></div>
+
+                    <div class="burgerknap">&#9776</div>
+                    <div class="menu">
+                        <a href="index.html">DET SKER</a>
+                        <a href="index.html">OM OS</a>
+                        <a href="index.html">KONTAKT</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="mainnav">
+                    <ul>
+                        <li class="menuitem"><a href="index.html">Det sker</a></li>
+                        <li class="menuitem"><a href="index.html">Om os</a></li>
+                        <li class="menuitem"><a href="index.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+
+        <div class="item item2">
+            <div>
+                <p></p>
+            </div>
+        </div>
+        <div class="item item3">3 STEVNSFORT</div>
+        <div class="item item4">4 GEOMUSEUM FAXE</div>
+        <div class="item item5">5 STEVNS KLINT</div>
+        <div class="item item6">6 NY LOKATION</div>
+        <div class="item item7">
+
+            <div class="om-os-nested">
+
+                <div class="nested-item1">
+                    <div>
+                        <h2></h2>
+                        <p></p>
+                        <button class="btn-hover color-11">LÆS MERE</button>
+                    </div>
+                </div>
+                <div class="nested-item2"></div>
+
+            </div>
+
+        </div>
+        <div class="item item8">
+
+            <div class="det-sker-nested">
+                <div class="nested-item3">
+                    <h2>Det sker</h2>
+                </div>
+                <div class="nested-item4 begivenhed">
+                    <div class="dato">
+                        <p>21 apr</p>
+                    </div>
+                    <div class="det-sker-text ">
+                        <p>Gratis rundvisning for pensionister på Stevnsfortet </p>
+                    </div>
+                </div>
+                <div class="nested-item5 begivenhed">
+                    <div class="dato">
+                        <p>15 apr</p>
+                    </div>
+                    <div class="det-sker-text">
+                        <p>Halv pris på Geomuseum Faxe for børn i Påskeferien </p>
+                    </div>
+                </div>
+                <div class="nested-item6 begivenhed">
+                    <div class="dato">
+                        <p>30 mar</p>
+                    </div>
+                    <div class="det-sker-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="nested-item6 begivenhed">
+                    <div class="dato">
+                        <p>27 mar</p>
+                    </div>
+                    <div class="det-sker-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item item9">
+            <div>
+                <a href="index.html">
+                    <p>Lorem ipsum dolor</p>
+                </a>
+                <a href="index.html">
+                    <p>Lorem ipsum</p>
+                </a>
+                <a href="index.html">
+                    <p>Lorem ipsum</p>
+                </a>
+                <a href="index.html">
+                    <p>Lorem ipsum</p>
+                </a>
+            </div>
+            <div>
+                <a href="index.html">
+                    <p>Lorem ipsum dolor</p>
+                </a>
+                <a href="index.html">
+                    <p>Lorem ipsum</p>
+                </a>
+                <a href="index.html">
+                    <p>Lorem ipsum</p>
+                </a>
+                <a href="index.html">
+                    <p>Lorem ipsum</p>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <template>
+        <section class="item item2">
+            <p></p>
+        </section>
+
+
+        <section class="nested-item1">
+            <h2></h2>
+            <p></p>
+        </section>
+
+
+        <section class="indhold3">
+            <h2 class="titel3"></h2>
+            <div class="beskrivelse3"></div>
+        </section>
+
+    </template>
+
+
+    <script>
+        "use strict"
+        let loadArray = [{
+                theUrl: "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/131",
+                theFunction: visForsideTekst
+            },
+            {
+                theUrl: "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/131",
+                theFunction: visViden
+            }, {
+                theUrl: "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/begivenheder",
+                theFunction: visDetSker
+            }
+
+        ]
+
+
+        let indhold;
+
+
+        let loadIterator = 0;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson(loadArray[loadIterator]);
+
+            async function hentJson(obj) {
+                console.log("nummer 1");
+
+                let url = obj.theUrl;
+                let myJson = await fetch(url);
+                indhold = await myJson.json();
+                obj.theFunction();
+                loadIterator++;
+                if (loadIterator < loadArray.length) {
+                    hentJson(loadArray[loadIterator]);
+                }
+            };
+        }
+
+
+        function visForsideTekst() {
+            console.log("visForsideTekst");
+
+            let dest = document.querySelector(".item2");
+            let temp = document.querySelector("template");
+
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector(".item2").innerHTML = indhold.content.rendered;
+            dest.appendChild(klon);
+
+        }
+
+        function visViden() {
+            console.log("visViden");
+
+            let dest = document.querySelector(".nested-item1");
+            let temp = document.querySelector("template");
+
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector(".nested-item1 h2").innerHTML = indhold.title.rendered;
+            klon.querySelector(".nested-item1 p").innerHTML = indhold.content.rendered;
+            dest.appendChild(klon);
+
+        }
+
+        function visDetSker() {
+            console.log("visDetSker");
+
+            let dest = document.querySelector(".indhold3");
+            let temp = document.querySelector("template");
+
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector(".titel3").innerHTML = indhold.title.rendered;
+            klon.querySelector(".beskrivelse3").innerHTML = indhold.content.rendered;
+            dest.appendChild(klon);
+
+        }
+    </script>
+
+
+    <script src="kalklandet.js"></script>
+
+
+</body>
+
+</html>
