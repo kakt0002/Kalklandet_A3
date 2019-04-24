@@ -10,18 +10,18 @@ p {
 
 }
 
-/*--------- INDHOLDFORTEGNELSE 
+/*--------- INDHOLDFORTEGNELSE
 
 1. FONT
 2. HEADER
-3. HOVER EFFEKTER 
+3. HOVER EFFEKTER
 4. FOOTER
 5. BUTTONS
 6. GRID
 7. OM KALKLANDET
 8. DET SKER
 9. KONTAKT KALKLANDET
-10. MEDIA QUERYS 
+10. MEDIA QUERYS
 
 
 ----------*/
@@ -706,9 +706,9 @@ h2 {
         align-self: center;
 
     }
-    
 
-    
+
+
     .logo-footer img {
 		margin-left: 40%;
 	}

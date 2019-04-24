@@ -41,7 +41,7 @@ function down() {
 
     function start() {
 
-        
+
         async function hentJson() {
 
             console.log("hent json");
@@ -76,8 +76,8 @@ function down() {
             })
 
         }
-        
-        
+
+
         hentJson();
-        
+
     }
