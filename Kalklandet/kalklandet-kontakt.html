@@ -48,9 +48,21 @@
 
                 <div class="nested-item1">
 
-                    <h1>Kontakt os</h1>
+                    <h1 class="titel"></h1>
+                    <br>
+                    <p class="text"></p>
+                    <br>
+                    <p class="adresse"></p>
+                    <br>
 
-                    <p>Kontakt os på mail via formularen. Forvent en svartid på maks én hverdag. <br> <br> Hvis du vil i telefonisk kontakt med os så ring til os på +45 88 77 66 55 <br> <br>Telefontider: <br> <br> <br> Mandag til fredag: 9.00 - 14.00 <br> Weekend: LUKKET <br> <br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur et dolorem quia unde molestias alias, voluptate aperiam ea.</p>
+                    <p class="tlf">
+                    </p>
+
+
+                    <p class="åbningstider"></p>
+                    <br>
+                    <p class="mail"></p>
+                    <br>
 
                 </div>
 
@@ -126,9 +138,52 @@
     </div>
 
 
+
+
+
+    <script>
+        "use strict"
+        let kontaktInformationer = [];
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        console.log("hent json  - test");
+
+        async function hentJson() {
+
+            console.log("hent json");
+
+            let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
+
+            let myJson = await fetch(url);
+
+            kontaktInformationer = await myJson.json();
+
+            visKontaktInformationer();
+        }
+
+
+        function visKontaktInformationer() {
+            console.log("VIS KONTAKTINFORMATIONER");
+
+
+            document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
+            document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
+            document.querySelector(".adresse").innerHTML = kontaktInformationer.firmaets_navn;
+            document.querySelector(".tlf").innerHTML = kontaktInformationer.adresse;
+            document.querySelector(".åbningstider").innerHTML = kontaktInformationer.tlf;
+            document.querySelector(".mail").innerHTML = kontaktInformationer.mail;
+
+
+            hentJson();
+
+
+        }
+    </script>
+
+
+
     <script src="/Kalklandet/kalklandet.js"></script>
-
-
 
 </body>
 

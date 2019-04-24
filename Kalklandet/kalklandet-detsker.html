@@ -44,10 +44,16 @@
 
         <div class="item item2">
 
+            <div class="nested-item3">
+                <h2>Det sker</h2>
+            </div>
+
             <div class="det-sker-nested">
-                <div class="nested-item3">
-                    <h2>Det sker</h2>
-                </div>
+
+
+                <main class="begivenhed"></main>
+
+                <!--
                 <a href="/Kalklandet/kalklandet-begivenhed.html">
                     <div class="nested-item4 begivenhed">
                         <div class="dato">
@@ -118,6 +124,7 @@
                         </div>
                     </div>
                 </a>
+-->
             </div>
 
 
@@ -162,8 +169,76 @@
     </div>
 
 
-    <script src="/Kalklandet/kalklandet.js"></script>
 
+    <template>
+
+        <section class="begivenhed">
+            <div class="dato"></div>
+
+            <p class="det-sker-text"></p>
+        </section>
+
+    </template>
+
+
+    <script>
+        "use strict"
+        let ForsideTekst = [];
+        let boksTekst = [];
+        let detSker = [];
+
+        document.addEventListener("DOMContentLoaded", start);
+
+
+        function start() {
+
+
+            async function hentJson1() {
+
+                console.log("hent json 1");
+
+                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/begivenhed?per_page=5";
+
+                let myJson = await fetch(url);
+                detSker = await myJson.json();
+
+                visDetSker();
+            }
+
+
+            function visDetSker() {
+                console.log("VIS DET SKER");
+
+                let dest = document.querySelector(".begivenhed");
+                let temp = document.querySelector("template");
+
+
+
+                detSker.forEach(begivenhed => {
+                    let klon = temp.cloneNode(true).content;
+
+                    klon.querySelector(".dato").innerHTML = begivenhed.dato;
+                    klon.querySelector(".det-sker-text").innerHTML = begivenhed.title.rendered;
+
+
+                    dest.appendChild(klon);
+                })
+
+            }
+
+            hentJson1();
+
+
+
+
+
+
+
+        }
+    </script>
+
+
+    <script src="/Kalklandet/kalklandet.js"></script>
 
 
 </body>
