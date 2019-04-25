@@ -201,6 +201,9 @@ body {
 }
 
 #sidebox4 {
+	background-image: url(/Koldkrigsmuseum/billeder/nyere_kultur-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	position: absolute;
 	top: 34em;
 	left: 0em;
@@ -209,6 +212,7 @@ body {
 	background-color: #88B52D;
 	box-shadow: 1px 1px 4px #506c17;
 }
+
 
 #menuknap {
 	display: inline-block;
@@ -604,6 +608,8 @@ body {
 
 	#btn5 {
 		top: 651px;
+		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
@@ -667,7 +673,7 @@ body {
 	}
 
 	.background5 {
-		background-color: rgba(136, 181, 45, 1);
+		background-color: rgba(136, 181, 45, 0.3);
 		width: 100%;
 		height: 100%;
 

@@ -1,40 +1,3 @@
-/*--------- OM TEKST WORDPRESS ----------*/
-
-.tekst {
-	margin: 0 auto;
-	width: 100vw;
-
-}
-
-.om_titel {
-	color: white;
-	font-family: 'limestoneregular';
-	font-size: 1.8em;
-	margin: 1em 2em;
-
-
-}
-
-.om_tekst {
-	color: white;
-	font-family: 'limestoneregular';
-	font-size: 1em;
-	margin: 1em 2em;
-
-}
-
-.om_foto1 {
-	text-align: center;
-
-}
-
-.om_foto1 img {
-	width: 80%;
-	margin: 1em 0;
-
-}
-
-
 .praktisk_info {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -72,7 +35,6 @@
 	padding-bottom: 0.2em;
 	padding: 10px;
 	font-size: 12px;
-	text-align: center;
 	line-height: 1.5;
 }
 
@@ -768,12 +730,13 @@ body {
 	}
 
 	#btn5 {
-		background-image: url(/Koldkrigsmuseum/billeder/nyere_kultur-sidebar.svg);
-		background-size: cover;
 		top: 651px;
+		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
-
 	}
+
+
 
 
 	div.button {
@@ -833,7 +796,7 @@ body {
 	}
 
 	.background5 {
-		background-color: rgba(136, 181, 45, 1);
+		background-color: rgba(136, 181, 45, 0.31);
 		width: 100%;
 		height: 100%;
 
