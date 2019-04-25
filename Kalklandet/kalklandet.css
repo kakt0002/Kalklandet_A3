@@ -646,8 +646,8 @@ h2 {
 .nested-item4 {
     display: flex;
     flex-direction: row;
-
-    background-color: #f1ebe3;
+    border: 1px solid black;
+    /*    background-color: #f1ebe3;*/
     min-height: 10vh;
     margin: 2vh 10vw 2vh 10vw;
     padding: 1vw;
@@ -674,12 +674,12 @@ h2 {
 
     width: 100px;
     height: 10vh;
-    background-color: #fe6400;
+    background-color: #ffffff;
     text-align: center;
 }
 
 .dato p {
-    padding-top: 0.8vw;
+    font-weight: 600;
 }
 
 .det-sker-text {
