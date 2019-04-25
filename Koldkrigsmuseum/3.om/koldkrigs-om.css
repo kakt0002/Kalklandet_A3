@@ -1,3 +1,61 @@
+/*--------- OM TEKST WORDPRESS ----------*/
+
+.tekst {
+	margin: 0 auto;
+	width: 100vw;
+
+}
+
+.om_titel {
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
+    color: white;
+    font-family: 'limestoneregular';
+    font-size: 1.8em;
+    margin: 1em 2em;
+=======
+	color: white;
+	font-family: 'limestoneregular';
+	font-size: 1.8em;
+	margin: 1em 2em;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
+
+
+}
+
+.om_tekst {
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
+    color: white;
+    font-family: 'limestoneregular';
+    font-size: 1em;
+    margin: 1em 2em;
+=======
+	color: white;
+	font-family: 'limestoneregular';
+	font-size: 1em;
+	margin: 1em 2em;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
+
+}
+
+.om_foto1 {
+	text-align: center;
+
+}
+
+.om_foto1 img {
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
+    width: 80%;
+    margin: 1em 0;
+=======
+	width: 80%;
+	margin: 1em 0;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
+
+}
+
+/*--------- OM TEKST WORDPRESS SLUT----------*/
+
+
 body {
     margin: 0;
     background-color: #8C8A87;
@@ -70,10 +128,8 @@ body {
 
 
 .header {
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     grid-column: 1/5;
-    background-image: url(billeder/koldkrigtunnel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 180vh;
     z-index: 1;
 }
@@ -81,11 +137,19 @@ body {
 .content {
     grid-column: 1/5;
     background-color: gold;
+=======
+	grid-column: 1/5;
+	z-index: 1;
+}
+
+.content {
+	grid-column: 1/5;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 }
 
 .footer {
     grid-column: 1/5;
-    background-color: #24211f;
+    background-color: #38728D;
     color: white;
 }
 
@@ -111,7 +175,7 @@ body {
 
     .header {
         grid-column: 1/5;
-        height: 50em;
+        height: 10em;
     }
 }
 
@@ -215,11 +279,10 @@ body {
     display: inline-block;
     position: fixed;
     right: 0em;
-    font-size: 2rem;
-    top: 0rem;
-    padding: 1rem;
-    padding-top: 1.9rem;
-    padding-right: 2rem;
+    font-size: 1.3em;
+    top: 0em;
+    padding: 0.7em;
+    padding-top: 0.3em;
     color: white;
     z-index: 2;
 
@@ -323,7 +386,9 @@ body {
 
 }
 
-
+.koldekrig_billede img {
+    height: 50vh;
+}
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
@@ -339,8 +404,8 @@ body {
     font-family: 'limestoneregular';
     text-align: center;
     color: #f7fbff;
-}
 
+}
 
 .footer p:nth-child(1) {
     font-family: 'limestoneregular';
@@ -385,44 +450,6 @@ body {
 }
 
 /***************************************************** FOOTER SLUT ********************************************************/
-
-/***** MOBILE VERSION *****/
-@media only screen and (max-width: 600px) {
-
-    .logo img {
-        width: 960px;
-        height: auto;
-        top: 20px;
-        left: 20px;
-        position: absolute;
-    }
-
-    #menuknap {
-        font-size: 2.2rem;
-        top: 0rem;
-        padding: 0.8rem;
-        padding-right: 1.7rem;
-        position: absolute;
-    }
-
-    .grid_skabelon {
-        display: grid;
-        grid-template-columns: 1fr;
-        /*        grid-template-rows: auto;*/
-    }
-
-    .header {
-        /*        grid-column: 1/5;*/
-        background-image: url(billeder/koldkrigtunnel.jpg);
-        background-repeat: no-repeat;
-        /*        background-size: cover;*/
-        width: 100%;
-        z-index: 1;
-    }
-
-}
-
-
 @media only screen and (min-width: 700px) {
 
 
@@ -479,21 +506,13 @@ body {
 
     }
 
-    .laes_mere {
-        color: #e5e1e1;
-        font-weight: 100;
-        font-family: 'Assistant', sans-serif;
-        width: 50vw;
-        padding: 5vw;
-        padding-left: 18vw;
-
-    }
 
 
 
 }
 
 @media only screen and (min-width: 1000px) {
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     .burgermenu {
         display: none;
     }
@@ -514,7 +533,7 @@ body {
         line-height: 3vh;
         right: 0vw;
         z-index: 2;
-        padding-top: 3.5vw;
+        padding-top: 2.5vw;
 
     }
 
@@ -547,43 +566,58 @@ body {
 		border: none;
 		background-color: transparent;
 		font-family: limestone;
-		font-weight: 100;
+=======
+	.burgermenu {
+		display: none;
+	}
+
+	.logo-footer img {
+		margin-left: 45%;
+
+	}
+
+	.fa-facebook {
+		margin-left: 47%;
+	}
+
+	.mainnav {
+		position: fixed;
+		display: block;
+		text-align: right;
+		line-height: 3vh;
+		right: 0vw;
+		z-index: 2;
+		padding-top: 2.5vw;
+
+	}
+
+	.mainnav a {
+		color: white;
+		text-decoration: none;
+		padding: 0 2vw 0 2vw;
+		display: inline-block;
+		font-family: Helvetica;
 		font-size: 0.8em;
 	}
 
-	.dropdown {
-		position: relative;
-		display: inline-block;
+	.tynd {
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
+		font-weight: 100;
 	}
 
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-		z-index: 1;
+	.tyk {
+		font-weight: 800;
 	}
 
-	.dropdown-content a {
-		color: #387288;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
+	.mainnav li {
+		list-style-type: none;
+		text-align: right;
 	}
 
-	.dropdown-content a:hover {
-		background-color: #ddd;
-	}
+	.mainnav a:hover {
+		color: #d9d6d6;
 
-	.dropdown:hover .dropdown-content {
-		display: block;
 	}
-
-	.dropdown:hover .dropbtn {
-		color: #387288;
-	}
-*/
 
     h1 {
         margin: 0;
@@ -597,41 +631,80 @@ body {
         text-decoration: none;
     }
 
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     #btn1 {
         top: 151px;
         background-image: url(billeder/kalklandet-sidebar-desktop.svg);
         background-size: cover;
+=======
+
+	#btn1 {
+		top: 151px;
+		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
 
     }
 
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     #btn2 {
         top: 276px;
         background-image: url(billeder/kold-sidebar-desktop.svg);
         background-size: cover;
         /*    border: 5px solid #387288;*/
+=======
+	#btn2 {
+		top: 276px;
+		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
 
     }
 
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     #btn3 {
         top: 401px;
         background-image: url(billeder/geo-sidebar-desktop.svg);
         background-size: cover;
+=======
+	#btn3 {
+		top: 401px;
+		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
     }
 
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     #btn4 {
         top: 526px;
         background-image: url(billeder/stevns-sidebar-desktop.svg);
         background-size: cover;
         /*    border: 5px solid #0182AD;*/
+=======
+	#btn4 {
+		top: 526px;
+		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
 
     }
 
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     #btn5 {
         top: 651px;
+=======
+	#btn5 {
+		top: 651px;
+		box-shadow: 1px 1px 4px #4d4d4d;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
     }
 
@@ -656,8 +729,14 @@ body {
     }
 
 
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
     div.button:hover {
         left: 0px;
+=======
+
+	div.button:hover {
+		left: 0px;
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
 
     }
@@ -697,6 +776,84 @@ body {
         height: 100%;
 
     }
+
+	.basic_info {
+		left: 28.5vw;
+		top: 60vh;
+	}
+
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
+    .tekst {
+        margin: 0 auto;
+        width: 40vw;
+
+    }
+
+    .om_titel {
+        color: white;
+        font-family: 'limestoneregular';
+        font-size: 2.2em;
+        margin: 1em 0em;
+=======
+	/*--- OM TEKST ---*/
+
+	.tekst {
+		margin: 0 auto;
+		width: 40vw;
+
+	}
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
+
+	.om_titel {
+		color: white;
+		font-family: 'limestoneregular';
+		font-size: 2.2em;
+		margin: 1em 0em;
+
+<<<<<<< HEAD:Koldkrigsmuseum/koldkrigs-om.css
+    }
+
+    .om_tekst {
+        color: white;
+        font-family: 'limestoneregular';
+        font-size: 1em;
+        margin: 1em 0em;
+
+    }
+
+    .om_foto1 {
+        text-align: center;
+
+    }
+
+    .om_foto1 img {
+        width: 140%;
+        margin: 1em 1em;
+
+    }
+=======
+
+	}
+
+	.om_tekst {
+		color: white;
+		font-family: 'limestoneregular';
+		font-size: 1em;
+		margin: 1em 0em;
+
+	}
+
+	.om_foto1 {
+		text-align: center;
+
+	}
+
+	.om_foto1 img {
+		width: 140%;
+		margin: 1em 1em;
+
+	}
+>>>>>>> fddb49eb97da23f9ab8e3e939c1afc9e2fef65ad:Koldkrigsmuseum/3.om/koldkrigs-om.css
 
 
 }
