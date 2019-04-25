@@ -13,13 +13,34 @@
         "use strict"
         let ForsideTekst = [];
         let boksTekst = [];
+
+
+        let filter = "kalklandet.dk";
         let detSker = [];
+
         let kontaktInformationer = [];
 
         document.addEventListener("DOMContentLoaded", start);
 
 
         function start() {
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering)
+            })
+
+
+
+            function filtrering() {
+                filter = this.getAttribute("data-filter");
+                console.log(this.getAttribute("data-filter"), filter);
+
+                visDetSker();
+
+
+            }
+
+
+
             async function hentJson1() {
 
                 console.log("hent json 1");
@@ -70,6 +91,45 @@
             hentJson2();
 
 
+
+
+            //
+            //            async function hentJson4() {
+            //
+            //                console.log("hent json 4");
+            //
+            //                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
+            //
+            //                let myJson = await fetch(url);
+            //                kontaktInformationer = await myJson.json();
+            //
+            //                visFooter();
+            //            }
+            //
+            //
+            //            function visFooter() {
+            //                console.log("VIS footer");
+            //
+            //
+            //                document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
+            //                document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
+            //                document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
+            //                document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
+            //                document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
+            //
+            //
+            //            }
+            //
+            //            hentJson4();
+
+
+
+
+
+
+
+
+
             async function hentJson3() {
 
                 console.log("hent json 3");
@@ -83,63 +143,49 @@
             }
 
 
+
             function visDetSker() {
                 console.log("VIS DET SKER");
+
 
                 let dest = document.querySelector(".begivenhed");
                 let temp = document.querySelector("template");
 
+                dest.innerHTML = "";
 
 
                 detSker.forEach(begivenhed => {
-                    let klon = temp.cloneNode(true).content;
+                    begivenhed.kategori.forEach(k => {
+                        if (k == filter) {
 
-                    klon.querySelector(".dato p").innerHTML = begivenhed.dato;
-                    klon.querySelector(".det-sker-text p").innerHTML = begivenhed.title.rendered;
+                            console.log(filter);
+
+                            let klon = temp.cloneNode(true).content;
+
+                            klon.querySelector(".dato p").innerHTML = begivenhed.dato;
+                            klon.querySelector(".det-sker-text p").innerHTML = begivenhed.title.rendered;
 
 
-                    dest.appendChild(klon);
+                            dest.appendChild(klon);
+
+
+
+
+                        }
+                    })
+
+
+
+
+
                 })
 
             }
 
+
+
+
             hentJson3();
-
-
-
-            async function hentJson4() {
-
-                console.log("hent json 4");
-
-                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
-
-                let myJson = await fetch(url);
-                kontaktInformationer = await myJson.json();
-
-                visFooter();
-            }
-
-
-            function visFooter() {
-                console.log("VIS footer");
-
-
-
-                document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
-                document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
-                document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
-                document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
-                document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
-
-
-            }
-
-            hentJson4();
-
-
-
-
-
 
 
         }
