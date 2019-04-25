@@ -1,37 +1,36 @@
-
 /*--------- OM TEKST WORDPRESS ----------*/
 
 .tekst {
-    margin: 0 auto;
-    width: 100vw;
+	margin: 0 auto;
+	width: 100vw;
 
 }
 
-.om_titel{
-    color: white;
-    font-family: 'limestoneregular';
-    font-size: 1.8em;
-    margin: 1em 2em;
+.om_titel {
+	color: white;
+	font-family: 'limestoneregular';
+	font-size: 1.8em;
+	margin: 1em 2em;
 
 
 }
 
 .om_tekst {
-     color: white;
-    font-family: 'limestoneregular';
-    font-size: 1em;
-    margin: 1em 2em;
+	color: white;
+	font-family: 'limestoneregular';
+	font-size: 1em;
+	margin: 1em 2em;
 
 }
 
 .om_foto1 {
-    text-align: center;
+	text-align: center;
 
 }
 
 .om_foto1 img {
-width: 80%;
-     margin: 1em 0;
+	width: 80%;
+	margin: 1em 0;
 
 }
 
@@ -111,13 +110,11 @@ body {
 
 .header {
 	grid-column: 1/5;
-	height: 180vh;
 	z-index: 1;
 }
 
 .content {
 	grid-column: 1/5;
-	background-color: gold;
 }
 
 .footer {
@@ -514,10 +511,16 @@ body {
 		text-decoration: none;
 		padding: 0 2vw 0 2vw;
 		display: inline-block;
-		font-family: 'Padauk', sans-serif;
-		font-weight: 600;
+		font-family: Helvetica;
 		font-size: 0.8em;
-		text-transform: uppercase;
+	}
+
+	.tynd {
+		font-weight: 100;
+	}
+
+	.tyk {
+		font-weight: 800;
 	}
 
 	.mainnav li {
@@ -529,52 +532,6 @@ body {
 		color: #d9d6d6;
 
 	}
-
-	/*
-	.dropbtn {
-		color: #e5e0e0;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		background-color: transparent;
-		font-family: limestone;
-		font-weight: 100;
-		font-size: 0.8em;
-	}
-
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-		z-index: 1;
-	}
-
-	.dropdown-content a {
-		color: #387288;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	}
-
-	.dropdown-content a:hover {
-		background-color: #ddd;
-	}
-
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-
-	.dropdown:hover .dropbtn {
-		color: #387288;
-	}
-*/
 
 	h1 {
 		margin: 0;
@@ -588,41 +545,45 @@ body {
 		text-decoration: none;
 	}
 
+
 	#btn1 {
 		top: 151px;
-		background-image: url(billeder/kalklandet-sidebar-desktop.svg);
+		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
 		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn2 {
 		top: 276px;
-		background-image: url(billeder/kold-sidebar-desktop.svg);
+		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
 		background-size: cover;
-		/*    border: 5px solid #387288;*/
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn3 {
 		top: 401px;
-		background-image: url(billeder/geo-sidebar-desktop.svg);
+		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
 		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
 
 	#btn4 {
 		top: 526px;
-		background-image: url(billeder/stevns-sidebar-desktop.svg);
+		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
 		background-size: cover;
-		/*    border: 5px solid #0182AD;*/
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn5 {
 		top: 651px;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
 
@@ -645,6 +606,7 @@ body {
 		text-align: center;
 		z-index: 3;
 	}
+
 
 
 	div.button:hover {
@@ -689,41 +651,46 @@ body {
 
 	}
 
-    /*--- OM TEKST ---*/
+	.basic_info {
+		left: 28.5vw;
+		top: 60vh;
+	}
 
-    .tekst {
-    margin: 0 auto;
-    width: 40vw;
+	/*--- OM TEKST ---*/
 
-}
+	.tekst {
+		margin: 0 auto;
+		width: 40vw;
 
-.om_titel{
-    color: white;
-    font-family: 'limestoneregular';
-    font-size: 2.2em;
-    margin: 1em 0em;
+	}
+
+	.om_titel {
+		color: white;
+		font-family: 'limestoneregular';
+		font-size: 2.2em;
+		margin: 1em 0em;
 
 
-}
+	}
 
-.om_tekst {
-     color: white;
-    font-family: 'limestoneregular';
-    font-size: 1em;
-    margin: 1em 0em;
+	.om_tekst {
+		color: white;
+		font-family: 'limestoneregular';
+		font-size: 1em;
+		margin: 1em 0em;
 
-}
+	}
 
-.om_foto1 {
-    text-align: center;
+	.om_foto1 {
+		text-align: center;
 
-}
+	}
 
-.om_foto1 img {
-width: 140%;
-     margin: 1em 1em;
+	.om_foto1 img {
+		width: 140%;
+		margin: 1em 1em;
 
-}
+	}
 
 
 }
