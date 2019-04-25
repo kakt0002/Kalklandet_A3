@@ -119,11 +119,10 @@ body {
 
 .logo img {
 	position: absolute;
-	width: 1200px;
 	height: auto;
-	top: 35px;
+	top: 18px;
 	left: 15px;
-	position: fixed;
+	position: relative;
 
 }
 
@@ -147,6 +146,7 @@ body {
 	padding: 8px;
 	border: 1px solid #ddd;
 	color: #387288;
+	margin-bottom: 20px;
 }
 
 #sidebox11 {
@@ -214,7 +214,7 @@ body {
 	display: inline-block;
 	position: fixed;
 	right: 0em;
-	font-size: 1.3em;
+	font-size: 1.8em;
 	top: 0em;
 	padding: 0.7em;
 	padding-top: 0.3em;
@@ -225,13 +225,13 @@ body {
 
 #menu {
 	position: fixed;
-	background-color: #387288;
+	background-color: #38728C;
 	top: -1em;
 	list-style-type: None;
 	width: 100%;
 	height: 100%;
 	box-shadow: 1px 1px 3px #6d5050;
-	font-family: 'limestoneregular';
+	font-family: limestone;
 	z-index: 1;
 
 }
@@ -240,6 +240,7 @@ body {
 	position: absolute;
 	top: 8em;
 	right: 3em;
+	margin: 2px;
 	text-align: right;
 }
 
@@ -250,22 +251,16 @@ body {
 }
 
 .menupunkter {
+
 	line-height: 6.5;
 	font-size: 0.8em;
 }
 
-.menupunkter2 {
-	position: absolute;
-	font-size: 0.7em;
-	line-height: 1.7;
-	top: -2.5em;
-	font-family: 'limestonelight';
-}
 
 .some-burger {
 	position: relative;
 	top: 40.5em;
-	left: 8.5em;
+	left: 5.8em;
 }
 
 
@@ -278,39 +273,41 @@ body {
 
 
 /***************************************************** HEADER SLUT ********************************************************/
-.basic_info {
+#basic_info {
 	position: relative;
 	color: white;
-	left: 8vh;
+	left: 6vh;
 	font-family: 'Assistant', sans-serif;
 	top: 14em;
 	line-height: 4vh;
 	max-width: 250px;
 }
 
-.basic_info h2 {
+#basic_info h2 {
 	font-weight: 100;
 	font-size: 15px;
 	text-transform: uppercase;
 	font-family: 'Assistant', sans-serif;
 	line-height: 7vh;
-	width: 289px;
+	border-bottom: 5px solid #38728C;
+	width: 200px;
 }
 
-.basic_info h1 {
+#basic_info h1 {
 	font-weight: 800;
-	font-size: 30px;
-	font-family: 'limestonebold';
+	font-size: 35px;
+	line-height: 1;
+	font-family: limestone;
 	text-transform: uppercase;
 }
 
-.basic_info p {
+#basic_info p {
 	font-weight: 100;
 	font-size: 15px;
 	line-height: 2.7vh;
 }
 
-.basic_info a {
+#basic_info a {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 2vh;
@@ -318,7 +315,7 @@ body {
 	text-decoration: none;
 }
 
-.basic_info a:hover {
+#basic_info a:hover {
 	color: #d9d6d6;
 
 }
@@ -359,20 +356,20 @@ body {
 
 
 .footer p {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	text-align: center;
 	color: #f7fbff;
 
 }
 
 .footer p:nth-child(1) {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 }
 
 .footer p:nth-child(2) {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	font-weight: 100;
 	font-size: 0.6em;
 }
@@ -424,7 +421,7 @@ body {
 	}
 
 
-	.basic_info {
+	#basic_info {
 		position: relative;
 		color: white;
 		left: 8vh;
@@ -434,7 +431,7 @@ body {
 		max-width: 550px;
 	}
 
-	.basic_info h2 {
+	#basic_info h2 {
 		font-weight: 100;
 		font-size: 15px;
 		text-transform: uppercase;
@@ -442,20 +439,20 @@ body {
 		line-height: 7vh;
 	}
 
-	.basic_info h1 {
+	#basic_info h1 {
 		font-weight: 800;
 		font-size: 30px;
-		font-family: 'limestonebold';
+		font-family: limestone;
 		text-transform: uppercase;
 	}
 
-	.basic_info p {
+	#basic_info p {
 		font-weight: 100;
 		font-size: 15px;
 		line-height: 2.7vh;
 	}
 
-	.basic_info a {
+	#basic_info a {
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 2vh;
@@ -463,7 +460,7 @@ body {
 		text-decoration: none;
 	}
 
-	.basic_info a:hover {
+	#basic_info a:hover {
 		color: #d9d6d6;
 
 	}
@@ -496,6 +493,16 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
+
+	.logo img {
+		position: fixed;
+		height: auto;
+		top: 40px;
+		left: 15px;
+		width: 17em;
+
+	}
+
 	.burgermenu {
 		display: none;
 	}
@@ -516,7 +523,7 @@ body {
 		line-height: 3vh;
 		right: 0vw;
 		z-index: 2;
-		padding-top: 2.5vw;
+		top: 2.5vw;
 
 	}
 
@@ -665,7 +672,7 @@ body {
 
 	}
 
-	.basic_info {
+	#basic_info {
 		left: 28.5vw;
 		top: 60vh;
 	}

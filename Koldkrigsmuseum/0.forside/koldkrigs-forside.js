@@ -27,7 +27,7 @@ function toggleMenu() {
 function down() {
 	console.log("vis læs mere");
 
+	document.querySelector(".viewport").classList.remove("overflow");
 	document.querySelector("#knap_laes_mere").removeEventListener("click", down);
-	document.querySelector(".viewport").classList.remove(".overflow");
 
 }
