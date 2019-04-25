@@ -24,7 +24,7 @@
 
                 console.log("hent json 1");
 
-                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/131";
+                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/202";
 
                 let myJson = await fetch(url);
 
