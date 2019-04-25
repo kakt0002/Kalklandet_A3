@@ -95,7 +95,7 @@
                     let klon = temp.cloneNode(true).content;
 
                     klon.querySelector(".dato p").innerHTML = begivenhed.dato;
-                    klon.querySelector(".det-sker-text").innerHTML = begivenhed.title.rendered;
+                    klon.querySelector(".det-sker-text p").innerHTML = begivenhed.title.rendered;
 
 
                     dest.appendChild(klon);
@@ -143,4 +143,3 @@
 
 
         }
-
