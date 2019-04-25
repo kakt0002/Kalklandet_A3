@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="kalklandet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,14 +44,28 @@
         </div>
 
         <div class="item item2">
-            <div>
+
+            <div class="splash_tekst">
+                <h1>Velkommen til Kalklandet!</h1>
                 <p></p>
             </div>
         </div>
-        <div class="item item3"></div>
-        <div class="item item4"></div>
-        <div class="item item5">STEVNS KLINT</div>
-        <div class="item item6">NY LOKATION</div>
+
+
+        <div class="parent">
+            <div class="item3"></div>
+        </div>
+        <div class="parent">
+            <div class="item4"></div>
+        </div>
+        <div class="parent">
+            <div class="item5"></div>
+        </div>
+        <div class="parent">
+            <div class="item6"></div>
+        </div>
+
+
         <div class="item item7">
 
 
@@ -61,10 +77,12 @@
                         <div>
                             <h2></h2>
                             <p></p>
-                            <button class="btn-hover color-11">LÆS MERE</button>
                         </div>
                     </div>
-                    <div class="nested-item2"></div>
+                    <div class="nested-item2">
+
+
+                    </div>
 
                 </div>
 
@@ -85,12 +103,12 @@
                     </div>
 
 
-                    <div class="filtrering">
-
-                        <button class="btn-hover color-11 ">STEVNSFORT</button>
-                        <button class="btn-hover color-11">GEOMUSEUM FAXE</button>
-                        <button class="btn-hover color-11">STEVNS KLINT</button>
-                        <button class="btn-hover color-11">NYERE TIDS KULTUR</button>
+                    <div class="button_container">
+                        <button class="btn-hover color-11 filter" data-filter="kalklandet.dk">KALKLANDET.DK</button>
+                        <button class="btn-hover color-11 filter" data-filter="stevnsfort">STEVNSFORT</button>
+                        <button class="btn-hover color-11 filter" data-filter="geomuseum_faxe">GEOMUSEUM FAXE</button>
+                        <button class="btn-hover color-11 filter" data-filter="stevns_klint">STEVNS KLINT</button>
+                        <button class="btn-hover color-11 filter" data-filter="nyere_tids_kultur">NYERE TIDS KULTUR</button>
 
                     </div>
 
@@ -104,33 +122,19 @@
 
         </div>
 
-
-
-
-
     </div>
 
 
     <template>
-
         <div class="nested-item4">
             <div class="dato">
                 <p></p>
             </div>
-
             <div class="det-sker-text">
-<p></p>
+                <p></p>
             </div>
-
-
         </div>
-
-
-
-
     </template>
-
-
 
     <script src="kalklandet.js"></script>
 
