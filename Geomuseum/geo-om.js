@@ -33,51 +33,35 @@ function down() {
 }
 
 
-
 "use strict"
-let undervisningForlob = [];
+let indhold = [];
 
 document.addEventListener("DOMContentLoaded", start);
 
 
 function start() {
-
-
     async function hentJson() {
 
-        console.log("hent json");
+        console.log("hent json 1");
 
-        let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/undervisningsforlob/?categories=3";
+        let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/198";
 
         let myJson = await fetch(url);
 
-        undervisningForlob = await myJson.json();
+        indhold = await myJson.json();
 
-        visUndervisning();
+        visIndhold();
     }
 
 
-    function visUndervisning() {
-        console.log("VIS UNDERVISNINGSFORLØB");
+    function visIndhold() {
+        console.log("VIS TEKST");
 
 
-        let dest = document.querySelector(".undervisningsforløb");
-        let temp = document.querySelector("template");
-
-
-
-        undervisningForlob.forEach(undervisningForlob => {
-            let klon = temp.cloneNode(true).content;
-
-            klon.querySelector(".undervisningsforløb h1").innerHTML = undervisningForlob.title.rendered;
-            klon.querySelector(".undervisningsforløb p").innerHTML = undervisningForlob.maalgruppe;
-
-
-            dest.appendChild(klon);
-        })
+        document.querySelector(".om_titel").innerHTML = indhold.title.rendered;
+        document.querySelector(".om_tekst").innerHTML = indhold.content.rendered;
 
     }
-
 
     hentJson();
 

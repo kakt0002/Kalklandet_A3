@@ -44,7 +44,7 @@ async function hentJson() {
 
     console.log("hent json");
 
-    let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/75";
+    let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/73";
 
     let myJson = await fetch(url);
 
