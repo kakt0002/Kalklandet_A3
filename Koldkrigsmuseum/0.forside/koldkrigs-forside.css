@@ -329,7 +329,7 @@ body {
 
 
 
-.laes_mere {
+#laes_mere {
     color: #e5e1e1;
     font-weight: 100;
     font-family: 'Assistant', sans-serif;
@@ -339,7 +339,7 @@ body {
 }
 
 
-.laes_mere h2 {
+#laes_mere h2 {
     position: relative;
     font-size: 6em;
     margin: 0;
@@ -347,7 +347,7 @@ body {
     left: -0.05em;
 }
 
-.laes_mere p {
+#laes_mere p {
     font-size: 1em;
 }
 
@@ -434,7 +434,7 @@ body {
         font-family: 'Assistant', sans-serif;
         top: 20rem;
         line-height: 4vh;
-        max-width: 550px;
+        max-width: 650px;
     }
 
     #basic_info h2 {
@@ -473,23 +473,23 @@ body {
     }
 
 
-    .laes_mere {
+    #laes_mere {
         color: #e5e1e1;
         font-weight: 100;
         font-family: 'Assistant', sans-serif;
         padding-left: 12vw;
         padding-bottom: 7vw;
-        width: width: 600px;
+        width: 600px;
     }
 
-    .laes_mere h2 {
+    #laes_mere h2 {
         font-size: 4rem;
         margin: 0;
         padding: 0;
         left: -0.05em;
     }
 
-    .laes_mere p {
+    #laes_mere p {
         font-size: 1rem;
     }
 
@@ -525,7 +525,7 @@ body {
         position: fixed;
         display: block;
         text-align: right;
-        line-height: 3vh;
+        line-height: 1.5rem;
         right: 0vw;
         z-index: 2;
         top: 2.5vw;
@@ -538,7 +538,7 @@ body {
         padding: 1vw 2vw 0 2vw;
         display: inline-block;
         font-family: Helvetica;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         font-weight: 800;
     }
 
@@ -673,7 +673,16 @@ body {
 
     #basic_info {
         left: 28.5vw;
-        top: 400px;
+        top: 445px;
+    }
+
+    #laes_mere {
+        color: #e5e1e1;
+        font-weight: 100;
+        font-family: 'Assistant', sans-serif;
+        padding-left: 17.3vw;
+        padding-bottom: 7vw;
+        width: 700px;
     }
 
 
