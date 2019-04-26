@@ -1,6 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	background-color: #8C8A87;
+
 }
 
 .hide {
@@ -325,7 +330,7 @@ body {
 }
 
 
-.laes_mere {
+#laes_mere {
 	color: #e5e1e1;
 	font-weight: 100;
 	font-family: 'Assistant', sans-serif;
@@ -336,7 +341,7 @@ body {
 
 }
 
-.laes_mere h2 {
+#laes_mere h2 {
 	position: relative;
 	font-size: 4em;
 	margin: 0;
@@ -344,7 +349,7 @@ body {
 	left: -0.05em;
 }
 
-.laes_mere p {
+#laes_mere p {
 	font-size: 1em;
 }
 
@@ -470,7 +475,7 @@ body {
 	}
 
 
-	.laes_mere {
+	#laes_mere {
 		color: #e5e1e1;
 		font-weight: 100;
 		font-family: 'Assistant', sans-serif;
@@ -480,7 +485,7 @@ body {
 
 	}
 
-	.laes_mere h2 {
+	#laes_mere h2 {
 		position: relative;
 		font-size: 4em;
 		margin: 0;
@@ -488,7 +493,7 @@ body {
 		left: -0.05em;
 	}
 
-	.laes_mere p {
+	#laes_mere p {
 		font-size: 1em;
 	}
 
@@ -512,7 +517,7 @@ body {
 	}
 
 	.logo-footer img {
-		margin-left: 45%;
+		margin-left: 44%;
 
 	}
 

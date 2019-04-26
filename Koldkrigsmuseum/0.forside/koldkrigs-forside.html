@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.css">
+	<link rel="stylesheet" href="/Koldkrigsmuseum//0.forside/koldkrigs-forside.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Padauk:400,700" rel="stylesheet">
 	<title></title>
@@ -27,8 +27,8 @@ HEADER START
 					<div id="menuknap">☰</div>
 					<ul id="menu" class="hidden">
 						<div class="sidebox">
-							<div id="sidebox11"><a href="#"></a></div>
-							<div id="sidebox1"><a href="#"></a></div>
+							<div id="sidebox11"><a href="/Kalklandet/index.html"></a></div>
+							<div id="sidebox1"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"></a></div>
 							<div id="sidebox2"></div>
 							<div id="sidebox3"></div>
 							<div id="sidebox4"></div>
@@ -50,10 +50,10 @@ HEADER START
 
 				</nav>
 				<div class="mainnav">
-					<li class="tyk"><a href="index.html">Praktisk information</a></li>
-					<li class="tyk"> <a href="/Koldkrigsmuseum/koldkrigs-undervisning.html">Undervisning</a></li>
-					<li class="tynd"> <a href="/Koldkrigsmuseum/koldkrigs-om.html">Om Den Koldekrig</a></li>
-					<li class="tynd"><a href="index.html">Kontakt</a></li>
+					<li class="tyk"><a href="/Koldkrigsmuseum/1.praktisk/koldkrigs-praktisk-information.html">Praktisk information</a></li>
+					<li class="tyk"> <a href="">Undervisning</a></li>
+					<li class="tynd"> <a href="">Om Den Koldekrig</a></li>
+					<li class="tynd"><a href="">Kontakt</a></li>
 
 
 				</div>
@@ -85,7 +85,7 @@ CONTENT START
 -->
 
 			<div class="destop_sidebar">
-				<a href="/Kalklandet/kalklandet_Maria.html">
+				<a href="/Kalklandet/index.html">
 					<div id="btn1" class="button">
 						<div class="background1">
 
@@ -93,7 +93,7 @@ CONTENT START
 					</div>
 				</a>
 
-				<a href="/Koldkrigsmuseum/koldkrigs-forside.html">
+				<a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html">
 					<div id="btn2" class="button">
 						<div class="background2">
 
@@ -145,7 +145,7 @@ CONTENT START
 
 		</div>
 -->
-			<section class="laes_mere">
+			<section id="laes_mere">
 				<div>
 					<h2>...</h2>
 					<p>Under Den Kolde Krig var Stevnsfort en brik i Danmark og NATO’s forsvar. Halvøen Stevns ville ligge i allerforreste frontlinje, hvis der udbrød krig mellem øst og vest. Derfor byggede man Stevnsfort, og i 40 år var man her døgnet rundt klar til krig. <br>
@@ -186,7 +186,41 @@ CONTENT SLUT
 
 
 
-	<script src="/Koldkrigsmuseum/0.forside/koldkrigs-forside.js"></script>
+	<script>
+		window.addEventListener("load", sidenVises);
+
+		function sidenVises() {
+			console.log("siden vises!");
+			// registrer klik på menu-knap
+			document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+			document.querySelector("#knap_laes_mere").addEventListener("click", down);
+		}
+
+		function toggleMenu() {
+			console.log("Toggle menu");
+			document.querySelector("#menu").classList.toggle("hidden");
+
+			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+			if (erSkjult == true) {
+				//menuen er nu skjult - ændr menuknap til lll
+				document.querySelector("#menuknap").textContent = "☰";
+			} else {
+				//menuen er nu vist - ændr menuknap til x
+				document.querySelector("#menuknap").textContent = "☰"
+			}
+		}
+
+
+
+		function down() {
+			console.log("vis læs mere");
+
+			document.querySelector(".viewport").classList.remove("overflow");
+			document.querySelector("#knap_laes_mere").removeEventListener("click", down);
+
+		}
+	</script>
 
 
 </body>
