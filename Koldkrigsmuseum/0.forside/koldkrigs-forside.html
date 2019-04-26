@@ -2,6 +2,7 @@
 <html lang="">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.css">
@@ -25,7 +26,7 @@ HEADER START
 
                 <nav class="burgermenu">
                     <div id="menuknap">☰</div>
-                    <ul id="menu" class="hidden">
+                    <div id="menu" class="hidden">
                         <div class="sidebox">
                             <div id="sidebox11"><a href="#"></a></div>
                             <div id="sidebox1"><a href="#"></a></div>
@@ -45,7 +46,7 @@ HEADER START
                             <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
                             <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
                         </div>
-                    </ul>
+                    </div>
 
 
                 </nav>
@@ -84,16 +85,19 @@ HEADER SLUT
 CONTENT START
 -->
 
+
             <div class="destop_sidebar">
-                <a href="/Kalklandet/kalklandet_Maria.html">
+                <a href="/Kalklandet/index.html">
                     <div id="btn1" class="button">
                         <div class="background1">
+
 
                         </div>
                     </div>
                 </a>
 
-                <a href="/Koldkrigsmuseum/koldkrigs-forside.html">
+
+                <a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html">
                     <div id="btn2" class="button">
                         <div class="background2">
 
@@ -145,6 +149,7 @@ CONTENT START
 
 		</div>
 -->
+
             <section class="laes_mere">
                 <div>
                     <h2>...</h2>
@@ -153,6 +158,7 @@ CONTENT START
                         På Koldkrigsmuseum Stevnsfort minder vi dig om en historie, som du måske kan huske, men slet ikke kender. På en guidet tur kan du opleve det underjordiske fort, som det så ud dengang, da krigen var tættest på. Ethvert besøg på fortet er en ny og særlig oplevelse. I selskab med en af museets 20 engagerede og forskellige guider får du nærværende og levende fortællinger om den allestedsnærværende krig i en unik og autentisk ramme.<br>
                         <br>
                         Du har også muligheden for selv at gå rundt i fortets store terræn, besøge særudstillingen i fortets velkomstbygning og se film i biografcontaineren.<br>
+
 
                         <br>
                         Som noget nyt har vi fået audioguide til terrænet, som man kan høre mens man går rundt. Den hentes til din egen telefon på app’en Useeum. Hent den i Google Play, App Store eller via deres hjemmeside. Høretelefoner kan lånes i velkomstbygningen.</p>
@@ -186,7 +192,42 @@ CONTENT SLUT
 
 
 
-    <script src="/Koldkrigsmuseum/0.forside/koldkrigs-forside.js"></script>
+
+    <script>
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("siden vises!");
+            // registrer klik på menu-knap
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+            document.querySelector("#knap_laes_mere").addEventListener("click", down);
+        }
+
+        function toggleMenu() {
+            console.log("Toggle menu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                //menuen er nu skjult - ændr menuknap til lll
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                //menuen er nu vist - ændr menuknap til x
+                document.querySelector("#menuknap").textContent = "☰"
+            }
+        }
+
+
+
+        function down() {
+            console.log("vis læs mere");
+
+            document.querySelector(".viewport").classList.remove("overflow");
+            document.querySelector("#knap_laes_mere").removeEventListener("click", down);
+
+        }
+    </script>
 
 
 </body>

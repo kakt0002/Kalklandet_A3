@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #ffffff;
@@ -325,15 +329,36 @@ h2 {
 .splash_tekst h1 {
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'limestone', sans-serif;
+
 }
 
 
 .splash_tekst p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
     font-family: 'assistant', sans-serif;
+
+}
+
+.pil {
+    position: relative;
+    animation: bouncing 1s infinite ease-in-out;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 0.7vw;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
 
 /*------ 5. BUTTONS------- */
@@ -599,7 +624,7 @@ h2 {
 
 .nested-item2 {
     background-position: bottom right;
-    background-image: url(billeder/map_ny.svg);
+    background-image: url(billeder/map_final.svg);
     background-size: cover;
     background-color: #ccc;
     min-height: 55vh;
@@ -770,7 +795,7 @@ h2 {
         background-color: #ccc;
         min-height: 55vh;
         margin: 2vh 5vw 2vh 5vw;
-        background-image: url(billeder/map_ny.svg);
+        background-image: url(billeder/map_final.svg);
         background-size: cover;
         background-position: bottom right;
     }
@@ -851,7 +876,7 @@ h2 {
         background-color: #ccc;
         min-height: 55vh;
         margin: 2vh 10vw 2vh 2vw;
-        background-image: url(billeder/map_ny.svg);
+        background-image: url(billeder/map_final.svg);
         background-size: cover;
         background-position: bottom right;
     }
