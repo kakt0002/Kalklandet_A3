@@ -1,16 +1,10 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-<<<<<<< HEAD
-	margin: 0;
-	background-color: #8C8A87;
-
-=======
     margin: 0;
     background-color: #8C8A87;
->>>>>>> origin/master
 }
 
 .hide {
@@ -335,15 +329,7 @@ body {
 }
 
 
-<<<<<<< HEAD
-#laes_mere {
-	color: #e5e1e1;
-	font-weight: 100;
-	font-family: 'Assistant', sans-serif;
-	width: 250px;
-	padding-left: 18vw;
-	padding-bottom: 7vw;
-=======
+
 .laes_mere {
     color: #e5e1e1;
     font-weight: 100;
@@ -351,23 +337,9 @@ body {
     width: 250px;
     padding-left: 18vw;
     padding-bottom: 7vw;
->>>>>>> origin/master
-
-
 }
 
-<<<<<<< HEAD
-#laes_mere h2 {
-	position: relative;
-	font-size: 4em;
-	margin: 0;
-	padding: 0;
-	left: -0.05em;
-}
 
-#laes_mere p {
-	font-size: 1em;
-=======
 .laes_mere h2 {
     position: relative;
     font-size: 4em;
@@ -378,7 +350,6 @@ body {
 
 .laes_mere p {
     font-size: 1em;
->>>>>>> origin/master
 }
 
 
@@ -445,89 +416,6 @@ body {
 @media only screen and (min-width: 700px) {
 
 
-<<<<<<< HEAD
-	.logo-footer img {
-		margin-left: 40%;
-	}
-
-	.fa-facebook {
-		margin-left: 47%;
-	}
-
-	.some-burger {
-		left: 18.5em;
-	}
-
-
-	#basic_info {
-		position: relative;
-		color: white;
-		left: 8vh;
-		font-family: 'Assistant', sans-serif;
-		top: 23em;
-		line-height: 4vh;
-		max-width: 550px;
-	}
-
-	#basic_info h2 {
-		font-weight: 100;
-		font-size: 15px;
-		text-transform: uppercase;
-		font-family: 'Assistant', sans-serif;
-		line-height: 7vh;
-	}
-
-	#basic_info h1 {
-		font-weight: 800;
-		font-size: 30px;
-		font-family: limestone;
-		text-transform: uppercase;
-	}
-
-	#basic_info p {
-		font-weight: 100;
-		font-size: 15px;
-		line-height: 2.7vh;
-	}
-
-	#basic_info a {
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 2vh;
-		color: white;
-		text-decoration: none;
-	}
-
-	#basic_info a:hover {
-		color: #d9d6d6;
-
-	}
-
-
-	#laes_mere {
-		color: #e5e1e1;
-		font-weight: 100;
-		font-family: 'Assistant', sans-serif;
-		padding-left: 12vw;
-		padding-bottom: 7vw;
-		width: 500px;
-
-	}
-
-	#laes_mere h2 {
-		position: relative;
-		font-size: 4em;
-		margin: 0;
-		padding: 0;
-		left: -0.05em;
-	}
-
-	#laes_mere p {
-		font-size: 1em;
-	}
-
-
-=======
     .logo-footer img {
         margin-left: 40%;
     }
@@ -605,36 +493,18 @@ body {
     .laes_mere p {
         font-size: 1rem;
     }
->>>>>>> origin/master
 
 }
 
 @media only screen and (min-width: 1000px) {
 
-<<<<<<< HEAD
-	.logo img {
-		position: fixed;
-		height: auto;
-		top: 40px;
-		left: 15px;
-		width: 17em;
 
-	}
-
-	.burgermenu {
-		display: none;
-	}
-
-	.logo-footer img {
-		margin-left: 44%;
-=======
     .logo img {
         position: fixed;
         height: auto;
         top: 40px;
         left: 15px;
         width: 17em;
->>>>>>> origin/master
 
     }
 
@@ -643,9 +513,23 @@ body {
     }
 
     .logo-footer img {
-        margin-left: 45%;
+        margin-left: 44%;
 
     }
+
+    .logo img {
+        position: fixed;
+        height: auto;
+        top: 40px;
+        left: 15px;
+        width: 17em;
+
+    }
+
+    .burgermenu {
+        display: none;
+    }
+
 
     .fa-facebook {
         margin-left: 47%;
