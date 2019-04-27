@@ -1,43 +1,6 @@
-/*--------- OM TEKST WORDPRESS ----------*/
-
-.tekst {
-	margin: 0 auto;
-}
-
-.om_titel {
-	color: white;
-	font-family: 'limestoneregular';
-	font-size: 1.8em;
-	margin: 1em 2em;
-
-
-}
-
-.om_tekst {
-	color: white;
-	font-family: 'limestoneregular';
-	font-size: 1em;
-	margin: 1em 0em;
-
-}
-
-.om_foto {
-	text-align: center;
-
-}
-
-.om_foto1 img {
-	width: 80%;
-	margin: 1em 0;
-
-}
-
-/*--------- OM TEKST WORDPRESS SLUT----------*/
-
-
 body {
 	margin: 0;
-	background-color: #4b4d52;
+	background-color: #F2F2F2;
 }
 
 .hide {
@@ -108,18 +71,17 @@ body {
 
 .header {
 	grid-column: 1/5;
-	height: 180vh;
 	z-index: 1;
+	height: 3.5em;
 }
 
 .content {
 	grid-column: 1/5;
-	background-color: gold;
 }
 
 .footer {
 	grid-column: 1/5;
-	background-color: #38728D;
+	background-color: #38728C;
 	color: white;
 }
 
@@ -145,26 +107,21 @@ body {
 
 	.header {
 		grid-column: 1/5;
-		height: 10em;
 	}
 }
 
 
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
-.logo img {
-	position: absolute;
-	width: 1200px;
-	height: auto;
-	top: 35px;
-	left: 15px;
-	position: fixed;
-
-}
-
 
 /***************************************************** HEADER START ********************************************************/
 
+.logo img {
+	position: absolute;
+	height: auto;
+	top: 18px;
+	left: 15px;
+}
 
 /*burgermenu start*/
 
@@ -182,54 +139,55 @@ body {
 	padding: 8px;
 	border: 1px solid #ddd;
 	color: #387288;
+	margin-bottom: 20px;
 }
 
 #sidebox11 {
-	background-image: url(billeder/kalklandet-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 2em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	box-shadow: 1px 1px 4px #255060;
 }
 
 #sidebox1 {
-	background-image: url(billeder/kold-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 10em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #387288;
 
 }
 
 #sidebox2 {
-	background-image: url(billeder/stevns-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 18em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #0082AD;
 	box-shadow: 1px 1px 4px #016383;
 }
 
 #sidebox3 {
-	background-image: url(billeder/geo-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 26em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #19A6A2;
 	box-shadow: 1px 1px 4px #0c6966;
@@ -241,35 +199,37 @@ body {
 	background-size: 100%;
 	position: absolute;
 	top: 34em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #88B52D;
 	box-shadow: 1px 1px 4px #506c17;
 }
 
+
 #menuknap {
 	display: inline-block;
 	position: fixed;
 	right: 0em;
-	font-size: 1.3em;
+	font-size: 1.8em;
 	top: 0em;
 	padding: 0.7em;
 	padding-top: 0.3em;
 	color: white;
 	z-index: 2;
+	cursor: pointer;
 
 }
 
 #menu {
 	position: fixed;
-	background-color: #387288;
+	background-color: #38728C;
 	top: -1em;
 	list-style-type: None;
 	width: 100%;
 	height: 100%;
 	box-shadow: 1px 1px 3px #6d5050;
-	font-family: 'limestoneregular';
+	font-family: limestone;
 	z-index: 1;
 
 }
@@ -278,6 +238,7 @@ body {
 	position: absolute;
 	top: 8em;
 	right: 3em;
+	margin: 2px;
 	text-align: right;
 }
 
@@ -288,27 +249,21 @@ body {
 }
 
 .menupunkter {
+
 	line-height: 6.5;
 	font-size: 0.8em;
 }
 
-.menupunkter2 {
-	position: absolute;
-	font-size: 0.7em;
-	line-height: 1.7;
-	top: -2.5em;
-	font-family: 'limestonelight';
-}
 
 .some-burger {
 	position: relative;
 	top: 40.5em;
-	left: 8.5em;
+	left: 5.8em;
 }
 
 
 
-/*burgermenu slut*/
+/*Desktop menu*/
 
 .mainnav {
 	display: none;
@@ -317,51 +272,13 @@ body {
 
 /***************************************************** HEADER SLUT ********************************************************/
 
-.basic_info {
-	position: relative;
-	color: white;
-	left: 8vh;
-	font-family: 'Assistant', sans-serif;
-	top: 14em;
-	line-height: 4vh;
-}
 
-.basic_info h2 {
-	font-weight: 600;
-	font-size: 3vw;
-	text-transform: uppercase;
-	line-height: 7vh;
-}
+/***************************************************** CONTENT START ********************************************************/
 
-.basic_info h1 {
-	font-weight: 600;
-	font-size: 8vw;
-	font-family: 'limestonebold';
-}
+/****WORDPRESS****/
 
-.basic_info p {
-	font-weight: 100;
-	font-size: 2vw;
-	line-height: 2vh;
-	width: 500px;
-}
+/***************************************************** CONTENT SLUT  ********************************************************/
 
-.basic_info a {
-	font-weight: 600;
-	font-size: 2vw;
-	line-height: 2vh;
-	color: white;
-	text-decoration: none;
-}
-
-.basic_info a:hover {
-	color: #d9d6d6;
-
-}
-
-.koldekrig_billede img {
-	height: 50vh;
-}
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
@@ -374,20 +291,20 @@ body {
 
 
 .footer p {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	text-align: center;
 	color: #f7fbff;
 
 }
 
 .footer p:nth-child(1) {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 }
 
 .footer p:nth-child(2) {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	font-weight: 100;
 	font-size: 0.6em;
 }
@@ -431,106 +348,41 @@ body {
 	}
 
 	.fa-facebook {
-		margin-left: 47%;
+		margin-left: 46%;
 	}
 
-	.some-burger {
-		left: 18.5em;
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
 	}
-
-
-	.basic_info {
-		position: relative;
-		color: white;
-		left: 46vh;
-		font-family: 'Assistant', sans-serif;
-		top: 30em;
-
-	}
-
-	.basic_info h2 {
-		font-weight: 100;
-		font-size: 1vw;
-		text-transform: uppercase;
-		font-family: 'Assistant', sans-serif;
-	}
-
-	.basic_info h1 {
-		font-weight: 800;
-		font-size: 4.5vw;
-		text-transform: uppercase;
-		font-family: 'limestonebold';
-	}
-
-	.basic_info p {
-		font-weight: 100;
-		font-size: 16px;
-		line-height: 2.6vh;
-	}
-
-	.basic_info a {
-		font-weight: 600;
-		font-size: 1vw;
-		color: white;
-	}
-
-	.basic_info a:hover {
-		color: #d9d6d6;
-
-	}
-
-
-	/*--- OM TEKST ---*/
-
-	.tekst {
-		margin: 0 auto;
-		width: 40vw;
-
-	}
-
-	.om_titel {
-		color: white;
-		font-family: 'limestoneregular';
-		font-size: 1.5em;
-		margin: 1em 0em;
-
-
-	}
-
-	.om_tekst {
-		color: white;
-		font-family: 'limestoneregular';
-		font-size: 0.5em;
-		margin: 1em 1.5em 1em 0em;
-
-	}
-
-	.om_foto {
-		text-align: center;
-
-	}
-
-	.om_foto img {
-		width: 120%;
-		margin: 1em 1em;
-
-	}
-
-
 
 
 
 }
 
+
 @media only screen and (min-width: 1000px) {
+
+
+	.logo img {
+		position: absolute;
+		height: auto;
+		top: 40px;
+		left: 15px;
+		width: 17em;
+
+	}
+
 	.burgermenu {
 		display: none;
 	}
 
 	.logo-footer img {
-		margin-left: 45%;
+		margin-left: 44%;
 
 	}
+
 
 	.fa-facebook {
 		margin-left: 47%;
@@ -540,22 +392,21 @@ body {
 		position: fixed;
 		display: block;
 		text-align: right;
-		line-height: 3vh;
+		line-height: 1.5rem;
 		right: 0vw;
 		z-index: 2;
-		padding-top: 2.5vw;
+		top: 2.5vw;
 
 	}
 
 	.mainnav a {
-		color: white;
+		color: #38728C;
 		text-decoration: none;
-		padding: 0 2vw 0 2vw;
+		padding: 0vw 2vw 0 2vw;
 		display: inline-block;
-		font-family: 'Padauk', sans-serif;
-		font-weight: 600;
-		font-size: 0.8em;
-		text-transform: uppercase;
+		font-family: helvetica;
+		font-size: 14.5px;
+		font-weight: 800;
 	}
 
 	.mainnav li {
@@ -564,125 +415,75 @@ body {
 	}
 
 	.mainnav a:hover {
-		color: #d9d6d6;
-
-	}
-
-	/*
-	.dropbtn {
-		color: #e5e0e0;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		background-color: transparent;
-		font-family: limestone;
-		font-weight: 100;
-		font-size: 0.8em;
-	}
-
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-		z-index: 1;
-	}
-
-	.dropdown-content a {
-		color: #387288;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	}
-
-	.dropdown-content a:hover {
-		background-color: #ddd;
-	}
-
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-
-	.dropdown:hover .dropbtn {
-		color: #387288;
-	}
-*/
-
-	h1 {
-		margin: 0;
-		top: -10;
-		position: relative;
-
-		font-size: 13px;
+		color: #9fbbc7;
 	}
 
 	a {
 		text-decoration: none;
 	}
 
+
 	#btn1 {
-		top: 151px;
-		background-image: url(billeder/kalklandet-sidebar-desktop.svg);
+		top: 150px;
+		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
 		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn2 {
-		top: 276px;
-		background-image: url(billeder/kold-sidebar-desktop.svg);
+		top: 265px;
+		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
 		background-size: cover;
-		/*    border: 5px solid #387288;*/
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn3 {
-		top: 401px;
-		background-image: url(billeder/geo-sidebar-desktop.svg);
+		top: 380px;
+		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
 		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
 
 	#btn4 {
-		top: 526px;
-		background-image: url(billeder/stevns-sidebar-desktop.svg);
+		top: 495px;
+		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
 		background-size: cover;
-		/*    border: 5px solid #0182AD;*/
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn5 {
-		top: 651px;
+		top: 610px;
+		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
 
 
 	div.button {
 		display: flex;
-		justify-content: flex-end;
 
 		box-sizing: border-box;
 
-		background-color: rgb(255, 255, 255);
-		color: black;
 		border: none;
-		border-radius: 0px;
-		width: 200px;
-		height: 125px;
-		position: fixed;
-		left: -73px;
+
+		width: 185px;
+		height: 115px;
+		position: absolute;
+		left: -65px;
+
 		transition: .5s ease;
 		text-align: center;
 		z-index: 3;
 	}
+
 
 
 	div.button:hover {
@@ -697,10 +498,11 @@ body {
 
 
 	.background1 {
-		background-color: rgba(230, 97, 38, 0.19);
+		background-color: rgba(255, 160, 100, 0.13);
 		width: 100%;
 		height: 100%;
 	}
+
 
 	.background2 {
 		background-color: rgba(56, 114, 136, 0.5);
@@ -721,47 +523,116 @@ body {
 	}
 
 	.background5 {
-		background-color: rgba(136, 181, 45, 1);
+		background-color: rgba(136, 181, 45, 0.3);
 		width: 100%;
 		height: 100%;
 
 	}
 
-	/*--- OM TEKST ---*/
+}
 
-	.tekst {
-		margin: 0 auto;
-		width: 40vw;
+.praktisk_info {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 1em;
+
+
+}
+
+.priser,
+.åbningstider,
+.handicapforhold,
+.find_vej {
+	padding: 1em;
+	min-height: 10em;
+}
+
+.praktisk_info h2 {
+	color: white;
+	background-color: #8eb1be;
+	border: 3px solid #8eb1be;
+	border-right: 100px solid #F2F2F2;
+	border-left: 100px solid #F2F2F2;
+	font-family: limestone;
+	font-weight: 100;
+	padding-bottom: 0.2em;
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.praktisk_info p {
+	color: #68828b;
+	font-family: limestone;
+	font-weight: 100;
+	padding-bottom: 0.2em;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+	.praktisk_info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		/*		margin-left: 12em;*/
 
 	}
 
-	.om_titel {
-		color: white;
-		font-family: 'limestoneregular';
-		font-size: 2.2em;
-		margin: 1em 0em;
+	.priser,
+	.åbningstider,
+	.handicapforhold,
+	.find_vej {
+		padding: 1em;
+		height: 12em;
+		width: 22em;
+	}
 
+
+	.handicapforhold,
+	.find_vej {
+		height: 40em;
+	}
+
+
+	.priser {
+		height: 16em;
 
 	}
 
-	.om_tekst {
-		color: white;
-		font-family: 'limestoneregular';
-		font-size: 1em;
-		margin: 1em 5em 1em 0em;
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+	}
+
+	.some-burger {
+
+		margin-left: 10em;
 
 	}
 
-	.om_foto {
-		text-align: center;
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	.praktisk_info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		margin-left: 12em;
+		margin-top: 2.7em;
 
 	}
 
-	.om_foto img {
-		width: 120%;
-		margin: 1em 1em;
-
-	}
 
 
 }
