@@ -126,8 +126,6 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
-    position: relative;
-
 }
 
 
@@ -159,8 +157,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 2em;
-    left: 0em;
-    height: 8em;
+
+    height: 16vh;
     width: 8em;
     box-shadow: 1px 1px 4px #255060;
 }
@@ -171,8 +169,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 10em;
-    left: 0em;
-    height: 8em;
+
+    height: 16vh;
     width: 8em;
     background-color: #387288;
 
@@ -184,8 +182,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 18em;
-    left: 0em;
-    height: 8em;
+
+    height: 16vh;
     width: 8em;
     background-color: #0082AD;
     box-shadow: 1px 1px 4px #016383;
@@ -197,8 +195,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 26em;
-    left: 0em;
-    height: 8em;
+
+    height: 16vh;
     width: 8em;
     background-color: #19A6A2;
     box-shadow: 1px 1px 4px #0c6966;
@@ -210,8 +208,8 @@ body {
     background-size: 100%;
     position: absolute;
     top: 34em;
-    left: 0em;
-    height: 8em;
+
+    height: 16vh;
     width: 8em;
     background-color: #88B52D;
     box-shadow: 1px 1px 4px #506c17;
@@ -228,6 +226,7 @@ body {
     padding-top: 0.3em;
     color: white;
     z-index: 2;
+    cursor: pointer;
 
 }
 
@@ -317,7 +316,7 @@ body {
 
 #basic_info a {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2vh;
     color: white;
     text-decoration: none;
@@ -330,7 +329,7 @@ body {
 
 
 
-.laes_mere {
+#laes_mere {
     color: #e5e1e1;
     font-weight: 100;
     font-family: 'Assistant', sans-serif;
@@ -340,15 +339,15 @@ body {
 }
 
 
-.laes_mere h2 {
+#laes_mere h2 {
     position: relative;
-    font-size: 4em;
+    font-size: 6em;
     margin: 0;
     padding: 0;
     left: -0.05em;
 }
 
-.laes_mere p {
+#laes_mere p {
     font-size: 1em;
 }
 
@@ -435,7 +434,7 @@ body {
         font-family: 'Assistant', sans-serif;
         top: 20rem;
         line-height: 4vh;
-        max-width: 550px;
+        max-width: 650px;
     }
 
     #basic_info h2 {
@@ -462,7 +461,7 @@ body {
 
     #basic_info a {
         font-weight: 600;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 2vh;
         color: white;
         text-decoration: none;
@@ -474,23 +473,23 @@ body {
     }
 
 
-    .laes_mere {
+    #laes_mere {
         color: #e5e1e1;
         font-weight: 100;
         font-family: 'Assistant', sans-serif;
         padding-left: 12vw;
         padding-bottom: 7vw;
-        width: width: 600px;
+        width: 600px;
     }
 
-    .laes_mere h2 {
+    #laes_mere h2 {
         font-size: 4rem;
         margin: 0;
         padding: 0;
         left: -0.05em;
     }
 
-    .laes_mere p {
+    #laes_mere p {
         font-size: 1rem;
     }
 
@@ -500,7 +499,7 @@ body {
 
 
     .logo img {
-        position: fixed;
+        position: absolute;
         height: auto;
         top: 40px;
         left: 15px;
@@ -517,19 +516,6 @@ body {
 
     }
 
-    .logo img {
-        position: fixed;
-        height: auto;
-        top: 40px;
-        left: 15px;
-        width: 17em;
-
-    }
-
-    .burgermenu {
-        display: none;
-    }
-
 
     .fa-facebook {
         margin-left: 47%;
@@ -539,7 +525,7 @@ body {
         position: fixed;
         display: block;
         text-align: right;
-        line-height: 3vh;
+        line-height: 1.5rem;
         right: 0vw;
         z-index: 2;
         top: 2.5vw;
@@ -552,7 +538,7 @@ body {
         padding: 1vw 2vw 0 2vw;
         display: inline-block;
         font-family: Helvetica;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         font-weight: 800;
     }
 
@@ -580,7 +566,7 @@ body {
 
 
     #btn1 {
-        top: 151px;
+        top: 150px;
         background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
@@ -589,7 +575,7 @@ body {
     }
 
     #btn2 {
-        top: 276px;
+        top: 265px;
         background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
@@ -598,7 +584,7 @@ body {
     }
 
     #btn3 {
-        top: 401px;
+        top: 380px;
         background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
@@ -606,7 +592,7 @@ body {
     }
 
     #btn4 {
-        top: 526px;
+        top: 495px;
         background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
@@ -615,7 +601,7 @@ body {
     }
 
     #btn5 {
-        top: 651px;
+        top: 610px;
         background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
@@ -625,18 +611,16 @@ body {
 
     div.button {
         display: flex;
-        justify-content: flex-end;
 
         box-sizing: border-box;
 
-        background-color: rgb(255, 255, 255);
-        color: black;
         border: none;
-        border-radius: 0px;
-        width: 200px;
-        height: 125px;
-        position: fixed;
-        left: -73px;
+
+        width: 185px;
+        height: 115px;
+        position: absolute;
+        left: -65px;
+
         transition: .5s ease;
         text-align: center;
         z-index: 3;
@@ -689,7 +673,16 @@ body {
 
     #basic_info {
         left: 28.5vw;
-        top: 60vh;
+        top: 445px;
+    }
+
+    #laes_mere {
+        color: #e5e1e1;
+        font-weight: 100;
+        font-family: 'Assistant', sans-serif;
+        padding-left: 17.3vw;
+        padding-bottom: 7vw;
+        width: 700px;
     }
 
 

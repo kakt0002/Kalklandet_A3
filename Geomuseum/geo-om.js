@@ -32,3 +32,37 @@ function down() {
 
 }
 
+
+"use strict"
+let indhold = [];
+
+document.addEventListener("DOMContentLoaded", start);
+
+
+function start() {
+    async function hentJson() {
+
+        console.log("hent json 1");
+
+        let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/198";
+
+        let myJson = await fetch(url);
+
+        indhold = await myJson.json();
+
+        visIndhold();
+    }
+
+
+    function visIndhold() {
+        console.log("VIS TEKST");
+
+
+        document.querySelector(".om_titel").innerHTML = indhold.title.rendered;
+        document.querySelector(".om_tekst").innerHTML = indhold.content.rendered;
+
+    }
+
+    hentJson();
+
+}

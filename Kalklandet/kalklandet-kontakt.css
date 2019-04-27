@@ -182,13 +182,12 @@ h2 {
 .item1 {
 
     height: 10vh;
-    background-color: lightgray;
+    background-color: rosybrown;
     z-index: 10;
 }
 
 .item2 {
     min-height: 53vh;
-    background-color: rgb(253, 242, 220);
     padding: 3rem 1rem 2rem 1rem;
 }
 
@@ -199,14 +198,13 @@ h2 {
 }
 
 .nested-item1 {
-    background-color: rgb(240, 240, 240);
+
     min-height: 55vh;
     margin: 2vh 2vw 2vh 2vw;
     padding: 1vw;
 }
 
 .nested-item2 {
-    background-color: rgb(196, 196, 196);
     min-height: 55vh;
     margin: 2vh 2vw 2vh 2vw;
     padding: 1vw;
@@ -282,20 +280,18 @@ h2 {
     }
 
     .nested-item1 {
-        background-color: rgb(240, 240, 240);
-        min-height: 55vh;
 
+        min-height: 55vh;
         margin: 2vh 2vw 2vh 10vw;
         padding: 1vw;
     }
 
     .nested-item2 {
-        background-color: rgb(196, 196, 196);
+
         min-height: 55vh;
         margin: 2vh 10vw 2vh 2vw;
         /*        padding: 1vw;*/
     }
-
 
 }
 
@@ -322,7 +318,7 @@ h2 {
 }
 
 #contact {
-    background: #F9F9F9;
+    background: #f1ebe3;
     padding: 25px;
 }
 
@@ -421,5 +417,3 @@ fieldset {
 
 
 /* https://codepen.io/ssbalakumar/pen/uzDIA */
-
-
