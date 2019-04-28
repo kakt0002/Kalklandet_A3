@@ -1,17 +1,50 @@
+@media only screen and (min-width: 700px) {
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+	}
+
+	.some-burger {
+
+		margin-left: 10em;
+
+	}
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	.praktisk_info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		margin-left: 12em;
+		margin-top: 2.7em;
+
+	}
+
+
+
+}
+
+/*--------- OM TEKST WORDPRESS SLUT----------*/
+
 body {
 	margin: 0;
-	background-color: #F2F2F0;
+	background-color: #F2F2F2;
 }
 
 .hide {
 	display: none;
-	margin: 0;
-	background-color: #8C8A87;
 }
 
+
+
 .overflow {
-	overflow: hidden;
-	height: 100vh;
 	overflow: hidden;
 	height: 100vh;
 }
@@ -28,11 +61,6 @@ body {
 		url('../LimeStone_font/limestone_bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-family: 'limestonebold';
-	src: url('../LimeStone_font/limestone_bold-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 
 }
 
@@ -42,19 +70,10 @@ body {
 		url('../LimeStone_font/limestone_heavy-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-family: 'limestoneheavy';
-	src: url('../LimeStone_font/limestone_heavy-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_heavy-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+
 }
 
 @font-face {
-	font-family: 'limestonelight';
-	src: url('../LimeStone_font/limestone_light-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_light-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 	font-family: 'limestonelight';
 	src: url('../LimeStone_font/limestone_light-webfont.woff2') format('woff2'),
 		url('../LimeStone_font/limestone_light-webfont.woff') format('woff');
@@ -69,11 +88,7 @@ body {
 		url('../LimeStone_font/limestone_regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-family: 'limestoneregular';
-	src: url('../LimeStone_font/limestone_regular-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+
 }
 
 /* ------ FONT SLUT ------*/
@@ -86,27 +101,22 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto;
 }
 
 
 .header {
 	grid-column: 1/5;
-	height: 180vh;
 	z-index: 1;
+	height: 3.5em;
 }
 
 .content {
 	grid-column: 1/5;
-	background-color: gold;
 }
 
 .footer {
 	grid-column: 1/5;
-	background-color: #38728D;
+	background-color: #38728C;
 	color: white;
 }
 
@@ -126,55 +136,13 @@ body {
 		grid-column: 1/2;
 		grid-template-columns: repeat(1, 1fr);
 	}
-
-	=======grid-column: 1/5;
-	height: 180vh;
-	z-index: 1;
-}
-
-.content {
-	grid-column: 1/5;
-	background-color: gold;
-}
-
-.footer {
-	grid-column: 1/5;
-	background-color: #38728D;
-	color: white;
-}
-
-.container > div {
-	padding: 3rem;
-}
-
-@media only screen and (max-width:600px) {
-	.grid_skabelon {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-	}
-
-	.header,
-	.content,
-	.footer {
-		grid-column: 1/2;
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	> > > > > > > origin/master
 }
 
 @media only screen and (min-width:600px) {
 
 	.header {
 		grid-column: 1/5;
-		height: 50em;
 	}
-
-	.header {
-		grid-column: 1/5;
-		height: 50em;
-	}
-
 }
 
 
@@ -182,13 +150,32 @@ body {
 
 .logo img {
 	position: absolute;
-	width: 1200px;
 	height: auto;
-	top: 35px;
+	top: 18px;
 	left: 15px;
-	position: fixed;
-
 }
+
+.pil {
+	position: relative;
+	left: 50%;
+	top: 99%;
+	animation: bouncing 1s infinite ease-in-out;
+}
+
+@keyframes bouncing {
+	0% {
+		bottom: 0;
+	}
+
+	50% {
+		bottom: 0.7vw;
+	}
+
+	100% {
+		bottom: 0;
+	}
+}
+
 
 /***************************************************** HEADER START ********************************************************/
 
@@ -209,187 +196,106 @@ body {
 	padding: 8px;
 	border: 1px solid #ddd;
 	color: #387288;
+	margin-bottom: 20px;
 }
 
 #sidebox11 {
-	background-image: url(billeder/kalklandet-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 2em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	box-shadow: 1px 1px 4px #255060;
 }
 
 #sidebox1 {
-	background-image: url(billeder/kold-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 10em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #387288;
-	=======transform: scale(0);
-}
 
-.menu {
-	position: absolute;
-}
-
-#mySearch {
-	width: 100%;
-	font-size: 0.5em;
-	padding: 8px;
-	border: 1px solid #ddd;
-	color: #387288;
-}
-
-#sidebox11 {
-	background-image: url(billeder/kalklandet-sidebar.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: absolute;
-	top: 2em;
-	left: 0em;
-	height: 8em;
-	width: 8em;
-	box-shadow: 1px 1px 4px #255060;
-}
-
-#sidebox1 {
-	background-image: url(billeder/kold-sidebar.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: absolute;
-	top: 10em;
-	left: 0em;
-	height: 8em;
-	width: 8em;
-	background-color: #387288;
 }
 
 #sidebox2 {
-	background-image: url(billeder/stevns-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 18em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #0082AD;
 	box-shadow: 1px 1px 4px #016383;
 }
 
 #sidebox3 {
-	background-image: url(billeder/geo-sidebar.svg);
+	background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	top: 26em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #19A6A2;
 	box-shadow: 1px 1px 4px #0c6966;
 }
 
 #sidebox4 {
+	background-image: url(/Koldkrigsmuseum/billeder/nyere_kultur-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	position: absolute;
 	top: 34em;
-	left: 0em;
-	height: 8em;
+
+	height: 16vh;
 	width: 8em;
 	background-color: #88B52D;
 	box-shadow: 1px 1px 4px #506c17;
 }
 
-#menuknap {
-	display: inline-block;
-	position: fixed;
-	right: 0em;
-	font-size: 1.3em;
-	top: 0em;
-	padding: 0.7em;
-	padding-top: 0.3em;
-	color: white;
-	z-index: 2;
-	=======background-image: url(billeder/stevns-sidebar.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: absolute;
-	top: 18em;
-	left: 0em;
-	height: 8em;
-	width: 8em;
-	background-color: #0082AD;
-	box-shadow: 1px 1px 4px #016383;
-}
-
-#sidebox3 {
-	background-image: url(billeder/geo-sidebar.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: absolute;
-	top: 26em;
-	left: 0em;
-	height: 8em;
-	width: 8em;
-	background-color: #19A6A2;
-	box-shadow: 1px 1px 4px #0c6966;
-}
-
-#sidebox4 {
-	position: absolute;
-	top: 34em;
-	left: 0em;
-	height: 8em;
-	width: 8em;
-	background-color: #88B52D;
-	box-shadow: 1px 1px 4px #506c17;
-}
 
 #menuknap {
 	display: inline-block;
 	position: fixed;
 	right: 0em;
-	font-size: 1.3em;
+	font-size: 1.8em;
 	top: 0em;
 	padding: 0.7em;
 	padding-top: 0.3em;
 	color: white;
 	z-index: 2;
+	cursor: pointer;
+
 }
 
 #menu {
 	position: fixed;
-	background-color: #387288;
+	background-color: #38728C;
 	top: -1em;
 	list-style-type: None;
 	width: 100%;
 	height: 100%;
 	box-shadow: 1px 1px 3px #6d5050;
-	font-family: 'limestoneregular';
+	font-family: limestone;
 	z-index: 1;
-	=======position: fixed;
-	background-color: #387288;
-	top: -1em;
-	list-style-type: None;
-	width: 100%;
-	height: 100%;
-	box-shadow: 1px 1px 3px #6d5050;
-	font-family: 'limestoneregular';
-	z-index: 1;
+
 }
 
 .undermenu {
 	position: absolute;
 	top: 8em;
 	right: 3em;
+	margin: 2px;
 	text-align: right;
 }
 
@@ -400,51 +306,16 @@ body {
 }
 
 .menupunkter {
+
 	line-height: 6.5;
 	font-size: 0.8em;
 }
 
-.menupunkter2 {
-	position: absolute;
-	font-size: 0.7em;
-	line-height: 1.7;
-	top: -2.5em;
-	font-family: 'limestonelight';
-}
 
 .some-burger {
 	position: relative;
 	top: 40.5em;
-	left: 8.5em;
-	position: absolute;
-	top: 8em;
-	right: 3em;
-	text-align: right;
-}
-
-#menu a {
-	position: relative;
-	text-decoration: none;
-	color: white;
-}
-
-.menupunkter {
-	line-height: 6.5;
-	font-size: 0.8em;
-}
-
-.menupunkter2 {
-	position: absolute;
-	font-size: 0.7em;
-	line-height: 1.7;
-	top: -2.5em;
-	font-family: 'limestonelight';
-}
-
-.some-burger {
-	position: relative;
-	top: 40.5em;
-	left: 8.5em;
+	left: 5.8em;
 }
 
 
@@ -456,8 +327,22 @@ body {
 }
 
 
-
 /***************************************************** HEADER SLUT ********************************************************/
+.intro {
+	font-family: 'Assistant', sans-serif;
+	font-weight: 100;
+	/*	margin: 70px 200px 100px 200px;*/
+	color: #3e474a;
+	margin: 2em;
+
+}
+
+.intro h2 {
+	font-family: limestone;
+	font-weight: 800;
+}
+
+
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
@@ -470,20 +355,20 @@ body {
 
 
 .footer p {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	text-align: center;
 	color: #f7fbff;
 
 }
 
 .footer p:nth-child(1) {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 }
 
 .footer p:nth-child(2) {
-	font-family: 'limestoneregular';
+	font-family: 'Assistant', sans-serif;
 	font-weight: 100;
 	font-size: 0.6em;
 }
@@ -535,77 +420,94 @@ body {
 	}
 
 
-	.basic_info {
-		position: relative;
+	#basic_info {
 		color: white;
-		left: 46vh;
+		left: 8vh;
 		font-family: 'Assistant', sans-serif;
-		top: 30em;
-
+		top: 20rem;
+		line-height: 4vh;
+		max-width: 650px;
 	}
 
-	.basic_info h2 {
+	#basic_info h2 {
 		font-weight: 100;
-		font-size: 1vw;
+		font-size: 1rem;
 		text-transform: uppercase;
 		font-family: 'Assistant', sans-serif;
+		line-height: 7vh;
 	}
 
-	.basic_info h1 {
+	#basic_info h1 {
 		font-weight: 800;
-		font-size: 4.5vw;
+		font-size: 2.5rem;
+		font-family: limestone;
 		text-transform: uppercase;
-		font-family: 'limestonebold';
+		margin-bottom: 2px;
 	}
 
-	.basic_info p {
+	#basic_info p {
 		font-weight: 100;
-		font-size: 16px;
-		line-height: 2.6vh;
+		font-size: 1rem;
+		line-height: 3.5vh;
 	}
 
-	.basic_info a {
+	#basic_info a {
 		font-weight: 600;
-		font-size: 1vw;
+		font-size: 20px;
+		line-height: 2vh;
 		color: white;
+		text-decoration: none;
 	}
 
-	.basic_info a:hover {
+	#basic_info a:hover {
 		color: #d9d6d6;
 
 	}
 
 
-	.intro {
-		color: #6c6969;
-		position: relative;
-		top: 20vh;
-		left: 20vw;
-		width: 700px;
-	}
-
-	.intro h2 {
-		font-family: 'limestonebold';
-		font-size: 40px;
-		line-height: 1vh;
-	}
-
-	.intro p {
-		font-family: 'Assistant', sans-serif;
+	#laes_mere {
+		color: #e5e1e1;
 		font-weight: 100;
+		font-family: 'Assistant', sans-serif;
+		padding-left: 12vw;
+		padding-bottom: 7vw;
+		width: 600px;
+	}
+
+	#laes_mere h2 {
+		font-size: 4rem;
+		margin: 0;
+		padding: 0;
+		left: -0.05em;
+	}
+
+	#laes_mere p {
+		font-size: 1rem;
 	}
 
 }
 
 @media only screen and (min-width: 1000px) {
+
+
+	.logo img {
+		position: absolute;
+		height: auto;
+		top: 40px;
+		left: 15px;
+		width: 17em;
+
+	}
+
 	.burgermenu {
 		display: none;
 	}
 
 	.logo-footer img {
-		margin-left: 45%;
+		margin-left: 44%;
 
 	}
+
 
 	.fa-facebook {
 		margin-left: 47%;
@@ -615,27 +517,20 @@ body {
 		position: fixed;
 		display: block;
 		text-align: right;
-		line-height: 3vh;
+		line-height: 1.5rem;
 		right: 0vw;
 		z-index: 2;
-		padding-top: 2.5vw;
+		top: 2.5vw;
 
 	}
 
 	.mainnav a {
-		color: #39728D;
+		color: #38728C;
 		text-decoration: none;
-		padding: 0 2vw 0 2vw;
+		padding: 0vw 2vw 0 2vw;
 		display: inline-block;
-		font-family: Helvetica;
-		font-size: 0.8em;
-	}
-
-	.tynd {
-		font-weight: 100;
-	}
-
-	.tyk {
+		font-family: helvetica;
+		font-size: 14.5px;
 		font-weight: 800;
 	}
 
@@ -645,79 +540,84 @@ body {
 	}
 
 	.mainnav a:hover {
-		color: #618da3;
-
+		color: #9fbbc7;
 	}
 
-	h1 {
+	#basic_info h1 {
 		margin: 0;
-		top: -10;
-		position: relative;
+		font-size: 2.8rem;
+	}
 
-		font-size: 13px;
+	#basic_info p {
+		font-size:
 	}
 
 	a {
 		text-decoration: none;
 	}
 
+
 	#btn1 {
-		top: 151px;
-		background-image: url(billeder/kalklandet-sidebar-desktop.svg);
+		top: 150px;
+		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
 		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn2 {
-		top: 276px;
-		background-image: url(billeder/kold-sidebar-desktop.svg);
+		top: 265px;
+		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
 		background-size: cover;
-		/*    border: 5px solid #387288;*/
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn3 {
-		top: 401px;
-		background-image: url(billeder/geo-sidebar-desktop.svg);
+		top: 380px;
+		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
 		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
 
 	#btn4 {
-		top: 526px;
-		background-image: url(billeder/stevns-sidebar-desktop.svg);
+		top: 495px;
+		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
 		background-size: cover;
-		/*    border: 5px solid #0182AD;*/
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
 	}
 
 	#btn5 {
-		top: 651px;
+		top: 610px;
+		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 	}
 
 
 	div.button {
 		display: flex;
-		justify-content: flex-end;
 
 		box-sizing: border-box;
 
-		background-color: rgb(255, 255, 255);
-		color: black;
 		border: none;
-		border-radius: 0px;
-		width: 200px;
-		height: 125px;
-		position: fixed;
-		left: -73px;
+
+		width: 185px;
+		height: 115px;
+		position: absolute;
+		left: -65px;
+
 		transition: .5s ease;
 		text-align: center;
 		z-index: 3;
 	}
+
 
 
 	div.button:hover {
@@ -732,10 +632,11 @@ body {
 
 
 	.background1 {
-		background-color: rgba(230, 97, 38, 0.19);
+		background-color: rgba(255, 160, 100, 0.13);
 		width: 100%;
 		height: 100%;
 	}
+
 
 	.background2 {
 		background-color: rgba(56, 114, 136, 0.5);
@@ -756,156 +657,184 @@ body {
 	}
 
 	.background5 {
-		background-color: rgba(136, 181, 45, 1);
+		background-color: rgba(136, 181, 45, 0.3);
 		width: 100%;
 		height: 100%;
 
 	}
 
+	#basic_info {
+		left: 28.5vw;
+		top: 445px;
+	}
 
-}
-
-.basic_info {
-	position: relative;
-	color: white;
-	left: 8vh;
-	font-family: 'Assistant', sans-serif;
-	top: 14em;
-	line-height: 4vh;
-}
-
-.basic_info h2 {
-	font-weight: 600;
-	font-size: 3vw;
-	text-transform: uppercase;
-	line-height: 7vh;
-}
-
-.basic_info h1 {
-	font-weight: 600;
-	font-size: 8vw;
-	font-family: 'limestonebold';
-}
-
-.basic_info p {
-	font-weight: 100;
-	font-size: 2vw;
-	line-height: 2vh;
-	width: 500px;
-}
-
-.basic_info a {
-	font-weight: 600;
-	font-size: 2vw;
-	line-height: 2vh;
-	color: white;
-	text-decoration: none;
-}
-
-.basic_info a:hover {
-	color: #d9d6d6;
-
-}
-
-.koldekrig_billede img {
-	height: 50vh;
-}
+	#laes_mere {
+		color: #e5e1e1;
+		font-weight: 100;
+		font-family: 'Assistant', sans-serif;
+		padding-left: 17.3vw;
+		padding-bottom: 7vw;
+		width: 700px;
+	}
 
 
-/*-- UNDERVISNINGSKASSSER --*/
+	.pil {
+		left: 35%;
+	}
+
 
 
 }
 
 
-/*------- UNDERVISNINGSFORLØB KASSER -----*/
-.undervisningsforløb_box {
-	background: #4f8698;
-	margin: 2em;
-	padding: 1em;
-	height: 10em;
-}
+/********************Wordpress****************/
+
 
 .undervisningsforløb {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-row-gap: 1em;
+	grid-row-gap: 0em;
+	position: relative;
 
 }
 
+
+.undervisningsforløb_box {
+
+	height: 8em;
+}
+
+
+
+
 .undervisningsforløb h1 {
-	color: white;
-	font-family: 'limestoneregular';
-	font-size: 1.8em;
+	color: #588295;
+	font-family: limestone;
+	font-weight: 100;
+	padding-bottom: 0.2em;
+	padding: 20px;
+	font-size: 12px;
+	text-align: left;
+	border-top: 5px solid #275160;
 }
 
 .undervisningsforløb p {
-	color: white;
-	font-family: 'limestoneregular';
-	font-size: 1em;
+	color: #275160;
+	font-family: 'Assistant', sans-serif;
+	font-weight: bolder;
+	padding-bottom: 0.2em;
+	padding-bottom: 10px;
+	font-size: 12px;
 	text-align: right;
-	margin: 0.8em 0;
+	font-weight: 700;
+	line-height: 1.5;
+	text-transform: uppercase;
 }
 
 
 .undervisningsforløb_knap {
-	width: 10em;
 	font-weight: 600;
-	color: #000000;
+	color: white;
 	cursor: pointer;
-	margin: 1vw;
-	height: 40px;
+	margin: 1.5vw;
+	height: 25px;
 	text-align: center;
 	border: none;
+	background-color: #86a8b7;
 	background-size: 300% 100%;
 	position: relative;
 	justify-self: end;
-	box-shadow: 5px 10px 18px #39606d;
+	top: -8vh;
+	left: 73vw;
+	box-shadow: 1px 1px 1px #39606d;
+	letter-spacing: -2px;
 
-	border-radius: 50px;
 	moz-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
+	font-size: 15px;
+
+}
+
+.undervisningsforløb_knap:hover {
+	background-color: #275160;
+}
+
+@media only screen and (min-width: 700px) {
+	.undervisningsforløb {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 0em;
+		left: 0em;
+
+	}
+
+	.undervisningsforløb_box {
+		padding: 1em;
+		width: 20em;
+	}
+
+	.intro-tekst {
+		margin-left: 2vw;
+	}
+
+	.undervisningsforløb_knap {
+
+		top: -6.1vh;
+		left: 87%;
+
+	}
+
+
 
 }
 
 @media only screen and (min-width: 1000px) {
-	.undervisningsforløb_box {
-		background: #4f8698;
-		margin: 2em;
-		padding: 1em;
-		height: 12em;
-		width: 22em;
-	}
+
 
 	.undervisningsforløb {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 3em;
+		grid-row-gap: 0em;
+		left: 4.2vw;
 
 	}
 
+	.undervisningsforløb_box {
+		padding: 1em;
+		width: 20em;
+	}
+
+
+
 	.undervisningsforløb h1 {
-		color: white;
-		font-family: 'limestoneregular';
 		margin: 0.2em;
+		font-size: 20px;
 
 	}
 
 	.undervisningsforløb p {
-		color: white;
-		font-family: 'limestoneregular';
-		font-size: 1em;
-		text-align: right;
+		font-size: 10px;
 		margin: 0.5em;
 	}
 
 
 	.undervisningsforløb_knap {
 
-		margin-top: 5em;
-
+		top: -9.5vh;
+		left: 85%;
 
 	}
+
+	.intro-tekst {
+		margin-left: 10vw;
+		width: 570px;
+	}
+
+	.intro {
+		margin: 70px 200px 100px 200px;
+
+	}
+
 }
