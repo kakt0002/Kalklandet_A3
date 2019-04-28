@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #ffffff;
@@ -325,15 +329,36 @@ h2 {
 .splash_tekst h1 {
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'limestone', sans-serif;
+
 }
 
 
 .splash_tekst p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
     font-family: 'assistant', sans-serif;
+
+}
+
+.pil {
+    position: relative;
+    animation: bouncing 1s infinite ease-in-out;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 0.7vw;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
 
 /*------ 5. BUTTONS------- */
@@ -531,6 +556,7 @@ h2 {
     min-height: 20vh;
     background-color: rgb(253, 242, 220);
     padding: 2vw 0vw 2vw 0vw;
+    margin-top: 100px;
 
 }
 
@@ -587,19 +613,25 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
-
 }
 
+
 .nested-item1 {
+    border-top: 5vh solid white;
     background-color: #ffffff;
     min-height: 55vh;
     margin: 2vh 10vw 2vh 10vw;
-    padding: 1vw;
+
+}
+
+.nested-item1 h2 {
+    padding: 0px;
+    margin: 0px;
 }
 
 .nested-item2 {
     background-position: bottom right;
-    background-image: url(billeder/map_ny.svg);
+    background-image: url(billeder/map_final.svg);
     background-size: cover;
     background-color: #ccc;
     min-height: 55vh;
@@ -639,20 +671,23 @@ h2 {
 .nested-item4 {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    background-color: #f1ebe3;
+
+    /*    border: 1px solid black;*/
     /*    background-color: #f1ebe3;*/
     min-height: 10vh;
     margin: 2vh 10vw 2vh 10vw;
     padding: 1vw;
+    cursor: pointer;
 }
 
 .nested-item5 {
     display: flex;
     flex-direction: row;
-    background-color: #eee;
     min-height: 10vh;
     margin: 2vh 10vw 2vh 10vw;
     padding: 1vw;
+    cursor: pointer;
 }
 
 .nested-item6 {
@@ -762,15 +797,19 @@ h2 {
     .nested-item1 {
         min-height: 20vh;
         margin: 2vh 5vw 2vh 5vw;
-        padding: 1vw;
+
+    }
+
+    .nested-item1 h2 {
+        padding: 0px;
+        margin: 0px;
     }
 
     .nested-item2 {
-        display: block;
         background-color: #ccc;
         min-height: 55vh;
         margin: 2vh 5vw 2vh 5vw;
-        background-image: url(billeder/map_ny.svg);
+        background-image: url(billeder/map_final.svg);
         background-size: cover;
         background-position: bottom right;
     }
@@ -843,17 +882,24 @@ h2 {
     .nested-item1 {
         min-height: 55vh;
         margin: 2vh 2vw 2vh 10vw;
-        padding: 1vw;
+
+    }
+
+    .nested-item1 h2 {
+        padding: 0px;
+        margin: 0px;
     }
 
     .nested-item2 {
+        border-top: 5vh solid white;
         display: block;
         background-color: #ccc;
         min-height: 55vh;
         margin: 2vh 10vw 2vh 2vw;
-        background-image: url(billeder/map_ny.svg);
+        background-image: url(billeder/map_final.svg);
         background-size: cover;
         background-position: bottom right;
+
     }
 
 
