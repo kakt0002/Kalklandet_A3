@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Koldkrigsmuseum/3.om/koldkrigs-om.css">
+    <link rel="stylesheet" href="/Koldkrigsmuseum/2.undervisning/koldkrigs-undervisning-single.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Padauk:400,700" rel="stylesheet">
     <title></title>
@@ -124,22 +124,29 @@ CONTENT START
         <div class="indhold">
 
 
-            <section class="tekst">
-                <h1 class="om_titel"></h1>
-                <p class="om_tekst"></p>
-            </section>
 
-            <div class="om_foto1">
-                <div class="om_foto">
-                    <img src="/Koldkrigsmuseum/billeder/om_den_kolde_krig1.jpg">
-                    <img src="/Koldkrigsmuseum/billeder/om_den_kolde_krig2.jpg">
-                    <img src="/Koldkrigsmuseum/billeder/om_den_kolde_krig3.jpg">
+            <section class="undervisningsforløb">
+                <h1 class="undervisningsforløb_title"></h1>
+
+                <p class="undervisningsforløb_tekst"></p>
+
+                <div class="undervisningsforløb_boks">
+
+                    <h2>Information</h2>
+
+                    <h3>Fag</h3>
+                    <p class="undervisningsforløb_fag"></p>
+
+                    <h3>Målgruppe</h3>
+                    <p class="undervisningsforløb_malgruppe"></p>
+
                 </div>
-            </div>
+
+
+            </section>
 
 
         </div>
-
 
 
 
@@ -168,65 +175,7 @@ CONTENT SLUT
 
 
 
-    <script>
-        window.addEventListener("load", sidenVises);
-
-        function sidenVises() {
-            console.log("siden vises!");
-            // registrer klik på menu-knap
-            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-            document.querySelector("#knap_laes_mere").addEventListener("click", down);
-        }
-
-        function toggleMenu() {
-            console.log("Toggle menu");
-            document.querySelector("#menu").classList.toggle("hidden");
-
-            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
-
-            if (erSkjult == true) {
-                //menuen er nu skjult - ændr menuknap til lll
-                document.querySelector("#menuknap").textContent = "☰";
-            } else {
-                //menuen er nu vist - ændr menuknap til x
-                document.querySelector("#menuknap").textContent = "☰"
-            }
-        }
-
-        "use strict"
-        let indhold = [];
-
-        document.addEventListener("DOMContentLoaded", start);
-
-
-        function start() {
-            async function hentJson() {
-
-                console.log("hent json 1");
-
-                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/statiske_sider/194";
-
-                let myJson = await fetch(url);
-
-                indhold = await myJson.json();
-
-                visIndhold();
-            }
-
-
-            function visIndhold() {
-                console.log("VIS TEKST");
-
-
-                document.querySelector(".om_titel").innerHTML = indhold.title.rendered;
-                document.querySelector(".om_tekst").innerHTML = indhold.content.rendered;
-
-            }
-
-            hentJson();
-
-        }
-    </script>
+    <script src="koldkrigs-undervisning-single.js"></script>
 
 
 </body>
