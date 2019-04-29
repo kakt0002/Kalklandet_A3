@@ -600,8 +600,6 @@ body {
         background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-
-
     }
 
     #btn3 {
@@ -655,6 +653,11 @@ body {
 
 
     div.button:hover {
+        left: 0px;
+    }
+
+
+    #btn2 {
         left: 0px;
     }
 
