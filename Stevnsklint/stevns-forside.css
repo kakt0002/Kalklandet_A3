@@ -88,7 +88,7 @@ body {
 
 .footer {
     grid-column: 1/5;
-    background-color: #3482A9;
+    background-color: #38728C;
     color: white;
 }
 
@@ -385,15 +385,15 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-    position: relative;
+    <<<<<<< HEAD position: relative;
     height: 5vh;
     margin-left: 32%;
     margin-top: 1em;
-    position: relative;
+    =======position: relative;
     height: 5vh;
     margin-left: 32%;
     margin-top: 2em;
-
+    > > > > > > > origin/master
 }
 
 
@@ -507,8 +507,6 @@ body {
         color: #d9d6d6;
 
     }
-
-
 
 
     #laes_mere {
@@ -632,7 +630,6 @@ body {
         background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-        left: 0px;
 
 
     }
