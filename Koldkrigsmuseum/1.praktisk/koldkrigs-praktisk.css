@@ -277,6 +277,42 @@ body {
 
 /****WORDPRESS****/
 
+.praktisk_info {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 1em;
+
+}
+
+.priser,
+.åbningstider,
+.handicapforhold,
+.find_vej {
+	padding: 1em;
+	min-height: 10em;
+}
+
+.praktisk_info h2 {
+	color: #3e474a;
+	font-family: limestone;
+	font-weight: 800;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.praktisk_info p {
+
+	color: #3e474a;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+
+
 /***************************************************** CONTENT SLUT  ********************************************************/
 
 
@@ -530,41 +566,6 @@ body {
 	}
 
 }
-
-.praktisk_info {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-row-gap: 1em;
-
-}
-
-.priser,
-.åbningstider,
-.handicapforhold,
-.find_vej {
-	padding: 1em;
-	min-height: 10em;
-}
-
-.praktisk_info h2 {
-	color: #3e474a;
-	font-family: limestone;
-	font-weight: 800;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 1.5;
-	text-transform: uppercase;
-}
-
-.praktisk_info p {
-
-	color: #3e474a;
-	font-family: 'Assistant', sans-serif;
-	font-weight: 100;
-	font-size: 12px;
-	line-height: 1.5;
-}
-
 
 
 
