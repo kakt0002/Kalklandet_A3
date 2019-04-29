@@ -324,8 +324,6 @@ body {
     line-height: 7vh;
     border-bottom: 5px solid #3482A9;
     width: 200px;
-
-
 }
 
 #basic_info h1 {
@@ -385,15 +383,14 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-    <<<<<<< HEAD position: relative;
+    position: relative;
     height: 5vh;
     margin-left: 32%;
     margin-top: 1em;
-    =======position: relative;
+    position: relative;
     height: 5vh;
     margin-left: 32%;
     margin-top: 2em;
-    > > > > > > > origin/master
 }
 
 
