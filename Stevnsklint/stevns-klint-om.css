@@ -20,11 +20,12 @@ body {
 
 .tekst {
     margin: 8vw 5vw;
+
 }
 
 .om_titel {
     color: #3e474a;
-    font-family: 'limestone', sans-serif;
+    font-family: 'limestoneregular', sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
@@ -120,7 +121,7 @@ body {
 
 .footer {
     grid-column: 1/5;
-    background-color: #38728C;
+    background-color: #3482A9;
     color: white;
 }
 
@@ -494,6 +495,7 @@ body {
         background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
+        left: 0px;
 
 
     }
@@ -587,7 +589,8 @@ body {
 
 
     .tekst {
-        margin: 75px 20px 30px 155px
+        margin: 175px 200px 30px 270px;
+
     }
 
     .om_titel {

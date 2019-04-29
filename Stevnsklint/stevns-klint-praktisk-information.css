@@ -81,7 +81,7 @@ body {
 
 .footer {
     grid-column: 1/5;
-    background-color: #38728C;
+    background-color: #3482A9;
     color: white;
 }
 
@@ -287,6 +287,7 @@ body {
 .priser,
 .åbningstider,
 .handicapforhold,
+.priser_guidet_tur,
 .find_vej {
     padding: 1em;
     min-height: 1em;
