@@ -687,7 +687,7 @@ body {
 
 
     .pil {
-        left: 35%;
+        left: 40%;
     }
 
 
@@ -775,11 +775,10 @@ body {
     background-size: 300% 100%;
     position: relative;
     justify-self: end;
-    top: -8vh;
-    left: 73vw;
+    top: -6vh;
+    left: 64.5vw;
     box-shadow: 1px 1px 1px #39606d;
     letter-spacing: -2px;
-
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -813,13 +812,15 @@ body {
     .undervisningsforløb_knap {
 
         top: -6.1vh;
-        left: 87%;
+        left: 78%;
 
     }
 
 
 
 }
+
+
 
 @media only screen and (min-width: 1000px) {
 
@@ -855,8 +856,9 @@ body {
 
     .undervisningsforløb_knap {
 
-        /*		top: -9.5vh;*/
-        left: 85%;
+        top: -3.5rem;
+
+        left: 78%;
 
     }
 
