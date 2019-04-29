@@ -117,7 +117,7 @@ body {
 
 .footer {
     grid-column: 1/5;
-    background-color: #38728C;
+    background-color: #3482A9;
     color: white;
 }
 
@@ -732,7 +732,7 @@ body {
     font-weight: 600;
     font-size: 17px;
     text-transform: uppercase;
-    border-bottom: 5px solid #38728C;
+    border-bottom: 5px solid #3482A9;
     width: 290px;
     padding-bottom: 1em;
 }
@@ -774,7 +774,7 @@ body {
     height: 25px;
     text-align: center;
     border: none;
-    background-color: #86a8b7;
+    background-color: #3482A9;
     background-size: 300% 100%;
     position: relative;
     justify-self: end;

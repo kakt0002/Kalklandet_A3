@@ -76,7 +76,7 @@ function start() {
             dest.appendChild(klon);
             dest.lastElementChild.addEventListener("click", () => {
 
-                location.href = "/Koldkrigsmuseum/2.undervisning/koldkrigs-undervisning-single.html?id=" + undervisningForlob.id;
+                location.href = "/Stevnsklint/stevns-klint-undervisning-single.htmll?id=" + undervisningForlob.id;
             })
 
 

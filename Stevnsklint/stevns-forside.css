@@ -332,10 +332,8 @@ body {
     font-weight: 800;
     font-size: 35px;
     line-height: 1;
-    font-family: limestone;
+    font-family: 'limestoneregular';
     text-transform: uppercase;
-
-
 }
 
 #basic_info p {
