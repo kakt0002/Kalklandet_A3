@@ -81,7 +81,7 @@ body {
 
 .footer {
     grid-column: 1/5;
-    background-color: #38728C;
+    background-color: #3482A9;
     color: white;
 }
 
@@ -440,7 +440,7 @@ body {
     }
 
     .kontakt_tekst {
-        margin: -40px -5px 30px 12px;
+        margin: 90px -5px 30px 120px;
     }
 
 
@@ -555,7 +555,7 @@ body {
         background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-
+        left: 0px;
 
     }
 
