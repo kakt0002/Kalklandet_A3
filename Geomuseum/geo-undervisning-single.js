@@ -31,23 +31,34 @@
 //    document.querySelector(".viewport").classList.remove(".overflow");
 //
 //}
-//
-//
+
+
+start();
 
 "use strict"
+
+
 let undervisningForlob = [];
 
-document.addEventListener("DOMContentLoaded", start);
+
+
+
 
 
 function start() {
+    let urlParams = new URLSearchParams(window.location.search);
+
+    let id = urlParams.get("id");
+
+    console.log(id);
+
 
 
     async function hentJson() {
 
         console.log("hent json");
 
-        let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/undervisningsforlob/?categories=4";
+        let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/undervisningsforlob/" + id;
 
         let myJson = await fetch(url);
 
@@ -61,30 +72,18 @@ function start() {
         console.log("VIS UNDERVISNINGSFORLØB");
 
 
-        let dest = document.querySelector(".undervisningsforløb");
-        let temp = document.querySelector("template");
+        document.querySelector(".undervisningsforløb_title").innerHTML = undervisningForlob.titel;
+        document.querySelector(".undervisningsforløb_tekst").innerHTML = undervisningForlob.tekst;
 
+        document.querySelector(".undervisningsforløb_fag").innerHTML = undervisningForlob.fag;
 
-
-        undervisningForlob.forEach(undervisningForlob => {
-            let klon = temp.cloneNode(true).content;
-
-            klon.querySelector(".undervisningsforløb h1").innerHTML = undervisningForlob.title.rendered;
-            klon.querySelector(".undervisningsforløb p").innerHTML = undervisningForlob.maalgruppe;
-
-
-            dest.appendChild(klon);
-            dest.lastElementChild.addEventListener("click", () => {
-
-                location.href = "/Geomuseum/geo-undervisning-single.html?id=" + undervisningForlob.id;
-            })
-
-
-
-        })
+        document.querySelector(".undervisningsforløb_malgruppe").innerHTML = undervisningForlob.maalgruppe;
 
     }
 
 
     hentJson();
+
+
+
 }
