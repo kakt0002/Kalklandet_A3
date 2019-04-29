@@ -598,6 +598,7 @@ body {
 
 	}
 
+<<<<<<< HEAD
 	.priser,
 	.åbningstider,
 	.handicapforhold,
@@ -607,6 +608,16 @@ body {
 		width: 22em;
 		margin-left: 7px;
 	}
+=======
+    .priser,
+    .åbningstider,
+    .handicapforhold,
+    .find_vej {
+        padding: 1em;
+        height: 12em;
+        width: 22em;
+    }
+>>>>>>> origin/master
 
 
 	.handicapforhold,
@@ -648,7 +659,12 @@ body {
 		margin-left: 12em;
 		margin-top: 2.7em;
 
+<<<<<<< HEAD
 	}
+=======
+        margin-bottom: 5em;
+    }
+>>>>>>> origin/master
 
 	.praktisk_info p {
 
