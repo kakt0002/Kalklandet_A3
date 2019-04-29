@@ -23,18 +23,24 @@ body {
 }
 
 .om_titel {
-    margin-top: 15vw;
-    font-weight: 100;
+    color: #3e474a;
+    font-family: limestone;
+    font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Assistant', sans-serif;
     line-height: 7vh;
     border-bottom: 5px solid #38728C;
     width: 290px;
+
 }
 
 .om_tekst {
+    color: #3e474a;
     font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -587,7 +593,7 @@ body {
 
     .om_titel {
         margin-top: 0vw;
-        font-weight: 100;
+        font-weight: 600;
         font-size: 20px;
         text-transform: uppercase;
         font-family: 'Assistant', sans-serif;
