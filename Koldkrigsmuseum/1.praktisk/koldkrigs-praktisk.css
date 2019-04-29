@@ -597,11 +597,13 @@ body {
     .handicapforhold,
     .find_vej {
         height: 40em;
+        margin-bottom: 8em;
     }
 
 
     .priser {
         height: 16em;
+        margin-bottom: 4em;
 
     }
 
