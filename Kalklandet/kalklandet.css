@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     background-color: #ffffff;
-    font-family: 'limestoneregular';
+    font-family: 'limestoneregular', sans-serif;
 
 }
 
@@ -268,7 +268,6 @@ h2 {
 
 
 .footer p {
-    font-family: 'limestoneregular';
     text-align: center;
     color: #f7fbff;
     font-size: 0.8em;
@@ -330,7 +329,6 @@ h2 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'limestone', sans-serif;
 
 }
 
@@ -415,14 +413,13 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
-
 }
 
 .item1 {
-
     height: 10vh;
     background-color: lightgray;
     z-index: 10;
+    
 }
 
 .item2 {
@@ -430,6 +427,8 @@ h2 {
     background-color: #ffffff;
     padding: 3rem 1rem 2rem 1rem;
     text-align: center;
+    
+    
 }
 
 
@@ -452,6 +451,7 @@ h2 {
 
     cursor: pointer;
     transition: all 0.5s ease;
+    
 }
 
 .item3:hover {
@@ -600,7 +600,6 @@ h2 {
 }
 
 
-
 .item10 {
     min-height: 53vh;
     background-color: rgb(253, 242, 220);
@@ -620,7 +619,6 @@ h2 {
     grid-template-columns: 1fr;
     grid-gap: 5px;
 }
-
 
 .nested-item1 {
     border-top: 5vh solid white;
@@ -644,12 +642,9 @@ h2 {
     margin: 2vh 10vw 2vh 10vw;
 }
 
-
-
 .nested-item1 div {
     display: grid;
 }
-
 
 .det-sker-nested {
     display: grid;
@@ -670,7 +665,10 @@ h2 {
 
 .nested-item3 h2 {
     text-align: center;
-    font-size: 4em;
+     font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
 }
 
 
