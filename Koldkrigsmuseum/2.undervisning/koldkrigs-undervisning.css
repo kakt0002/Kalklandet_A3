@@ -3,6 +3,7 @@
         width: 150px;
         left: 20px;
         z-index: 2;
+        margin-top: 2em;
     }
 
     .some-burger {
@@ -357,7 +358,7 @@ body {
     position: relative;
     height: 5vh;
     margin-left: 32%;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 
@@ -417,6 +418,7 @@ body {
 
     .logo-footer img {
         margin-left: 40%;
+        margin-top: 2em;
     }
 
     .fa-facebook {
@@ -727,11 +729,12 @@ body {
 
     color: #3e474a;
     font-family: 'limestone', sans-serif;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 17px;
     text-transform: uppercase;
     border-bottom: 5px solid #38728C;
     width: 290px;
+    padding-bottom: 1em;
 }
 
 
