@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     background-color: #ffffff;
-    font-family: 'limestoneregular';
+    font-family: 'limestoneregular', sans-serif;
 
 }
 
@@ -268,7 +268,6 @@ h2 {
 
 
 .footer p {
-    font-family: 'limestoneregular';
     text-align: center;
     color: #f7fbff;
     font-size: 0.8em;
@@ -330,7 +329,6 @@ h2 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'limestone', sans-serif;
 
 }
 
@@ -415,14 +413,13 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
-
 }
 
 .item1 {
-
     height: 10vh;
     background-color: lightgray;
     z-index: 10;
+
 }
 
 .item2 {
@@ -430,7 +427,10 @@ h2 {
     background-color: #ffffff;
     padding: 3rem 1rem 2rem 1rem;
     text-align: center;
+
+
 }
+
 
 .parent {
     height: 100%;
@@ -439,19 +439,19 @@ h2 {
     margin: auto;
 }
 
+
 .item3 {
-    /*    background-color: linear-gradient (rgba(255, 0, 0, 0.45) rgba(255, 0, 0, 0.45));*/
-    background-image: url(billeder/koldkrig_foto.png);
-    background-size: cover;
+    background-image: url(billeder/koldkrig_mobilfoto_lille.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
-    min-height: 40vh;
-    background-color: lightgoldenrodyellow;
+    min-height: 25vw;
+
 
     cursor: pointer;
-    height: 100%;
-    width: auto;
-    background-position: center;
     transition: all 0.5s ease;
+
 }
 
 .item3:hover {
@@ -461,14 +461,16 @@ h2 {
 
 
 .item4 {
-    min-height: 40vh;
-    background-image: url(billeder/stevns_klint_foto.png);
-    background-size: cover;
+    background-image: url(billeder/stevnsklint_mobilfoto_lille.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-height: 25vw;
+    width: 100%;
+
 
     cursor: pointer;
-    background-position: center;
     transition: all 0.5s ease;
-    height: 100%;
 }
 
 .item4:hover {
@@ -476,16 +478,16 @@ h2 {
 }
 
 .item5 {
-    background-color: aliceblue;
-    background-image: url(billeder/geo_faxe_foto.png);
-
-    background-size: cover;
-    min-height: 40vh;
-    cursor: pointer;
-
-    transition: all 0.5s ease;
-    height: 100%;
+    background-image: url(billeder/geo_faxe_mobilfoto_lille.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
+    min-height: 25vw;
+    width: 100%;
+
+
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .item5:hover {
@@ -493,14 +495,18 @@ h2 {
 }
 
 .item6 {
-    background-color: #bdeabd;
-    background-image: url(billeder/nyere_tid_foto.png);
-    min-height: 40vh;
-    cursor: pointer;
-    background-size: cover;
-    transition: all 0.5s ease;
-    height: 100%;
+    background-image: url(billeder/nyere_kultur_mobilfoto_lille.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
+    min-height: 25vw;
+    width: 100%;
+
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+
 }
 
 .item6:hover {
@@ -594,7 +600,6 @@ h2 {
 }
 
 
-
 .item10 {
     min-height: 53vh;
     background-color: rgb(253, 242, 220);
@@ -614,7 +619,6 @@ h2 {
     grid-template-columns: 1fr;
     grid-gap: 5px;
 }
-
 
 .nested-item1 {
     border-top: 5vh solid white;
@@ -638,12 +642,9 @@ h2 {
     margin: 2vh 10vw 2vh 10vw;
 }
 
-
-
 .nested-item1 div {
     display: grid;
 }
-
 
 .det-sker-nested {
     display: grid;
@@ -664,7 +665,10 @@ h2 {
 
 .nested-item3 h2 {
     text-align: center;
-    font-size: 4em;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
 }
 
 
@@ -707,7 +711,7 @@ h2 {
 .dato {
 
     width: 100px;
-    height: 10vh;
+    height: 20vh;
     background-color: #ffffff;
     text-align: center;
 }
@@ -739,6 +743,7 @@ h2 {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
         grid-gap: 5px;
     }
 
@@ -762,23 +767,25 @@ h2 {
 
 
     .item3 {
-        min-height: 66vh;
-        background-color: #e2e2e2;
-        background-position: center;
+        background-image: url(billeder/koldkrig_mobilfoto.png);
+        min-height: 13.4vw;
+
     }
 
     .item4 {
-        min-height: 66vh;
-        background-color: #c8f7d0;
+        background-image: url(billeder/stevnsklint_mobilfoto.png);
+        min-height: 13.4vw;
     }
 
     .item5 {
-        min-height: 66vh;
+        background-image: url(billeder/geo_faxe_mobilfoto.png);
+        min-height: 13.4vw;
         background-position: center;
     }
 
     .item6 {
-        min-height: 66vh;
+        background-image: url(billeder/nyere_kultur_mobilfoto.png);
+        min-height: 13.4vw;
     }
 
 
@@ -886,7 +893,8 @@ h2 {
 }
 
 
-/* IPAD */
+/*
+ IPAD
 @media only screen and (max-width: 1140px) {
     .item3 {
         background-image: url(billeder/koldkrig_mobilfoto.png);
@@ -909,6 +917,7 @@ h2 {
 
 
 }
+*/
 
 /* DEKSTOP */
 
@@ -948,6 +957,34 @@ h2 {
         background-position: bottom right;
 
     }
+
+    .item3 {
+        background-image: url(billeder/koldkrig_foto.png);
+        min-height: 34.7vw;
+
+
+    }
+
+    .item4 {
+        background-image: url(billeder/stevns_klint_foto.png);
+        min-height: 34.7vw;
+
+    }
+
+    .item5 {
+        background-image: url(billeder/geo_faxe_foto.png);
+        min-height: 34.7vw;
+        background-position: center;
+
+    }
+
+    .item6 {
+        background-image: url(billeder/nyere_tid_foto.png);
+        min-height: 34.7vw;
+
+    }
+
+
 
 
 }

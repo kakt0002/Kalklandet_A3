@@ -1,10 +1,6 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
-    background-color: #82bcbb;
+    background-color: #F2F2F2;
 }
 
 .hide {
@@ -17,6 +13,90 @@ body {
     overflow: hidden;
     height: 100vh;
 }
+
+
+/*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
+
+
+
+.indhold {
+    margin: 8vw 5vw;
+}
+
+
+
+.undervisningsforløb_title {
+    margin-top: 15vw;
+    font-weight: 100;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Assistant', sans-serif;
+    line-height: 7vh;
+    border-bottom: 5px solid #00A5A3;
+    width: 290px;
+}
+
+.undervisningsforløb_tekst {
+    font-family: 'Assistant', sans-serif;
+}
+
+
+.undervisningsforløb_boks {
+
+
+    margin: 5vw 0vw;
+    padding: 1.5vw;
+    text-align: center;
+    background: #00A5A3;
+
+    height: 300px;
+    box-shadow: 2px 5px 5px #888888;
+
+}
+
+
+.undervisningsforløb_boks h2 {
+
+    font-weight: 500;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-family: 'Assistant', sans-serif;
+    width: 100%;
+    color: white;
+    line-height: 7vh;
+
+
+    border-bottom: 3px solid #ffffff;
+    width: 90%;
+    margin: 4vw auto 0 auto;
+
+}
+
+
+
+.undervisningsforløb_boks h3 {
+    margin-top: 7vw;
+
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Assistant', sans-serif;
+    width: 100%;
+
+    color: white;
+}
+
+
+
+.undervisningsforløb_fag,
+.undervisningsforløb_malgruppe {
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+
+
+}
+
 
 /*--------- FONT ----------*/
 
@@ -75,11 +155,8 @@ body {
 
 .header {
     grid-column: 1/5;
-    background-image: url(/Geomuseum/billeder/geo-forside.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 180vh;
     z-index: 1;
+    height: 3.5em;
 }
 
 .content {
@@ -88,7 +165,7 @@ body {
 
 .footer {
     grid-column: 1/5;
-    background-color: #00A5A3;
+    background-color: #38728C;
     color: white;
 }
 
@@ -114,12 +191,14 @@ body {
 
     .header {
         grid-column: 1/5;
-        height: 50em;
     }
 }
 
 
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
+
+
+/***************************************************** HEADER START ********************************************************/
 
 .logo img {
     position: absolute;
@@ -127,31 +206,6 @@ body {
     top: 18px;
     left: 15px;
 }
-
-.pil {
-    position: relative;
-    left: 52%;
-
-    animation: bouncing 1s infinite ease-in-out;
-}
-
-@keyframes bouncing {
-    0% {
-        bottom: 0;
-    }
-
-    50% {
-        bottom: 0.7vw;
-    }
-
-    100% {
-        bottom: 0;
-    }
-}
-
-
-/***************************************************** HEADER START ********************************************************/
-
 
 /*burgermenu start*/
 
@@ -236,6 +290,7 @@ body {
     box-shadow: 1px 1px 4px #506c17;
 }
 
+
 #menuknap {
     display: inline-block;
     position: fixed;
@@ -258,7 +313,7 @@ body {
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 3px #6d5050;
-    font-family: 'limestone', sans-serif;
+    font-family: limestone;
     z-index: 1;
 
 }
@@ -292,7 +347,7 @@ body {
 
 
 
-/*burgermenu slut*/
+/*Desktop menu*/
 
 .mainnav {
     display: none;
@@ -300,88 +355,23 @@ body {
 
 
 /***************************************************** HEADER SLUT ********************************************************/
-#basic_info {
-    position: relative;
-    color: white;
-    left: 6vh;
-    font-family: 'Assistant', sans-serif;
-    top: 14em;
-    line-height: 4vh;
-    max-width: 250px;
-}
-
-#basic_info h2 {
-    font-weight: 400;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-family: 'Assistant', sans-serif;
-    line-height: 7vh;
-    border-bottom: 5px solid #00A5A3;
-    width: 200px;
-
-}
-
-#basic_info h1 {
-    font-weight: 800;
-    font-size: 35px;
-    line-height: 1;
-    font-family: limestone;
-    text-transform: uppercase;
-}
-
-#basic_info p {
-    font-weight: 100;
-    font-size: 15px;
-    line-height: 2.7vh;
-}
-
-#basic_info a {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 2vh;
-    color: white;
-    text-decoration: none;
-}
-
-#basic_info a:hover {
-    color: #d9d6d6;
-
-}
 
 
+/***************************************************** CONTENT START ********************************************************/
 
-#laes_mere {
-    color: #e5e1e1;
-    font-weight: 100;
-    font-family: 'Assistant', sans-serif;
-    width: 250px;
-    padding-left: 18vw;
-    padding-bottom: 7vw;
-}
+/****WORDPRESS****/
 
-
-#laes_mere h2 {
-    position: relative;
-    font-size: 6em;
-    margin: 0;
-    padding: 0;
-    left: -0.05em;
-}
-
-#laes_mere p {
-    font-size: 1em;
-}
+/***************************************************** CONTENT SLUT  ********************************************************/
 
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-
     position: relative;
     height: 5vh;
     margin-left: 32%;
-    margin-top: 2em;
-
+    margin-top: 1em;
 }
+
 
 
 .footer p {
@@ -442,80 +432,107 @@ body {
     }
 
     .fa-facebook {
-        margin-left: 47%;
+        margin-left: 46%;
     }
 
-    .some-burger {
-        left: 18.5em;
+    .logo-footer img {
+        width: 150px;
+        left: 20px;
+        z-index: 2;
     }
 
 
-    #basic_info {
-        color: white;
-        left: 8vh;
-        font-family: 'Assistant', sans-serif;
-        top: 20rem;
-        line-height: 4vh;
-        max-width: 650px;
+
+    /*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
+
+
+    .indhold {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+        width: 100%;
+
     }
 
-    #basic_info h2 {
+    .undervisningsforløb {
+        margin: 1vw 3vw;
+
+    }
+
+    .undervisningsforløb_title {
+        margin-top: 5vw;
         font-weight: 100;
-        font-size: 1rem;
+        font-size: 22px;
         text-transform: uppercase;
         font-family: 'Assistant', sans-serif;
-        line-height: 3vh;
+        line-height: 7vh;
+        border-bottom: 5px solid #00A5A3;
+        width: 290px;
     }
 
-    #basic_info h1 {
-        font-weight: 800;
-        font-size: 2.5rem;
-        font-family: 'limestone', sans-serif;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-    }
-
-    #basic_info p {
-        font-weight: 100;
-        font-size: 1rem;
-        line-height: 3.5vh;
-    }
-
-    #basic_info a {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 2vh;
-        color: white;
-        text-decoration: none;
-    }
-
-    #basic_info a:hover {
-        color: #d9d6d6;
-
-    }
-
-
-    #laes_mere {
-        color: #e5e1e1;
-        font-weight: 100;
+    .undervisningsforløb_tekst {
         font-family: 'Assistant', sans-serif;
-        padding-left: 12vw;
-        padding-bottom: 7vw;
-        width: 600px;
     }
 
-    #laes_mere h2 {
-        font-size: 4rem;
-        margin: 0;
-        padding: 0;
-        left: -0.05em;
+
+    .undervisningsforløb_boks {
+        margin: 3vw 0vw;
+        text-align: center;
+        background: #00A5A3;
+
+        height: 400px;
+        box-shadow: 2px 5px 5px #888888;
+
     }
 
-    #laes_mere p {
-        font-size: 1rem;
+
+    .undervisningsforløb_boks h2 {
+
+        font-weight: 500;
+        font-size: 37px;
+        text-transform: uppercase;
+        font-family: 'Assistant', sans-serif;
+        width: 100%;
+        color: white;
+        line-height: 7vh;
+
+
+        border-bottom: 3px solid #ffffff;
+        width: 90%;
+        margin: 0vw auto 0 auto;
+
     }
+
+
+
+    .undervisningsforløb_boks h3 {
+        margin-top: 7vw;
+
+        font-weight: 500;
+        font-size: 25px;
+        font-family: 'Assistant', sans-serif;
+        width: 100%;
+
+        color: white;
+    }
+
+
+
+    .undervisningsforløb_fag,
+    .undervisningsforløb_malgruppe {
+        font-family: 'Assistant', sans-serif;
+        color: white;
+        font-size: 15px;
+        font-weight: 200;
+
+
+    }
+
+
+
 
 }
+
 
 @media only screen and (min-width: 1000px) {
 
@@ -525,7 +542,7 @@ body {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 14em;
+        width: 17em;
 
     }
 
@@ -534,7 +551,7 @@ body {
     }
 
     .logo-footer img {
-        margin-left: 45%;
+        margin-left: 44%;
 
     }
 
@@ -555,7 +572,7 @@ body {
     }
 
     .mainnav a {
-        color: white;
+        color: #00A5A3;
         text-decoration: none;
         padding: 0vw 2vw 0 2vw;
         display: inline-block;
@@ -570,16 +587,7 @@ body {
     }
 
     .mainnav a:hover {
-        color: #7acbca;
-    }
-
-    #basic_info h1 {
-        margin: 0;
-        font-size: 2.8rem;
-    }
-
-    #basic_info p {
-        font-size:
+        color: #9fbbc7;
     }
 
     a {
@@ -591,7 +599,7 @@ body {
         top: 150px;
         background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
+        box-shadow: 1px 1px 4px #4d4d4d;
 
 
     }
@@ -600,14 +608,16 @@ body {
         top: 265px;
         background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
+        box-shadow: 1px 1px 4px #4d4d4d;
+
+
     }
 
     #btn3 {
         top: 380px;
         background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
+        box-shadow: 1px 1px 4px #4d4d4d;
 
     }
 
@@ -615,7 +625,7 @@ body {
         top: 495px;
         background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
+        box-shadow: 1px 1px 4px #4d4d4d;
 
 
     }
@@ -624,7 +634,7 @@ body {
         top: 610px;
         background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
+        box-shadow: 1px 1px 4px #4d4d4d;
 
     }
 
@@ -636,13 +646,8 @@ body {
 
         border: none;
 
-        width: 22vh;
-        height: 14vh;
-        /*
         width: 185px;
         height: 115px;
-*/
-
         position: absolute;
         left: -65px;
 
@@ -655,18 +660,8 @@ body {
 
     div.button:hover {
         left: 0px;
-    }
 
 
-    #btn3 {
-        left: 0px;
-    }
-
-    .desktop_sidebar {
-        position: relative;
-        background-color: aqua;
-        top: 300px;
-        z-index: 111;
     }
 
     .rotate {
@@ -706,38 +701,95 @@ body {
 
     }
 
-    #basic_info {
-        left: 28.5vw;
-        top: 440px;
+
+
+
+
+    /*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
+
+
+    .indhold {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+        width: 100%;
+        margin: 0 0 0 0vw;
     }
 
-    #laes_mere {
-        color: #e5e1e1;
+
+    .undervisningsforløb {
+        margin-left: 15vw;
+    }
+
+    .undervisningsforløb_title {
+        margin-top: 5vw;
         font-weight: 100;
+        font-size: 22px;
+        text-transform: uppercase;
         font-family: 'Assistant', sans-serif;
-        padding-left: 17.3vw;
-        padding-bottom: 7vw;
-        width: 700px;
+        line-height: 7vh;
+        border-bottom: 5px solid #00A5A3;
+        width: 290px;
+    }
+
+    .undervisningsforløb_tekst {
+        font-family: 'Assistant', sans-serif;
     }
 
 
-    .pil {
-        left: 42%;
+    .undervisningsforløb_boks {
+        margin: 5vw 0vw;
+        padding: 1vw;
+        text-align: center;
+        background: #00A5A3;
+
+        height: 400px;
+        box-shadow: 2px 5px 5px #888888;
+
+    }
+
+
+    .undervisningsforløb_boks h2 {
+
+        font-weight: 500;
+        font-size: 37px;
+        text-transform: uppercase;
+        font-family: 'Assistant', sans-serif;
+        width: 100%;
+        color: white;
+        line-height: 7vh;
+
+
+        border-bottom: 3px solid #ffffff;
+        width: 90%;
+        margin: 0vw auto 0 auto;
+
     }
 
 
 
-}
+    .undervisningsforløb_boks h3 {
+        margin-top: 3vw;
+
+        font-weight: 500;
+        font-size: 31px;
+        font-family: 'Assistant', sans-serif;
+        width: 100%;
+
+        color: white;
+    }
 
 
-@media only screen and (min-height: 1800px) {
 
-    div.button {
+    .undervisningsforløb_fag,
+    .undervisningsforløb_malgruppe {
+        font-family: 'Assistant', sans-serif;
+        color: white;
+        font-size: 18px;
+        font-weight: 200;
 
-        width: 25vh;
-        height: 17vh;
-        left: -65px;
 
     }
+
 
 }

@@ -1,29 +1,42 @@
-        var burgerknap = document.querySelector('.burgerknap');
-        var mobilmenu = document.querySelector('nav');
-        burgerknap.addEventListener("click", function () {
-            if (mobilmenu.style.display == 'none' || mobilmenu.style.display == '') {
-                mobilmenu.style.display = 'flex';
-            } else {
-                mobilmenu.style.display = 'none';
-            }
-        });
+        document.addEventListener("DOMContentLoaded", sidenVises);
+
+        function sidenVises() {
 
 
 
-        "use strict"
-        let ForsideTekst = [];
-        let boksTekst = [];
+            var burgerknap = document.querySelector('.burgerknap');
+            var mobilmenu = document.querySelector('nav');
+            burgerknap.addEventListener("click", function () {
+                if (mobilmenu.style.display == 'none' || mobilmenu.style.display == '') {
+                    mobilmenu.style.display = 'flex';
+                } else {
+                    mobilmenu.style.display = 'none';
+                }
+            });
 
 
-        let filter = "kalklandet.dk";
-        let detSker = [];
+        }
 
-        let kontaktInformationer = [];
 
-        document.addEventListener("DOMContentLoaded", start);
+        start();
+
+
 
 
         function start() {
+
+            "use strict"
+            let ForsideTekst = [];
+            let boksTekst = [];
+
+
+            let filter = "kalklandet.dk";
+            let detSker = [];
+
+            let kontaktInformationer = [];
+
+
+
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.addEventListener("click", filtrering)
             })
@@ -93,48 +106,12 @@
 
 
 
-            //
-            //            async function hentJson4() {
-            //
-            //                console.log("hent json 4");
-            //
-            //                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
-            //
-            //                let myJson = await fetch(url);
-            //                kontaktInformationer = await myJson.json();
-            //
-            //                visFooter();
-            //            }
-            //
-            //
-            //            function visFooter() {
-            //                console.log("VIS footer");
-            //
-            //
-            //                document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
-            //                document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
-            //                document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
-            //                document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
-            //                document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
-            //
-            //
-            //            }
-            //
-            //            hentJson4();
-
-
-
-
-
-
-
-
 
             async function hentJson3() {
 
                 console.log("hent json 3");
 
-                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/begivenhed?per_page=5";
+                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/begivenhed";
 
                 let myJson = await fetch(url);
                 detSker = await myJson.json();
@@ -151,30 +128,19 @@
                 let dest = document.querySelector(".begivenhed");
                 let temp = document.querySelector("template");
 
-                dest.innerHTML = "";
+
+                detSker.forEach(detSker => {
+                    let klon = temp.cloneNode(true).content;
+
+                    klon.querySelector(".dato p").innerHTML = detSker.dato;
+                    klon.querySelector(".det-sker-text p").innerHTML = detSker.title.rendered;
 
 
-                detSker.forEach(begivenhed => {
-                    begivenhed.kategori.forEach(k => {
-                        if (k == filter) {
+                    dest.appendChild(klon);
+                    dest.lastElementChild.addEventListener("click", () => {
 
-                            console.log(filter);
-
-                            let klon = temp.cloneNode(true).content;
-
-                            klon.querySelector(".dato p").innerHTML = begivenhed.dato;
-                            klon.querySelector(".det-sker-text p").innerHTML = begivenhed.title.rendered;
-
-
-                            dest.appendChild(klon);
-
-
-
-
-                        }
+                        location.href = "/Kalklandet/kalklandet-begivenhed.html?id=" + detSker.id;
                     })
-
-
 
 
 
@@ -182,10 +148,6 @@
 
             }
 
-
-
-
-            hentJson3();
-
+            //            hentJson3();
 
         }
