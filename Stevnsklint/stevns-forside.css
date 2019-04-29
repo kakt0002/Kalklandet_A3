@@ -128,12 +128,15 @@ body {
     left: 15px;
 }
 
-.pil {
-    position: relative;
-    left: 50%;
-    animation: bouncing 1s infinite ease-in-out;
-}
 
+
+.pilparent {
+    position: relative;
+    top: 15vw;
+    left: 30vw;
+    animation: bouncing 1s infinite ease-in-out;
+
+}
 
 
 @keyframes bouncing {
@@ -319,7 +322,7 @@ body {
     text-transform: uppercase;
     font-family: 'Assistant', sans-serif;
     line-height: 7vh;
-    border-bottom: 5px solid #38728C;
+    border-bottom: 5px solid #3482A9;
     width: 200px;
 
 

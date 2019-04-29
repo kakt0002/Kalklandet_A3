@@ -670,7 +670,7 @@ h2 {
 
 .nested-item3 h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
 }
 
 
@@ -682,9 +682,15 @@ h2 {
     /*    border: 1px solid black;*/
     /*    background-color: #f1ebe3;*/
     min-height: 10vh;
-    margin: 2vh 10vw 2vh 10vw;
+    margin: 2vh 5vw 2vh 5vw;
     padding: 1vw;
+
+
     cursor: pointer;
+    width: 800px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .nested-item5 {
@@ -893,28 +899,22 @@ h2 {
  IPAD
 @media only screen and (max-width: 1140px) {
     .item3 {
-        background-image: url(billeder/koldkrig_mobilfoto_lille.png);
+        background-image: url(billeder/koldkrig_mobilfoto.png);
         width: 100%;
-        height: 20vw;
+        height: 50vw;
     }
 
     .item4 {
-        background-image: url(billeder/stevnsklint_mobilfoto_lille.png);
-        width: 100%;
-        height: 20vw;
+        background-image: url(billeder/stevnsklint_mobilfoto.png);
     }
 
 
     .item5 {
-        background-image: url(billeder/geo_faxe_mobilfoto_lille.png);
-        width: 100%;
-        height: 20vw;
+        background-image: url(billeder/geo_faxe_mobilfoto.png);
     }
 
     .item6 {
-        background-image: url(billeder/nyere_kultur_mobilfoto_lille.png);
-        width: 100%;
-        height: 20vw;
+        background-image: url(billeder/nyere_kultur_mobilfoto.png);
     }
 
 
