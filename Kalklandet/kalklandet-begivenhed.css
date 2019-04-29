@@ -13,7 +13,7 @@ body {
 
 .indhold {
 
-    margin: 0vw 0;
+    margin: 5vw;
 }
 
 
@@ -202,6 +202,8 @@ h2 {
 }
 
 
+
+
 @media only screen and (min-width: 700px) {
 
     .menu {
@@ -368,7 +370,7 @@ h2 {
 
 
     .indhold {
-        margin: 2vw 0;
+        margin: 5vw 0;
 
     }
 
@@ -422,6 +424,8 @@ h2 {
 }
 
 
+
+
 /*-- GRID ---*/
 
 .item2 {
@@ -431,5 +435,4 @@ h2 {
 
 .nested-item1 {
     min-height: 55vh;
-    margin: 0;
     padding: 0vw;
