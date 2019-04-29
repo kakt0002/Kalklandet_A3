@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Stevnsklint/stevns-klint-undervisning.css">
+    <link rel="stylesheet" href="/Stevnsklint/stevns-klint-undervisning-single.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Padauk:400,700" rel="stylesheet">
     <title></title>
@@ -22,7 +22,7 @@ HEADER START
 -->
             <div class="header">
 
-                <div class="logo"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"><img src="/Koldkrigsmuseum/billeder/logo-kold-bl%C3%A5t.svg" alt="logo"></a></div>
+                <div class="logo"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"><img src="/Koldkrigsmuseum/billeder/logo-koldkrig.svg" alt="logo"></a></div>
 
                 <nav class="burgermenu">
                     <div id="menuknap">☰</div>
@@ -37,10 +37,9 @@ HEADER START
 
                         <div class="undermenu">
                             <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Søg her..." title="Type in a category">
-
+                            <li><a class="menupunkter" href="/Koldkrigsmuseum/3.om/koldkrigs-om.html">Om den Koldekrig</a></li>
                             <li><a class="menupunkter" href="/Koldkrigsmuseum/1.praktisk/koldkrigs-praktisk.html">Praktisk information</a></li>
                             <li><a class="menupunkter" href="/Koldkrigsmuseum/2.undervisning/koldkrigs-undervisning.html">Undervisning</a></li>
-                            <li><a class="menupunkter" href="/Koldkrigsmuseum/3.om/koldkrigs-om.html">Om Den Kolde Krig</a></li>
                             <li><a class="menupunkter" href="/Koldkrigsmuseum/4.kontakt/koldkrigs-kontakt.html">Kontakt</a></li>
                         </div>
                         <div class="some-burger">
@@ -116,108 +115,64 @@ CONTENT START
 
 
 
-            <!--
-		<div class="content">
-
-
-			<main class="statiske_sider"></main>
-
-			<template>
-				<section class="statiske_sider">
-					<h2 class="titel"></h2>
-					<div class="beskrivelse"></div>
-					<img src="" class="foto">
-					<div class="pris"></div>
-					<div class="kategori"></div>
-				</section>
-			</template>
-
-
-		</div>
--->
+            <div class="indhold">
 
 
 
+                <section class="undervisningsforløb" id="singleview">
+                    <h1 class="undervisningsforløb_title"></h1>
+
+                    <p class="undervisningsforløb_tekst"></p>
+
+                    <div class="undervisningsforløb_boks">
+
+                        <h2>Information</h2>
+
+                        <h3>Fag</h3>
+                        <p class="undervisningsforløb_fag"></p>
+
+                        <h3>Målgruppe</h3>
+                        <p class="undervisningsforløb_malgruppe"></p>
+
+                    </div>
 
 
-            <div class="intro">
+                </section>
 
-                <div class="intro-tekst">
-                    <h2>Undervisning</h2>
-                    <p>Undervisningen i Kalklandet foregår i autentiske miljøer både udendørs og indenfor på vores museer. Kalklandets forskellige lokaliteter gør det til et oplagt sted at gennemføre både fler- og tværfaglige undervisningsforløb.</p>
-                </div>
-
-                <main class="undervisningsforløb"></main>
-
-                <template>
-                    <section class="undervisningsforløb">
-                        <div class="undervisningsforløb_box">
-                            <p class="undervisningsforløb_niveau"></p>
-
-                            <h1 class="undervisningsforløb_title"></h1>
-
-
-                            <button class=" undervisningsforløb_knap">››
-                            </button>
-
-
-                        </div>
-
-
-
-
-                    </section>
-                </template>
-
-
-                <template>
-                    <section class="undervisningsforløb">
-                        <div class="undervisningsforløb_box">
-                            <p class="undervisningsforløb_niveau"></p>
-                            <a href="/Koldkrigsmuseum/2.undervisning/koldkrigs-undervisning-single.html">
-                                <h1 class="undervisningsforløb_title"></h1>
-                            </a>
-
-
-                            <button class=" undervisningsforløb_knap">››
-                            </button>
-
-
-                        </div>
-                    </section>
-                </template>
 
             </div>
 
-        </div>
-
-        <div class="footer">
-            <div class="logo-footer"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/logo-koldkrig-footer.svg" alt="logo"></a></div>
-            <p>Korsnæbsvej 60 • 4673 Rødvig • Stevnsfort@oesm.dk
-                • +45 56 50 28 06 </p>
-            <p>Åbent alle dage kl. 10-17</p>
-            <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
-
-        </div>
 
 
 
-
-    </div>
-
-
-    <!--
+            <!--
 CONTENT SLUT
 -->
 
 
+            <div class="footer">
+                <div class="logo-footer"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/logo-koldkrig-footer.svg" alt="logo"></a></div>
+                <p>Korsnæbsvej 60 • 4673 Rødvig • Stevnsfort@oesm.dk
+                    • +45 56 50 28 06 </p>
+                <p>Åbent alle dage kl. 10-17</p>
+                <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
+
+            </div>
+
+
+        </div>
 
 
 
 
 
-    <script src="stevns-klint-undervisning.js"></script>
+
+
+
+        <script src="/Stevnsklint/stevns-klint-undervisning-single.js"></script>
+
+    </div>
 
 
 </body>
