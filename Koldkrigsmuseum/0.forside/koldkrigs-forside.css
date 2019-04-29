@@ -375,10 +375,17 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
+<<<<<<< HEAD
 	position: relative;
 	height: 5vh;
 	margin-left: 32%;
 	margin-top: 1em;
+=======
+    position: relative;
+    height: 5vh;
+    margin-left: 32%;
+    margin-top: 2em;
+>>>>>>> origin/master
 }
 
 
