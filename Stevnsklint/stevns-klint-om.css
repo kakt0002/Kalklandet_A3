@@ -588,10 +588,7 @@ body {
 
 
 
-    .tekst {
-        margin: 175px 200px 30px 270px;
 
-    }
 
     .om_titel {
         margin-top: 0vw;
@@ -600,7 +597,7 @@ body {
         text-transform: uppercase;
         font-family: 'limestone', sans-serif;
         line-height: 7vh;
-        border-bottom: 5px solid #38728C;
+        border-bottom: 5px solid #3482A9;
         width: 290px;
     }
 
