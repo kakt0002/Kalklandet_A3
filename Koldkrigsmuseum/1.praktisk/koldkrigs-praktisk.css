@@ -290,6 +290,7 @@ body {
 .find_vej {
     padding: 1em;
     min-height: 1em;
+
 }
 
 .praktisk_info h2 {
@@ -589,6 +590,7 @@ body {
         padding: 1em;
         height: 12em;
         width: 22em;
+        margin-left: 7px;
     }
 
 
