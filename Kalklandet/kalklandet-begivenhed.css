@@ -37,7 +37,7 @@ h1 {
 
 
     line-height: 7vh;
-    border-bottom: 5px solid #38728C;
+    border-bottom: 5px solid rgb(254, 100, 0);
     color: #3e474a;
     font-family: 'limestoneregular';
     font-weight: 600;
@@ -375,6 +375,7 @@ h2 {
     }
 
 
+
     .dato {
         color: #3e474a;
         font-family: 'Assistant', sans-serif;
@@ -392,7 +393,7 @@ h2 {
 
 
         line-height: 7vh;
-        border-bottom: 5px solid #38728C;
+        border-bottom: 5px solid rgb(254, 100, 0);
         color: #3e474a;
         font-family: 'limestoneregular';
         font-weight: 600;
