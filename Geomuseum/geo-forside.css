@@ -236,7 +236,6 @@ body {
 	box-shadow: 1px 1px 4px #506c17;
 }
 
-
 #menuknap {
 	display: inline-block;
 	position: fixed;
@@ -376,12 +375,13 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
+
 	position: relative;
 	height: 5vh;
 	margin-left: 32%;
-	margin-top: 1em;
-}
+	margin-top: 2em;
 
+}
 
 
 .footer p {
