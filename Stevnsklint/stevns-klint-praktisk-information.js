@@ -32,7 +32,7 @@ function down() {
 
 }
 
-
+start();
 
 function start() {
     async function hentJson() {
