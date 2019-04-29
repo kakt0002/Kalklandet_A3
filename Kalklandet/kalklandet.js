@@ -148,6 +148,6 @@
 
             }
 
-            hentJson3();
+            //            hentJson3();
 
         }
