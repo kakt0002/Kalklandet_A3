@@ -5,10 +5,69 @@ body {
 
 }
 
-p {
-    font-family: 'Arial', 'Helvetica Neue', 'Helvetica, sans-serif;
 
+
+/*---- INDHOLD ----*/
+
+
+
+.indhold {
+
+    margin: 5vw;
 }
+
+
+
+.dato {
+    color: #3e474a;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.titel h1 {}
+
+h1 {
+
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+
+    line-height: 7vh;
+    border-bottom: 5px solid rgb(254, 100, 0);
+    color: #3e474a;
+    font-family: 'limestoneregular';
+    font-weight: 600;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+
+.tekst {
+
+    margin-top: 10vw;
+
+    color: #3e474a;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.foto {
+    width: 100vw;
+    text-align: center;
+    margin-top: 15vw;
+}
+
+
+
+
+
 
 /*--------- FONT ----------*/
 
@@ -53,6 +112,7 @@ p {
 }
 
 /* ------ FONT SLUT ------*/
+
 
 
 /* -------- HEADER --------*/
@@ -142,6 +202,8 @@ h2 {
 }
 
 
+
+
 @media only screen and (min-width: 700px) {
 
     .menu {
@@ -182,13 +244,12 @@ h2 {
 .item1 {
 
     height: 10vh;
-    background-color: lightgray;
+    background-color: rosybrown;
     z-index: 10;
 }
 
 .item2 {
     min-height: 53vh;
-    background-color: rgb(253, 242, 220);
     padding: 3rem 1rem 2rem 1rem;
 }
 
@@ -199,15 +260,13 @@ h2 {
 }
 
 .nested-item1 {
-    background-color: rgb(240, 240, 240);
+
     min-height: 55vh;
     margin: 2vh 2vw 2vh 2vw;
     padding: 1vw;
 }
 
 .nested-item2 {
-    background-image: url(/Kalklandet/tank.jpg);
-    background-position: center;
     min-height: 55vh;
     margin: 2vh 2vw 2vh 2vw;
     padding: 1vw;
@@ -235,6 +294,14 @@ h2 {
 }
 
 
+/*---- INDHOLD ----*/
+
+.foto {
+    width: 100vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
 
 
 
@@ -247,9 +314,9 @@ h2 {
 
 /*DESKTOP*/
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
 
-    .grid-container {
+    .grid-container_kontakt {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
@@ -257,20 +324,20 @@ h2 {
     }
 
 
-    .item1 {
+    .item1_kontakt {
         grid-column: 1/3;
         height: 10vh;
         background-color: lightgray;
 
     }
 
-    .item2 {
+    .item2_kontakt {
         grid-column: 1/3;
         min-height: 53vh;
     }
 
 
-    .item9 {
+    .item9_kontakt {
         grid-column: 1/3;
         height: 10vh;
         background-color: #8b8b8b
@@ -283,18 +350,90 @@ h2 {
     }
 
     .nested-item1 {
-        background-color: rgb(240, 240, 240);
-        min-height: 55vh;
 
+        min-height: 55vh;
         margin: 2vh 2vw 2vh 10vw;
         padding: 1vw;
     }
 
+
     .nested-item2 {
+
         min-height: 55vh;
         margin: 2vh 10vw 2vh 2vw;
-        /*        padding: 1vw;*/
+        padding: 1vw;
+    }
+
+    /*---- INDHOLD ----*/
+
+
+
+
+    .indhold {
+        margin: 5vw 0;
+
     }
 
 
+
+    .dato {
+        color: #3e474a;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    .titel h1 {}
+
+    h1 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+
+
+        line-height: 7vh;
+        border-bottom: 5px solid rgb(254, 100, 0);
+        color: #3e474a;
+        font-family: 'limestoneregular';
+        font-weight: 600;
+        font-size: 38px;
+        text-transform: uppercase;
+    }
+
+
+    .tekst {
+        margin-top: 2vw;
+
+        color: #3e474a;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    .foto {
+        width: 40vw;
+        text-align: center;
+        margin-top: 8vw;
+    }
+
+
+
+
 }
+
+
+
+
+/*-- GRID ---*/
+
+.item2 {
+    padding: 0;
+}
+
+
+.nested-item1 {
+    min-height: 55vh;
+    padding: 0vw;
