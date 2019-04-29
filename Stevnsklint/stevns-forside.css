@@ -128,12 +128,15 @@ body {
     left: 15px;
 }
 
-.pil {
-    position: relative;
-    left: 50%;
-    animation: bouncing 1s infinite ease-in-out;
-}
 
+
+.pilparent {
+    position: relative;
+    top: 15vw;
+    left: 30vw;
+    animation: bouncing 1s infinite ease-in-out;
+
+}
 
 
 @keyframes bouncing {
