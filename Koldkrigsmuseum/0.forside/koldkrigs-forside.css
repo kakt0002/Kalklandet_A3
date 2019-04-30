@@ -551,6 +551,12 @@ margin-top: 2em;
 
     }
 
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+	}
+
 
     .fa-facebook {
         margin-left: 47%;
