@@ -17,17 +17,15 @@ function toggleMenu() {
         //menuen er nu skjult - ændr menuknap til lll
         document.querySelector("#menuknap").textContent = "☰";
         document.querySelector(".logo").classList.remove("hidden");
-        document.querySelector("#basic_info").classList.remove("hidden");
-        document.querySelector(".parent_pil").classList.remove("hidden");
-        document.querySelector("#laes_mere").classList.remove("hidden");
+        document.querySelector(".indhold").classList.remove("hidden");
+        document.querySelector(".indhold2").classList.remove("hidden");
         document.querySelector(".footer").classList.remove("hidden");
     } else {
         //menuen er nu vist - ændr menuknap til x
         document.querySelector("#menuknap").innerHTML = "&times";
         document.querySelector(".logo").classList.add("hidden");
-        document.querySelector("#basic_info").classList.add("hidden");
-        document.querySelector(".parent_pil").classList.add("hidden");
-        document.querySelector("#laes_mere").classList.add("hidden");
+        document.querySelector(".indhold").classList.add("hidden");
+        document.querySelector(".indhold2").classList.add("hidden");
         document.querySelector(".footer").classList.add("hidden");
     }
 }

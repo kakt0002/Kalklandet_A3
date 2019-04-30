@@ -17,21 +17,16 @@ function toggleMenu() {
         //menuen er nu skjult - ændr menuknap til lll
         document.querySelector("#menuknap").textContent = "☰";
         document.querySelector(".logo").classList.remove("hidden");
-        document.querySelector("#basic_info").classList.remove("hidden");
-        document.querySelector(".parent_pil").classList.remove("hidden");
-        document.querySelector("#laes_mere").classList.remove("hidden");
+        document.querySelector("#indhold").classList.remove("hidden");
         document.querySelector(".footer").classList.remove("hidden");
     } else {
         //menuen er nu vist - ændr menuknap til x
         document.querySelector("#menuknap").innerHTML = "&times";
         document.querySelector(".logo").classList.add("hidden");
-        document.querySelector("#basic_info").classList.add("hidden");
-        document.querySelector(".parent_pil").classList.add("hidden");
-        document.querySelector("#laes_mere").classList.add("hidden");
+        document.querySelector("#indhold").classList.add("hidden");
         document.querySelector(".footer").classList.add("hidden");
     }
 }
-
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -93,8 +88,6 @@ function start() {
     hentJson();
 
 
-
-
     async function hentJson3() {
 
         console.log("hent json 3");
@@ -112,13 +105,9 @@ function start() {
     function visIndhold3() {
         console.log("VIS TEKST ÅBNINGSTIDER");
 
-
         document.querySelector(".find_vej h2").innerHTML = indhold3.title.rendered;
         document.querySelector(".find_vej p").innerHTML = indhold3.content.rendered;
-
-
     }
 
     hentJson3();
-
 }
