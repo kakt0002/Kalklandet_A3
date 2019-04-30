@@ -136,6 +136,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
+    width: 15rem;
 }
 
 .pil {
@@ -551,11 +552,11 @@ margin-top: 2em;
 
     }
 
-	.logo-footer img {
-		width: 150px;
-		left: 20px;
-		z-index: 2;
-	}
+    .logo-footer img {
+        width: 150px;
+        left: 20px;
+        z-index: 2;
+    }
 
 
     .fa-facebook {
