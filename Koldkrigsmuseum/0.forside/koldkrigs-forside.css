@@ -132,38 +132,29 @@ body {
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
 .logo img {
-<<<<<<< HEAD
 	position: absolute;
 	height: auto;
 	top: 18px;
 	left: 15px;
 }
 
-.pil-parent {
+
+.parent_pil {
 	position: absolute;
-=======
-    position: absolute;
-    height: auto;
-    top: 18px;
-    left: 15px;
-    width: 15rem;
->>>>>>> origin/master
+	top: 400px;
+	left: 50%;
 }
 
 .pil {
-	left: 52%;
+	position: relative;
 
-
-
+	animation: bounce 1s infinite ease-in-out;
 }
 
-.bouncing {
-	animation: bounce 0.5s;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-}
 
-@keyframes bouncing {
+
+@keyframes bounce {
+
 	0% {
 		bottom: 0;
 	}
@@ -177,6 +168,12 @@ body {
 	}
 }
 
+
+
+.bounce {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+}
 
 /***************************************************** HEADER START ********************************************************/
 
@@ -563,11 +560,11 @@ body {
 
 	}
 
-    .logo-footer img {
-        width: 150px;
-        left: 20px;
-        z-index: 2;
-    }
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+	}
 
 
 	.fa-facebook {
@@ -618,88 +615,44 @@ body {
 	}
 
 
-<<<<<<< HEAD
-    /****** LOGOER_SIDEBAR billeder*****/
-    #btn1 {
-        top: 150px;
-        background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-=======
+
 	#btn1 {
 		top: 150px;
-		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
->>>>>>> origin/master
-
-
 	}
 
-<<<<<<< HEAD
-    #btn2 {
-        top: 265px;
-        background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
-
-    #btn3 {
-        top: 380px;
-        background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-=======
 	#btn2 {
 		top: 265px;
-		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
 	}
+
 
 	#btn3 {
 		top: 380px;
-		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
->>>>>>> origin/master
-
 	}
 
-<<<<<<< HEAD
-    #btn4 {
-        top: 495px;
-        background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-=======
 	#btn4 {
 		top: 495px;
-		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
->>>>>>> origin/master
-
-
 	}
 
-<<<<<<< HEAD
-    #btn5 {
-        top: 610px;
-        background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-=======
 	#btn5 {
 		top: 610px;
-		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
->>>>>>> origin/master
-
 	}
 
-    /****** LOGOER_SIDEBAR billeder SLUT*****/
+	/****** LOGOER_SIDEBAR billeder SLUT*****/
 
 
 	div.button {
@@ -794,10 +747,13 @@ body {
 	}
 
 
-	.pil {
-		top: 200px;
+	.parent_pil {
+		position: absolute;
+		top: 590px;
 		left: 50%;
 	}
+
+
 
 
 
