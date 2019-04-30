@@ -188,6 +188,11 @@ body {
     z-index: 10;
 }
 
+.logoboxe {
+    background-color: #fe6400;
+    height: 100vh;
+}
+
 #menuknap {
     cursor: pointer;
 }

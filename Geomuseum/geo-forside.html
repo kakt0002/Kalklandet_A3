@@ -41,7 +41,7 @@ HEADER START
                             </div>
 
                             <div class="accordion" id="koldkrig_logo"></div>
-                            <div class="panel panel_open">
+                            <div class="panel">
                                 <ul class="open_koldkrig">
                                     <li><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html">Forside</a></li>
                                     <li><a href="/Koldkrigsmuseum/1.praktisk/koldkrigs-praktisk.html">Praktisk information</a></li>
@@ -63,7 +63,7 @@ HEADER START
                             </div>
 
                             <div class="accordion" id="geo_logo"></div>
-                            <div class="panel">
+                            <div class="panel panel_open">
                                 <ul class="open_geo">
                                     <li><a href="/Geomuseum/geo-forside.html">Forside</a></li>
                                     <li><a href="/Geomuseum/geo-praktisk-information.html">Praktisk information</a></li>
@@ -89,8 +89,6 @@ HEADER START
                     <li> <a href="/Geomuseum/geo-undervisning.html">Undervisning</a></li>
                     <li> <a href="/Geomuseum/geo-om.html">Om kalk og kridt</a></li>
                     <li><a href="/Geomuseum/geo-kontakt.html">Kontakt</a></li>
-
-
                 </div>
 
 
@@ -99,15 +97,13 @@ HEADER START
                         <h2>Åbent i dag Kl. 9.00 - 15.00</h2>
                         <h1>Geomuseum Faxe</h1>
                         <p>På Geomuseum Faxe kan du se den dramatiske historie om den sidste store masseuddød, der hændte for 66 millioner år siden, og få fortællingen om, hvordan livet rejste sig på ny og dannede det unikke koralrev. Du kan også gå på fossiljagt i Faxe Kalkbrud og finde dine egne 63 millioner år gamle fossiler. </p>
-
-                        <!--                        <a id="knap_laes_mere" href="koldkrigs-forside.html#laes_mere">LÆS MERE...</a>-->
                     </div>
                 </section>
+
+
                 <div class="parent_pil">
                     <a href="#laes_mere"> <img src="/Koldkrigsmuseum/billeder/pil_hvid.svg" alt="pil" class="pil"></a>
                 </div>
-
-
 
             </div>
 
@@ -119,7 +115,6 @@ HEADER SLUT
             <!--
 CONTENT START
 -->
-
 
             <div class="destop_sidebar">
                 <a href="/Kalklandet/index.html">
@@ -165,26 +160,6 @@ CONTENT START
             </div>
 
 
-            <!--
-		<div class="content">
-
-
-			<main class="statiske_sider"></main>
-
-			<template>
-				<section class="statiske_sider">
-					<h2 class="titel"></h2>
-					<div class="beskrivelse"></div>
-					<img src="" class="foto">
-					<div class="pris"></div>
-					<div class="kategori"></div>
-				</section>
-			</template>
-
-
-		</div>
--->
-
             <section id="laes_mere">
                 <div>
                     <h2>...</h2>
@@ -198,7 +173,6 @@ CONTENT START
                     </p>
                 </div>
             </section>
-
         </div>
 
         <div class="footer">
@@ -208,11 +182,7 @@ CONTENT START
             <p>Åbent mandag til fredag kl. 9-15</p>
             <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
-
         </div>
-
-
-
 
     </div>
 
@@ -221,20 +191,13 @@ CONTENT START
 CONTENT SLUT
 -->
 
-
-
-
-
-
-
     <script>
         window.addEventListener("load", sidenVises);
 
         function sidenVises() {
-            console.log("siden vises!");
+            console.log("siden vises");
             // registrer klik på menu-knap
             document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-            document.querySelector("#knap_laes_mere").addEventListener("click", down);
         }
 
         function toggleMenu() {
@@ -246,23 +209,42 @@ CONTENT SLUT
             if (erSkjult == true) {
                 //menuen er nu skjult - ændr menuknap til lll
                 document.querySelector("#menuknap").textContent = "☰";
+                document.querySelector(".logo").classList.remove("hidden");
+                document.querySelector("#basic_info").classList.remove("hidden");
+                document.querySelector(".parent_pil").classList.remove("hidden");
+                document.querySelector("#laes_mere").classList.remove("hidden");
+                document.querySelector(".footer").classList.remove("hidden");
             } else {
                 //menuen er nu vist - ændr menuknap til x
-                document.querySelector("#menuknap").textContent = "☰"
+                document.querySelector("#menuknap").innerHTML = "&times";
+                document.querySelector(".logo").classList.add("hidden");
+                document.querySelector("#basic_info").classList.add("hidden");
+                document.querySelector(".parent_pil").classList.add("hidden");
+                document.querySelector("#laes_mere").classList.add("hidden");
+                document.querySelector(".footer").classList.add("hidden");
             }
         }
 
 
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-        function down() {
-            console.log("vis læs mere");
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-            document.querySelector(".viewport").classList.remove("overflow");
-            document.querySelector("#knap_laes_mere").removeEventListener("click", down);
-
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
     </script>
-
-
 </body>
 
 </html>

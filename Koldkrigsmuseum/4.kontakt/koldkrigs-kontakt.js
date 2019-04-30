@@ -1,10 +1,9 @@
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
-    console.log("siden vises!");
+    console.log("siden vises");
     // registrer klik på menu-knap
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-    document.querySelector("#knap_laes_mere").addEventListener("click", down);
 }
 
 function toggleMenu() {
@@ -16,24 +15,41 @@ function toggleMenu() {
     if (erSkjult == true) {
         //menuen er nu skjult - ændr menuknap til lll
         document.querySelector("#menuknap").textContent = "☰";
+        document.querySelector(".logo").classList.remove("hidden");
+        document.querySelector("#basic_info").classList.remove("hidden");
+        document.querySelector(".parent_pil").classList.remove("hidden");
+        document.querySelector("#laes_mere").classList.remove("hidden");
+        document.querySelector(".footer").classList.remove("hidden");
     } else {
         //menuen er nu vist - ændr menuknap til x
-        document.querySelector("#menuknap").textContent = "☰"
+        document.querySelector("#menuknap").innerHTML = "&times";
+        document.querySelector(".logo").classList.add("hidden");
+        document.querySelector("#basic_info").classList.add("hidden");
+        document.querySelector(".parent_pil").classList.add("hidden");
+        document.querySelector("#laes_mere").classList.add("hidden");
+        document.querySelector(".footer").classList.add("hidden");
     }
 }
 
 
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-function down() {
-    console.log("vis læs mere");
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
 
-    document.querySelector("#knap_laes_mere").removeEventListener("click", down);
-    document.querySelector(".viewport").classList.remove(".overflow");
-
-}
-
-
-
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+} <
 
 
 "use strict"
@@ -60,7 +76,6 @@ async function hentJson() {
 function visKontaktInformationer() {
     console.log("VIS KONTAKTINFORMATIONER");
 
-
     document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
     document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
     document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
@@ -69,8 +84,5 @@ function visKontaktInformationer() {
     document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
     document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
 
-
     hentJson();
-
-
 }

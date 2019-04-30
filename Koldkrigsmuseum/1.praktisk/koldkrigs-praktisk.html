@@ -97,7 +97,6 @@ HEADER START
 HEADER SLUT
 -->
 
-
             <!--
 CONTENT START
 -->
@@ -194,25 +193,13 @@ CONTENT START
                         <p class="pris_0-5_guidet_tur1"></p>
                         <p></p>
                     </div>
-
-
-
                 </div>
-
-
             </section>
-
-
         </div>
-
-
-
 
         <!--
 CONTENT SLUT
 -->
-
-
         <div class="footer">
             <div class="logo-footer"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"><img src="/Koldkrigsmuseum/billeder/logo-koldkrig-footer.svg" alt="logo"></a></div>
             <p>Korsnæbsvej 60 • 4673 Rødvig • Stevnsfort@oesm.dk
@@ -222,26 +209,19 @@ CONTENT SLUT
             <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
 
         </div>
-
-
-
-
     </div>
 
 
 
-
-
     <script>
-        "use strict"
-        let indhold = [];
-        let indhold2 = [];
-        let indhold3 = [];
+        window.addEventListener("load", sidenVises);
 
-        document.addEventListener("DOMContentLoaded", start);
-        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-
-
+        function sidenVises() {
+            console.log("siden vises");
+            // registrer klik på menu-knap
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+            start();
+        }
 
         function toggleMenu() {
             console.log("Toggle menu");
@@ -252,16 +232,47 @@ CONTENT SLUT
             if (erSkjult == true) {
                 //menuen er nu skjult - ændr menuknap til lll
                 document.querySelector("#menuknap").textContent = "☰";
-                document.querySelector(".logo-footer img").classList.remove("hidden");
+                document.querySelector(".logo").classList.remove("hidden");
+                document.querySelector("#basic_info").classList.remove("hidden");
+                document.querySelector(".parent_pil").classList.remove("hidden");
+                document.querySelector("#laes_mere").classList.remove("hidden");
+                document.querySelector(".footer").classList.remove("hidden");
             } else {
                 //menuen er nu vist - ændr menuknap til x
-                document.querySelector("#menuknap").textContent = "☰"
-                document.querySelector("#menuknap").classList.add("white_farve");
-                document.querySelector(".logo-footer img").classList.add("hidden");
+                document.querySelector("#menuknap").innerHTML = "&times";
+                document.querySelector(".logo").classList.add("hidden");
+                document.querySelector("#basic_info").classList.add("hidden");
+                document.querySelector(".parent_pil").classList.add("hidden");
+                document.querySelector("#laes_mere").classList.add("hidden");
+                document.querySelector(".footer").classList.add("hidden");
             }
         }
 
 
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+
+        "use strict"
+        let indhold = [];
+        let indhold2 = [];
+        let indhold3 = [];
 
         function start() {
             async function hentJson() {
@@ -326,12 +337,9 @@ CONTENT SLUT
 
                 document.querySelector(".handicapforhold h2").innerHTML = indhold2.title.rendered;
                 document.querySelector(".handicapforhold p").innerHTML = indhold2.content.rendered;
-
-
             }
 
             hentJson2();
-
 
 
             async function hentJson3() {
@@ -354,7 +362,6 @@ CONTENT SLUT
 
                 document.querySelector(".find_vej h2").innerHTML = indhold3.title.rendered;
                 document.querySelector(".find_vej p").innerHTML = indhold3.content.rendered;
-
 
             }
 
@@ -392,15 +399,9 @@ CONTENT SLUT
                 document.querySelector(".pris_0-5_guidet_tur1").innerHTML =
                     `Pris for børn mellem 0-5 år: ` + indhold3.pris_for_0_5;
 
-
-
-
-
-
             }
 
             hentJson4();
-
         }
 
     </script>

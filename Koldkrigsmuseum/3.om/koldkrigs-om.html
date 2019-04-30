@@ -97,12 +97,9 @@ HEADER START
 HEADER SLUT
 -->
 
-
             <!--
 CONTENT START
 -->
-
-
             <div class="destop_sidebar">
                 <a href="/Kalklandet/index.html">
                     <div id="btn1" class="button">
@@ -145,17 +142,10 @@ CONTENT START
                     </div>
                 </a>
             </div>
-
-
-
-
         </div>
 
 
-
         <div class="indhold">
-
-
             <section class="tekst">
                 <h1 class="om_titel"></h1>
                 <p class="om_tekst"></p>
@@ -168,18 +158,11 @@ CONTENT START
                     <img src="/Koldkrigsmuseum/billeder/om_den_kolde_krig3.jpg">
                 </div>
             </div>
-
-
         </div>
-
-
-
-
 
         <!--
 CONTENT SLUT
 -->
-
 
         <div class="footer">
             <div class="logo-footer"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/logo-koldkrig-footer.svg" alt="logo"></a></div>
@@ -188,15 +171,8 @@ CONTENT SLUT
             <p>Åbent alle dage kl. 10-17</p>
             <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
-
         </div>
-
-
     </div>
-
-
-
-
 
 
 
@@ -204,10 +180,10 @@ CONTENT SLUT
         window.addEventListener("load", sidenVises);
 
         function sidenVises() {
-            console.log("siden vises!");
+            console.log("siden vises");
             // registrer klik på menu-knap
             document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-            document.querySelector("#knap_laes_mere").addEventListener("click", down);
+            start();
         }
 
         function toggleMenu() {
@@ -219,17 +195,44 @@ CONTENT SLUT
             if (erSkjult == true) {
                 //menuen er nu skjult - ændr menuknap til lll
                 document.querySelector("#menuknap").textContent = "☰";
+                document.querySelector(".logo").classList.remove("hidden");
+                document.querySelector("#basic_info").classList.remove("hidden");
+                document.querySelector(".parent_pil").classList.remove("hidden");
+                document.querySelector("#laes_mere").classList.remove("hidden");
+                document.querySelector(".footer").classList.remove("hidden");
             } else {
                 //menuen er nu vist - ændr menuknap til x
-                document.querySelector("#menuknap").textContent = "☰"
+                document.querySelector("#menuknap").innerHTML = "&times";
+                document.querySelector(".logo").classList.add("hidden");
+                document.querySelector("#basic_info").classList.add("hidden");
+                document.querySelector(".parent_pil").classList.add("hidden");
+                document.querySelector("#laes_mere").classList.add("hidden");
+                document.querySelector(".footer").classList.add("hidden");
             }
+        }
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
 
         "use strict"
         let indhold = [];
-
-        document.addEventListener("DOMContentLoaded", start);
-
 
         function start() {
             async function hentJson() {
@@ -249,18 +252,13 @@ CONTENT SLUT
             function visIndhold() {
                 console.log("VIS TEKST");
 
-
                 document.querySelector(".om_titel").innerHTML = indhold.title.rendered;
                 document.querySelector(".om_tekst").innerHTML = indhold.content.rendered;
-
             }
-
             hentJson();
-
         }
 
     </script>
-
 
 </body>
 

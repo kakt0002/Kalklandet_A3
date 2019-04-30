@@ -191,84 +191,60 @@ body {
 /*burgermenu start*/
 
 .hidden {
-    transform: scale(0);
+    display: none;
 }
 
-.menu {
-    position: absolute;
+.burgermenu {
+    z-index: 10;
 }
 
-#mySearch {
+.logoboxe {
+    background-color: #fe6400;
+    height: 100vh;
+}
+
+#menuknap {
+    cursor: pointer;
+}
+
+#koldkrig_logo {
+    background-image: url(/billeder_logo/koldkrig_menu_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
-    font-size: 0.5em;
-    padding: 8px;
-    border: 1px solid #ddd;
-    color: #387288;
-    margin-bottom: 20px;
+    height: 22vw;
 }
 
-#sidebox11 {
-    background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar.svg);
+#stevns_logo {
+    background-image: url(/billeder_logo/stevns_klint_menu_logo.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
-    top: 2em;
-
-    height: 16vh;
-    width: 8em;
-    box-shadow: 1px 1px 4px #255060;
+    width: 100%;
+    height: 22vw;
 }
 
-#sidebox1 {
-    background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar.svg);
+#geo_logo {
+    background-image: url(/billeder_logo/geo_museum_menu_logo.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
-    top: 10em;
-
-    height: 16vh;
-    width: 8em;
-    background-color: #387288;
-
+    width: 100%;
+    height: 22vw;
 }
 
-#sidebox2 {
-    background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar.svg);
+#nyeretid_logo {
+    background-image: url(/billeder_logo/nyere_tid_menu_logo.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
-    top: 18em;
-
-    height: 16vh;
-    width: 8em;
-    background-color: #0082AD;
-    box-shadow: 1px 1px 4px #016383;
+    width: 100%;
+    height: 22vw;
 }
 
-#sidebox3 {
-    background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar.svg);
+#kalkland_logo {
+    background-image: url(/billeder_logo/kalklandet_menu_logo.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
-    top: 26em;
-
-    height: 16vh;
-    width: 8em;
-    background-color: #19A6A2;
-    box-shadow: 1px 1px 4px #0c6966;
-}
-
-#sidebox4 {
-    background-image: url(/Koldkrigsmuseum/billeder/nyere_kultur-sidebar.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 34em;
-
-    height: 16vh;
-    width: 8em;
-    background-color: #88B52D;
-    box-shadow: 1px 1px 4px #506c17;
+    width: 100%;
+    height: 22vw;
 }
 
 
@@ -278,62 +254,112 @@ body {
     right: 0em;
     font-size: 1.8em;
     top: 0em;
-    padding: 0.7em;
-    padding-top: 0.3em;
+    padding: 0.9em;
+    padding-top: 0.8em;
     color: white;
     z-index: 2;
+
+}
+
+/*--- FARVE TIL ÅBEN MENU ---*/
+
+ul li {
+    padding: 0.4em;
+}
+
+ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+ul.open_koldkrig {
+    background-color: #537689;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.open_stevns {
+    background-color: #2D7B9F;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.open_geo {
+    background-color: #549996;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+.open_nyeretid {
+    background-color: #95A94E;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.open_kalklandet {
+    background-color: #fe6400;
+    list-style-type: none;
+    margin: 0;
+}
+
+*/ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+}
+
+li:hover {
     cursor: pointer;
-
-}
-
-#menu {
-    position: fixed;
-    background-color: #38728C;
-    top: -1em;
-    list-style-type: None;
-    width: 100%;
-    height: 100%;
-    box-shadow: 1px 1px 3px #6d5050;
-    font-family: limestone;
-    z-index: 1;
-
-}
-
-.undermenu {
-    position: absolute;
-    top: 8em;
-    right: 3em;
-    margin: 2px;
-    text-align: right;
 }
 
 #menu a {
-    position: relative;
     text-decoration: none;
     color: white;
+    line-height: 2.4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'limestoneregular';
 }
 
-.menupunkter {
-
-    line-height: 6.5;
-    font-size: 0.8em;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    cursor: pointer;
+    transition: 1s;
 }
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
-.some-burger {
-    position: relative;
-    top: 40.5em;
-    left: 5.8em;
+.active,
+.accordion:hover {
+    opacity: 1;
+    /*    ELLER SCALE? KAKTUS DU HAR KODE TIL DET?*/
 }
 
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    display: none;
+    /*    overflow: hidden;*/
+}
 
+/*Sættes på den side/logo-billede man er på*/
+.panel_open {
+    display: block;
+}
 
-/*Desktop menu*/
+/** burgermenu  slut**/
+
 
 .mainnav {
     display: none;
 }
-
 
 /***************************************************** HEADER SLUT ********************************************************/
 
