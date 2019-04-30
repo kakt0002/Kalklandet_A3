@@ -760,9 +760,15 @@ h2 {
 
 @media only screen and (min-width: 700px) {
 
+<<<<<<< HEAD
 	.grid-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+=======
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+>>>>>>> origin/master
 
 		grid-gap: 5px;
 	}
@@ -786,12 +792,20 @@ h2 {
 	/***** Attraktioner start ****/
 
 
+<<<<<<< HEAD
 	.item3 {
 		background-image: url(billeder/koldkrig_mobilfoto.png);
 		min-height: 13.4vw;
+=======
+    .item3 {
+        background-image: url(billeder/koldkrig_mobilfoto.png);
+        min-height: 26.8vw;
+
+>>>>>>> origin/master
 
 	}
 
+<<<<<<< HEAD
 	.item4 {
 		background-image: url(billeder/stevnsklint_mobilfoto.png);
 		min-height: 13.4vw;
@@ -807,6 +821,23 @@ h2 {
 		background-image: url(billeder/nyere_kultur_mobilfoto.png);
 		min-height: 13.4vw;
 	}
+=======
+    .item4 {
+        background-image: url(billeder/stevnsklint_mobilfoto.png);
+        min-height: 26.8vw;
+    }
+
+    .item5 {
+        background-image: url(billeder/geo_faxe_mobilfoto.png);
+        min-height: 26.8vw;
+
+    }
+
+    .item6 {
+        background-image: url(billeder/nyere_kultur_mobilfoto.png);
+        min-height: 26.8vw;
+    }
+>>>>>>> origin/master
 
 
 	/***** Attraktioner slut ****/
