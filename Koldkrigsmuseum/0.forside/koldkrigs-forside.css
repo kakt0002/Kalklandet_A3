@@ -673,7 +673,7 @@ li:hover {
     #btn5 {
         top: 610px;
         background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
-        background-size: cover;
+        background-size: 100%;
         box-shadow: 1px 1px 4px #4d4d4d;
     }
 
@@ -685,8 +685,8 @@ li:hover {
         box-sizing: border-box;
         border: none;
 
-        width: 175px;
-        height: 109px;
+        width: 185px;
+        height: 115px;
 
         position: absolute;
         left: -65px;
@@ -706,11 +706,20 @@ li:hover {
     }
 
     .desktop_sidebar {
+        position: absolute;
+        /*        background-color: aqua;*/
+        /*        top: 300px;*/
+        z-index: 11;
+    }
+
+    /*
+    .desktop_sidebar {
         position: relative;
         background-color: aqua;
         top: 300px;
         z-index: 111;
     }
+*/
 
     .rotate {
         transform: rotate(270deg);
