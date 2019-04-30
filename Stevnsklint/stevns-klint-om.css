@@ -344,15 +344,11 @@ body {
 }
 
 .footer p:nth-child(2) {
-<<<<<<< HEAD
+
 	font-family: 'Assistant', sans-serif;
 	font-weight: 100;
-	font-size: 0.6em;
-=======
-    font-family: 'Assistant', sans-serif;
-    font-weight: 100;
-    font-size: 0.9em;
->>>>>>> origin/master
+	font-size: 0.9em;
+
 }
 
 .footer p:nth-child(3) {
@@ -469,86 +465,41 @@ body {
 		text-decoration: none;
 	}
 
-<<<<<<< HEAD
 	#btn1 {
 		top: 150px;
-		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
-
-
 	}
 
 	#btn2 {
 		top: 265px;
-		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
 	}
 
+
 	#btn3 {
 		top: 380px;
-		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
-
 	}
 
 	#btn4 {
 		top: 495px;
-		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
+		background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
-
-
 	}
 
 	#btn5 {
 		top: 610px;
-		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
 		background-size: cover;
 		box-shadow: 1px 1px 4px #4d4d4d;
-
 	}
-=======
-    #btn1 {
-        top: 150px;
-        background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
-
-    #btn2 {
-        top: 265px;
-        background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
-
-
-    #btn3 {
-        top: 380px;
-        background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
-
-    #btn4 {
-        top: 495px;
-        background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
-
-    #btn5 {
-        top: 610px;
-        background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
->>>>>>> origin/master
-
-    /****** LOGOER_SIDEBAR billeder SLUT*****/
 
 
 
