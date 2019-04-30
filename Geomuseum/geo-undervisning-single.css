@@ -381,7 +381,9 @@ li:hover {
     margin-top: 1em;
 }
 
-
+.footer {
+    margin-top: 4rem;
+}
 
 .footer p {
     font-family: 'Assistant', sans-serif;
