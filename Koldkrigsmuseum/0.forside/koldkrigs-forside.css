@@ -24,6 +24,7 @@ body {
 
 
 
+
 @font-face {
     font-family: 'limestonebold';
     src: url('../LimeStone_font/limestone_bold-webfont.woff2') format('woff2'),
@@ -59,6 +60,7 @@ body {
     font-style: normal;
 
 }
+
 
 /* ------ FONT SLUT ------*/
 
@@ -284,7 +286,7 @@ body {
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 3px #6d5050;
-    font-family: limestone;
+    font-family: 'limestoneregular';
     z-index: 1;
 
 }
@@ -350,8 +352,9 @@ body {
     font-weight: 800;
     font-size: 35px;
     line-height: 1;
-    font-family: limestone;
+    font-family: 'limestoneregular', sans-serif;
     text-transform: uppercase;
+
 }
 
 #basic_info p {
@@ -492,7 +495,7 @@ body {
     #basic_info h1 {
         font-weight: 800;
         font-size: 2.5rem;
-        font-family: limestone;
+        font-family: 'limestoneregular';
         text-transform: uppercase;
         margin-bottom: 2px;
     }
@@ -603,6 +606,12 @@ body {
     #basic_info h1 {
         margin: 0;
         font-size: 2.8rem;
+
+        font-weight: 800;
+        font-size: 2.5rem;
+        font-family: 'limestoneregular';
+        text-transform: uppercase;
+        margin-bottom: 2px;
     }
 
     #basic_info p {
