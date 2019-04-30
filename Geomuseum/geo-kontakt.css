@@ -411,6 +411,7 @@ body {
 
 		line-height: 7vh;
 		width: 290px;
+		border-bottom: 5px solid #00A5A3;
 	}
 
 	.kontakt_tekst p {
@@ -475,7 +476,7 @@ body {
 	}
 
 	.logo-footer img {
-		margin-left: 44%;
+		margin-left: 46%;
 
 	}
 
