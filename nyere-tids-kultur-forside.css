@@ -129,14 +129,23 @@ body {
     width: 16rem;
 }
 
-.pil {
-    position: relative;
-    left: 52%;
 
-    animation: bouncing 1s infinite ease-in-out;
+.parent_pil {
+    position: absolute;
+    top: 400px;
+    left: 50%;
 }
 
-@keyframes bouncing {
+.pil {
+    position: relative;
+
+    animation: bounce 1s infinite ease-in-out;
+}
+
+
+
+@keyframes bounce {
+
     0% {
         bottom: 0;
     }
@@ -150,6 +159,12 @@ body {
     }
 }
 
+
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
 
 /***************************************************** HEADER START ********************************************************/
 
@@ -398,7 +413,7 @@ body {
 .footer p:nth-child(2) {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
-    font-size: 0.6em;
+    font-size: 0.9em;
 }
 
 .footer p:nth-child(3) {
@@ -597,14 +612,12 @@ body {
     }
 
 
-    /****** LOGOER_SIDEBAR billeder*****/
+
     #btn1 {
         top: 150px;
         background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-
-
     }
 
     #btn2 {
@@ -614,12 +627,12 @@ body {
         box-shadow: 1px 1px 4px #4d4d4d;
     }
 
+
     #btn3 {
         top: 380px;
         background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-
     }
 
     #btn4 {
@@ -627,8 +640,6 @@ body {
         background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-
-
     }
 
     #btn5 {
@@ -636,7 +647,6 @@ body {
         background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
         background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
-
     }
 
     /****** LOGOER_SIDEBAR billeder SLUT*****/
@@ -724,12 +734,18 @@ body {
         width: 700px;
     }
 
-
-    .pil {
-        left: 42%;
+    #basic_info {
+        left: 28.5vw;
+        top: 380px;
     }
 
 
+
+    .parent_pil {
+        position: absolute;
+        top: 590px;
+        left: 50%;
+    }
 
 
 }

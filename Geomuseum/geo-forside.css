@@ -611,51 +611,46 @@ body {
     }
 
 
+
+
     #btn1 {
         top: 150px;
-        background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
+        background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
-
-
+        box-shadow: 1px 1px 4px #4d4d4d;
     }
 
     #btn2 {
         top: 265px;
-        background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
+        background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
+        box-shadow: 1px 1px 4px #4d4d4d;
     }
+
 
     #btn3 {
         top: 380px;
-        background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
+        background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
-
+        box-shadow: 1px 1px 4px #4d4d4d;
     }
 
     #btn4 {
         top: 495px;
-        background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
+        background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
-
-
+        box-shadow: 1px 1px 4px #4d4d4d;
     }
 
     #btn5 {
         top: 610px;
-        background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+        background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
         background-size: cover;
-        box-shadow: 1px 1px 4px #9a9a9a;
-
+        box-shadow: 1px 1px 4px #4d4d4d;
     }
-
 
     div.button {
         display: flex;
-
         box-sizing: border-box;
 
         border: none;
@@ -730,11 +725,12 @@ body {
 
     }
 
+
+
     #basic_info {
         left: 28.5vw;
-        top: 380px;
+        top: 340px;
     }
-
 
     #laes_mere {
         color: #e5e1e1;
@@ -745,14 +741,12 @@ body {
         width: 700px;
     }
 
+
+
     .parent_pil {
         position: absolute;
-        top: 210px;
-        left: 35%;
-    }
-
-    .pil {
-        left: 42%;
+        top: 590px;
+        left: 50%;
     }
 
 
