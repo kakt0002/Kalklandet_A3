@@ -673,7 +673,7 @@ li:hover {
     #btn5 {
         top: 610px;
         background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
-        background-size: 100%;
+        background-size: cover;
         box-shadow: 1px 1px 4px #4d4d4d;
     }
 
