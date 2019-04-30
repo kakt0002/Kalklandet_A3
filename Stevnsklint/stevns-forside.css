@@ -4,7 +4,8 @@ html {
 
 body {
 	margin: 0;
-	background-color: #436976;;
+	background-color: #436976;
+	;
 }
 
 .hide {
@@ -448,8 +449,7 @@ body {
 @media only screen and (min-width: 700px) {
 
 
-<<<<<<< HEAD
-	.logo-footer img {
+	<<<<<<< HEAD .logo-footer img {
 		margin-left: 40%;
 	}
 
@@ -526,84 +526,6 @@ body {
 	#laes_mere p {
 		font-size: 1rem;
 	}
-=======
-    .logo-footer img {
-        margin-left: 40%;
-    }
-
-    .fa-facebook {
-        margin-left: 47%;
-    }
-
-    .some-burger {
-        left: 18.5em;
-    }
-
-
-    #basic_info {
-        color: white;
-        left: 8vh;
-        font-family: 'Assistant', sans-serif;
-        top: 20rem;
-        line-height: 4vh;
-        max-width: 650px;
-    }
-
-    #basic_info h2 {
-        font-weight: 100;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-family: 'Assistant', sans-serif;
-        line-height: 7vh;
-    }
-
-    #basic_info h1 {
-        font-weight: 800;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-    }
-
-    #basic_info p {
-        font-weight: 100;
-        font-size: 1rem;
-        line-height: 3.5vh;
-    }
-
-    #basic_info a {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 2vh;
-        color: white;
-        text-decoration: none;
-    }
-
-    #basic_info a:hover {
-        color: #d9d6d6;
-
-    }
-
-
-    #laes_mere {
-        color: #e5e1e1;
-        font-weight: 100;
-        font-family: 'Assistant', sans-serif;
-        padding-left: 12vw;
-        padding-bottom: 7vw;
-        width: 600px;
-    }
-
-    #laes_mere h2 {
-        font-size: 4rem;
-        margin: 0;
-        padding: 0;
-        left: -0.05em;
-    }
-
-    #laes_mere p {
-        font-size: 1rem;
-    }
->>>>>>> origin/master
 
 }
 
@@ -627,6 +549,13 @@ body {
 		margin-left: 44%;
 
 	}
+
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+	}
+
 
 
 	.fa-facebook {
