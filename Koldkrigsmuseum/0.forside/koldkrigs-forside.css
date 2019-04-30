@@ -75,7 +75,7 @@ body {
 
 .header {
     grid-column: 1/5;
-    background-image: url(/Koldkrigsmuseum/billeder/koldkrigtunnel.jpg);
+    background-image: url(/Koldkrigsmuseum/billeder/koldkrigtunnel2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 180vh;
@@ -373,20 +373,17 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-<<<<<<< HEAD
-    position: relative;
+    <<<<<<< HEAD position: relative;
     height: 5vh;
     margin-left: 32%;
     margin-top: 2em;
 }
-=======
 
-	position: relative;
-	height: 5vh;
-	margin-left: 32%;
-	margin-top: 2em;
->>>>>>> origin/master
-
+=======position: relative;
+height: 5vh;
+margin-left: 32%;
+margin-top: 2em;
+> > > > > > > origin/master
 }
 
 
