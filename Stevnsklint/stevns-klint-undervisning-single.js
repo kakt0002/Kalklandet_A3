@@ -73,7 +73,7 @@ function start() {
 
 
         document.querySelector(".undervisningsforløb_title").innerHTML = undervisningForlob.titel;
-        document.querySelector(".undervisningsforløb_tekst").innerHTML = undervisningForlob.tekst;
+        document.querySelector(".undervisningsforløb_tekst").innerHTML = undervisningForlob.content.rendered;
 
         document.querySelector(".undervisningsforløb_fag").innerHTML = undervisningForlob.fag;
 
