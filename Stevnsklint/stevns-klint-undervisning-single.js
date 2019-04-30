@@ -75,9 +75,9 @@ function start() {
         document.querySelector(".undervisningsforløb_title").innerHTML = undervisningForlob.titel;
         document.querySelector(".undervisningsforløb_tekst").innerHTML = undervisningForlob.content.rendered;
 
-        document.querySelector(".undervisningsforløb_fag").innerHTML = undervisningForlob.fag;
+        document.querySelector(".undervisningsforløb_varighed").innerHTML = undervisningForlob.varighed;
 
-        document.querySelector(".undervisningsforløb_malgruppe").innerHTML = undervisningForlob.maalgruppe;
+        document.querySelector(".undervisningsforløb_antal").innerHTML = undervisningForlob.antal_elever;
 
     }
 

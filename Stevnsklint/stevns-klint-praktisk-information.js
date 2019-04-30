@@ -53,7 +53,7 @@ function start() {
         console.log("VIS TEKST");
 
 
-        document.querySelector(".pris_tekst_guidet_tur").innerHTML = indhold.tekst;
+        document.querySelector(".pris_tekst_guidet_tur").innerHTML = indhold.content.rendered;
 
         document.querySelector(".pris_voksne_guidet_tur").innerHTML = `Pris for voksne: ` + indhold.pris_for_voksne;
 
