@@ -4,11 +4,9 @@ body {
     margin: 0;
 }
 
-/*
 .hidden {
-    display:none;
+    display: none;
 }
-*/
 
 #koldkrig_logo {
     background-image: url(/billeder_logo/koldkrig_menu_logo.svg);
