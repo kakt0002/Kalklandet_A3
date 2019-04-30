@@ -762,7 +762,7 @@ h2 {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
         grid-gap: 5px;
     }
@@ -788,24 +788,25 @@ h2 {
 
     .item3 {
         background-image: url(billeder/koldkrig_mobilfoto.png);
-        min-height: 13.4vw;
+        min-height: 26.8vw;
+
 
     }
 
     .item4 {
         background-image: url(billeder/stevnsklint_mobilfoto.png);
-        min-height: 13.4vw;
+        min-height: 26.8vw;
     }
 
     .item5 {
         background-image: url(billeder/geo_faxe_mobilfoto.png);
-        min-height: 13.4vw;
-        background-position: center;
+        min-height: 26.8vw;
+
     }
 
     .item6 {
         background-image: url(billeder/nyere_kultur_mobilfoto.png);
-        min-height: 13.4vw;
+        min-height: 26.8vw;
     }
 
 
