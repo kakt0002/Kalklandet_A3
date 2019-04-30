@@ -730,10 +730,10 @@ h2 {
 
 .dato {
 
-    width: 100px;
-    height: 20vh;
+    width: 170px;
     background-color: #ffffff;
     text-align: center;
+    padding: 5px;
 }
 
 .dato p {
