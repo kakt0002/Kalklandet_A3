@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #8C8A87;
+    background-color: #9BB055;
 }
 
 .hide {
@@ -574,7 +574,7 @@ body {
     }
 
     .mainnav a:hover {
-        color: #d9d6d6;
+        color: #9BB055;
     }
 
     #basic_info h1 {
