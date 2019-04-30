@@ -75,11 +75,56 @@ body {
 
 }
 
-ul {
+/*--- FARVE TIL ÅBEN MENU ---*/
+
+ul li {
+    padding: 0.4em;
+}
+
+
+ul.open_koldkrig {
+    background-color: #537689;
+    list-style-type: none;
+    margin: 0;
+
+}
+
+
+
+.open_stevns {
+    background-color: #2D7B9F;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.open_geo {
+    background-color: #549996;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.open_nyeretid {
+    background-color: #95A94E;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.open_kalklandet {
+    background-color: #fe6400;
+    list-style-type: none;
+    margin: 0;
+}
+
+*/ ul {
     list-style-type: none;
     margin: 0;
     padding: 2rem;
-    background-color: lightgray;
 }
 
 li:hover {
@@ -90,15 +135,15 @@ li:hover {
     text-decoration: none;
     color: white;
     line-height: 2.4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 1rem;
-    font-family: 'limestone', sans-serif;
+    font-family: 'assistant', sans-serif;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     cursor: pointer;
-    transition: 0.4s;
+    transition: 1s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
