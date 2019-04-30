@@ -78,6 +78,7 @@ body {
     background-image: url(/Koldkrigsmuseum/billeder/koldkrigtunnel2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     height: 180vh;
     z-index: 1;
 }
@@ -118,6 +119,15 @@ body {
     }
 }
 
+@media only screen and (max-width:780px) {
+    .header {
+        background-image: url(/Koldkrigsmuseum/billeder/koldkrigtunnel2_mobil.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: bottom;
+    }
+}
 
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
