@@ -87,7 +87,8 @@ p {
 	left: 0px;
 	height: 10vh;
 	width: 100%;
-	background-color: #fff;
+	background-color: #FDFDFD;
+	z-index: 3;
 }
 
 .siteheaderflexcontainer {
@@ -119,6 +120,8 @@ nav {
 
 }
 
+
+
 .logo,
 .mainnav li,
 ul {
@@ -144,13 +147,13 @@ h2 {
 }
 
 .menu a:hover {
-	background-color: #fe6400;
+	color: #9d8779;
 }
 
 .menu a {
 	text-decoration: none;
 	display: block;
-	color: black;
+	color: #fe6400;
 	padding: 10px 20px 10px 20px;
 }
 
@@ -197,11 +200,11 @@ h2 {
 		text-decoration: none;
 		padding: 0 2vw 0 2vw;
 		display: inline-block;
-		color: black;
+		color: #fe6400;
 	}
 
 	.menu_desktop a:hover {
-		background-color: #fe6400;
+		color: #9d8779;
 	}
 
 	.menu_mobil {
@@ -276,7 +279,7 @@ h2 {
 
 .footer {
 	grid-column: 1/5;
-	background-color: #E66126;
+	background-color: #B5A984;
 
 	color: white;
 }
@@ -352,6 +355,8 @@ h2 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 500;
+	text-shadow: 1px 1px 3px rgba(155, 139, 88, 0.62);
+	color: #5c553e;
 
 }
 
@@ -360,12 +365,16 @@ h2 {
 	font-size: 1.1em;
 	font-weight: 300;
 	font-family: 'assistant', sans-serif;
+	color: #B5A984;
 
 }
+
+
 
 .pil {
 	position: relative;
 	animation: bouncing 1s infinite ease-in-out;
+	opacity: 0.8;
 }
 
 @keyframes bouncing {
@@ -420,13 +429,168 @@ h2 {
 
 .btn-hover.color-11 {
 	background-image: linear-gradient(to right, #fe6400 0%, #fe8c00 40%, #fe6400 100%);
-	/*    box-shadow: 0 5px 15px rgba(254, 100, 0, .6);*/
+	box-shadow: 0 5px 15px rgba(254, 100, 0, .6);
 }
 
 
 /* ---------------------------------------------------------- BUTTONS SLUT ----------------------------------------------------------- */
 
+/** attraktioner hover **/
 
+
+/* Shine */
+.item3 {
+	position: relative;
+}
+
+.item3::before {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.item3:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Shine */
+.item4 {
+	position: relative;
+}
+
+.item4::before {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.item4:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+/* Shine */
+.item5 {
+	position: relative;
+}
+
+.item5::before {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.item5:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Shine */
+.item6 {
+	position: relative;
+}
+
+.item6::before {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.item6:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+/************** https://codepen.io/nxworld/pen/ZYNOBZ *******************/
+/**/
 
 
 /*------ 6. GRID ------- */
@@ -446,20 +610,22 @@ h2 {
 }
 
 .item2 {
-	min-height: 20vh;
-	background-color: #ffffff;
-	padding: 3rem 1rem 2rem 1rem;
+	height: 50vh;
+	background-color: #A6A198;
+	padding: 1em;
 	text-align: center;
-
+	background-image: url(/Koldkrigsmuseum/billeder/kalkforside.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 
 }
-
 
 .parent {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 	margin: auto;
+
 }
 
 
@@ -477,9 +643,11 @@ h2 {
 
 }
 
+/*
 .item3:hover {
 	transform: scale(1.15);
 }
+*/
 
 
 
@@ -496,9 +664,11 @@ h2 {
 	transition: all 0.5s ease;
 }
 
+/*
 .item4:hover {
 	transform: scale(1.15);
 }
+*/
 
 .item5 {
 	background-image: url(billeder/geo_faxe_mobilfoto_lille.png);
@@ -513,9 +683,11 @@ h2 {
 	transition: all 0.5s ease;
 }
 
+/*
 .item5:hover {
 	transform: scale(1.15);
 }
+*/
 
 .item6 {
 	background-image: url(billeder/nyere_kultur_mobilfoto_lille.png);
@@ -532,9 +704,11 @@ h2 {
 
 }
 
+/*
 .item6:hover {
 	transform: scale(1.15);
 }
+*/
 }
 
 
@@ -645,6 +819,7 @@ h2 {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 5px;
+
 }
 
 .nested-item1 {
@@ -653,11 +828,21 @@ h2 {
 	min-height: 55vh;
 	margin: 2vh 10vw 2vh 10vw;
 
+
 }
 
 .nested-item1 h2 {
 	padding: 0px;
 	margin: 0px;
+	text-transform: uppercase;
+	color: #6f674f;
+	text-align: left;
+	border-bottom: 4px solid #6f674f;
+
+}
+
+p {
+	color: #B5A984;
 }
 
 .nested-item2 {
@@ -687,6 +872,9 @@ h2 {
 	min-height: 10vh;
 	margin: 2vh 10vw 2vh 10vw;
 	padding: 1vw;
+
+
+
 }
 
 
@@ -695,6 +883,7 @@ h2 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 500;
+	color: #6f674f;
 
 }
 
@@ -703,6 +892,7 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	background-color: #f1ebe3;
+
 
 	/*    border: 1px solid black;*/
 	/*    background-color: #f1ebe3;*/
@@ -715,7 +905,9 @@ h2 {
 	text-align: center;
 	justify-self: center;
 	align-self: center;
+
 }
+
 
 .nested-item5 {
 	display: flex;
@@ -727,36 +919,58 @@ h2 {
 }
 
 .nested-item6 {
-	display: flex;
 	background-color: #eee;
 	min-height: 10vh;
 	margin: 2vh 10vw 2vh 10vw;
 	padding: 1vw;
+
 }
 
 .dato {
 
-	width: 170px;
-	background-color: #ffffff;
+	width: 290px;
 	text-align: center;
 	padding: 5px;
+
+
 }
 
 .dato p {
+
 	font-weight: 600;
+	font-family: 'Assistant', sans-serif;
+	text-align: right;
+
+
+
+}
+
+#dato-sker {
+	border-bottom: 5px solid #6f674f;
+	color: #6f674f;
+	text-transform: uppercase;
+
+
 }
 
 .det-sker-text {
 	width: 90%;
-	height: 10vh;
+	height: 5vh;
+
+
 }
 
 .det-sker-text {
 	text-align: left;
+	top: 20px;
+
 }
 
 .det-sker-text p {
-	padding: 0vw 0vw 0vw 2vw;
+	font-family: 'limestonelight';
+	text-align: left;
+	font-size: 16px;
+
 }
 
 
@@ -781,10 +995,12 @@ h2 {
 	.item2 {
 		grid-column: 1/5;
 		min-height: 20vh;
+
 	}
 
 	.item2 div {
 		margin: 0 20vw 0 20vw;
+
 	}
 
 
@@ -793,6 +1009,7 @@ h2 {
 
 
 	.item3 {
+		border-top: 5px solid white;
 		background-image: url(billeder/koldkrig_mobilfoto.png);
 		min-height: 26.8vw;
 
@@ -800,17 +1017,20 @@ h2 {
 	}
 
 	.item4 {
+		border-top: 5px solid white;
 		background-image: url(billeder/stevnsklint_mobilfoto.png);
 		min-height: 26.8vw;
 	}
 
 	.item5 {
+		border-top: 5px solid white;
 		background-image: url(billeder/geo_faxe_mobilfoto.png);
 		min-height: 26.8vw;
 
 	}
 
 	.item6 {
+		border-top: 5px solid white;
 		background-image: url(billeder/nyere_kultur_mobilfoto.png);
 		min-height: 26.8vw;
 	}
@@ -917,34 +1137,28 @@ h2 {
 		margin-left: 47%;
 	}
 
-}
+	.det-sker-text p {
+		font-family: 'limestoneregular';
+		text-align: left;
+		font-weight: 100;
+		font-size: 20px;
 
+	}
 
-/*
- IPAD
-@media only screen and (max-width: 1140px) {
-    .item3 {
-        background-image: url(billeder/koldkrig_mobilfoto.png);
-        width: 100%;
-        height: 50vw;
-    }
+	.dato {
 
-    .item4 {
-        background-image: url(billeder/stevnsklint_mobilfoto.png);
-    }
+		width: 570px;
+		text-align: center;
+		padding: 5px;
 
-
-    .item5 {
-        background-image: url(billeder/geo_faxe_mobilfoto.png);
-    }
-
-    .item6 {
-        background-image: url(billeder/nyere_kultur_mobilfoto.png);
-    }
-
+	}
 
 }
-*/
+
+.logo-footer img {
+	margin-left: 40%;
+}
+
 
 /* DEKSTOP */
 
@@ -1017,7 +1231,54 @@ h2 {
 
 	}
 
+	.det-sker-text p {
+		font-family: 'limestoneregular';
+		text-align: left;
+		font-weight: 100;
+		font-size: 16px;
 
+	}
+
+	.dato {
+
+		width: 570px;
+		text-align: center;
+		padding: 5px;
+
+	}
+
+	.mainnav {
+		position: fixed;
+		display: block;
+		text-align: right;
+		right: 2vw;
+		z-index: 2;
+		top: 2vw;
+
+	}
+
+	.mainnav a {
+		color: #b5a984;
+		text-decoration: none;
+		padding: 0vw 2vw 0 2vw;
+		display: inline-block;
+		font-family: 'limestonebold';
+		font-size: 14.5px;
+		font-weight: 600;
+		line-height: 0;
+		text-transform: uppercase;
+
+	}
+
+	.mainnav li {
+		list-style-type: none;
+		text-align: right;
+		line-height: 30px;
+	}
+
+	.mainnav a:hover {
+		color: #98895b;
+	}
 
 
 

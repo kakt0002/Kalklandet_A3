@@ -18,31 +18,47 @@
 	<div class="item item1">
 
 
+
 		<div class="siteheader">
-			<div class="siteheaderflexcontainer">
-				<div class="logo"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-ost.svg" alt="logo"></a></div>
+			<div class="logo"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-ost.svg" alt="logo"></a></div>
 
 
+			<div class="mainnav">
+				<a href="#det_sker">Det sker</a>
+				<a href="#om_os">Hvem er vi</a>
+				<a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a>
 
-				<div class="menu_desktop">
-					<a href="#det_sker">DET SKER</a>
-					<a href="#om_os">HVEM ER VI?</a>
-					<a href="/Kalklandet/kalklandet-kontakt.html">KONTAKT</a>
-				</div>
+
 			</div>
-		</div>
-
-		<div class="menu_mobil">
-			<div class="menuknap">☰</div>
-
-
-			<ul class="menu">
-				<li><a href="#det_sker">Det sker</a> </li>
-				<li><a href="#om_os">Hvem er vi?</a>
-				<li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
-			</ul>
 
 		</div>
+
+
+		<!--
+
+	<div class="siteheaderflexcontainer">
+
+
+
+
+		<div class="menu_desktop">
+			<a href="#det_sker">DET SKER</a>
+			<a href="#om_os">HVEM ER VI</a>
+			<a href="/Kalklandet/kalklandet-kontakt.html">KONTAKT</a>
+		</div>
+	</div>
+
+<div class="menu_mobil">
+	<div class="menuknap">☰</div>
+
+
+	<ul class="menu">
+		<li><a href="#det_sker">Det sker</a> </li>
+		<li><a href="#om_os">Hvem er vi</a>
+		<li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
+	</ul>
+
+</div>-->
 
 
 
@@ -53,6 +69,9 @@
 		<div class="splash_tekst">
 			<h1>Velkommen til Kalklandet</h1>
 			<p></p>
+
+		</div>
+		<div class="pil-parent">
 			<div class="pil"><a href="#om_os"> <img src="billeder/pil.svg" alt="pil"></a></div>
 		</div>
 	</div>
@@ -122,18 +141,6 @@
 				</div>
 
 
-				<!--
-                    <div class="button_container">
-                        <button class="btn-hover color-11 filter" data-filter="kalklandet.dk">KALKLANDET.DK</button>
-                        <button class="btn-hover color-11 filter" data-filter="stevnsfort">STEVNSFORT</button>
-                        <button class="btn-hover color-11 filter" data-filter="geomuseum_faxe">GEOMUSEUM FAXE</button>
-                        <button class="btn-hover color-11 filter" data-filter="stevns_klint">STEVNS KLINT</button>
-                        <button class="btn-hover color-11 filter" data-filter="nyere_tids_kultur">NYERE TIDS KULTUR</button>
-
-                    </div>
--->
-
-
 				<main class="begivenhed"></main>
 
 
@@ -144,7 +151,7 @@
 	</div>
 
 	<div class="footer">
-		<div class="logo-footer"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"><img src="billeder/kalklogo-kalklandet-footer.svg" alt="logo"></a></div>
+		<div class="logo-footer"><a href="/Kalklandet/index.html"><img src="billeder/kalklogo-kalklandet-footer.svg" alt="logo"></a></div>
 		<p>Rådhusvej 2 • 4640 Faxe • museum@oesm.dk
 			• +45 56 50 28 06 </p>
 		<p>Åbent mandag til fredag kl. 9-15</p>
@@ -158,10 +165,15 @@
 	<template>
 		<div class="nested-item4">
 			<div class="dato">
-				<p></p>
-			</div>
-			<div class="det-sker-text">
-				<p></p>
+
+
+
+				<p id="dato-sker"></p>
+
+
+				<div class="det-sker-text">
+					<p></p>
+				</div>
 			</div>
 		</div>
 	</template>
