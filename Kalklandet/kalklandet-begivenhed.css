@@ -5,6 +5,9 @@ body {
 
 }
 
+.mainnav {
+	display: none;
+}
 
 
 /*---- INDHOLD ----*/
