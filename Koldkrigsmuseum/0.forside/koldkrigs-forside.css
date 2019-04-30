@@ -132,6 +132,7 @@ body {
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
 .logo img {
+<<<<<<< HEAD
 	position: absolute;
 	height: auto;
 	top: 18px;
@@ -140,6 +141,13 @@ body {
 
 .pil-parent {
 	position: absolute;
+=======
+    position: absolute;
+    height: auto;
+    top: 18px;
+    left: 15px;
+    width: 15rem;
+>>>>>>> origin/master
 }
 
 .pil {
@@ -555,11 +563,11 @@ body {
 
 	}
 
-	.logo-footer img {
-		width: 150px;
-		left: 20px;
-		z-index: 2;
-	}
+    .logo-footer img {
+        width: 150px;
+        left: 20px;
+        z-index: 2;
+    }
 
 
 	.fa-facebook {

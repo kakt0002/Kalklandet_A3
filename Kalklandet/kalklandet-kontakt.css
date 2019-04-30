@@ -76,17 +76,7 @@ p {
 
 
 /*Navigationsmenuen*/
-nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 75px;
-    left: 0;
-    background-color: white;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-}
+
 
 .logo img {
     position: absolute;
@@ -98,7 +88,7 @@ nav {
 }
 
 .logo,
-.burgerknap,
+
 .mainnav li,
 ul {
     padding: 0vw 0vw 0vw 0vw;
@@ -107,64 +97,88 @@ ul {
     list-style-type: none;
 }
 
-.burgerknap {
-    font-size: 30px;
-    margin-right: 5vw;
-    z-index: 11;
-}
 
 h2 {
     margin-bottom: 1em;
 }
 
 
-.menu {
+.menu_desktop {
     display: none;
 }
 
-.menuitem {
+.menu {
 
-    margin-left: 5px;
-    margin-right: 5px;
+
     padding: 0;
 }
 
-.menuitem:hover {
+.menu a:hover {
     background-color: #fe6400;
 }
 
-.menuitem a {
+.menu a {
     text-decoration: none;
     display: block;
     color: black;
     padding: 10px 20px 10px 20px;
+}
 
+
+
+.menuknap {
+    display: inline-block;
+    font-size: 38px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin: 1vh 0vw 0vw 85vw;
+    z-index: 1000;
+    cursor: pointer;
+    position: fixed;
+
+}
+
+
+.menu {
+    list-style-type: none;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 75px;
+
+}
+
+.hidden {
+    display: none;
 }
 
 
 @media only screen and (min-width: 700px) {
 
-    .menu {
+    .menu_desktop {
         display: block;
         text-decoration: none;
         line-height: 10vh;
         padding-right: 8vw;
     }
 
-    .menu a {
+    .menu_desktop a {
         text-decoration: none;
         padding: 0 2vw 0 2vw;
         display: inline-block;
         color: black;
     }
 
-    .menu a:hover {
+    .menu_desktop a:hover {
         background-color: #fe6400;
     }
 
-    .burgerknap {
+    .menu_mobil {
         display: none;
     }
+
+
 }
 
 

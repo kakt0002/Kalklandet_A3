@@ -126,6 +126,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
+    width: 16rem;
 }
 
 .pil {
@@ -375,18 +376,11 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-    <<<<<<< HEAD position: relative;
-    height: 5vh;
-    margin-left: 32%;
-    margin-top: 1em;
-    =======position: relative;
     height: 5vh;
     margin-left: 32%;
     margin-top: 2em;
-    > > > > > > > origin/master
+
 }
-
-
 
 .footer p {
     font-family: 'Assistant', sans-serif;
@@ -438,6 +432,18 @@ body {
 }
 
 /***************************************************** FOOTER SLUT ********************************************************/
+
+@media only screen and (max-width:720px) {
+    .header {
+        background-image: url(/Kalklandet/billeder/nyere_tid_foto_mobil.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: bottom;
+    }
+}
+
+
 @media only screen and (min-width: 700px) {
 
 
@@ -635,21 +641,12 @@ body {
 
     div.button {
         display: flex;
-
         box-sizing: border-box;
-
         border: none;
-
         width: 22vh;
         height: 14vh;
-        /*
-        width: 185px;
-        height: 115px;
-*/
-
         position: absolute;
         left: -65px;
-
         transition: .5s ease;
         text-align: center;
         z-index: 3;
