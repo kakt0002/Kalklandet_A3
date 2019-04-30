@@ -1,17 +1,17 @@
 body {
-    margin: 0;
-    background-color: #F2F2F2;
+	margin: 0;
+	background-color: #F2F2F2;
 }
 
 .hide {
-    display: none;
+	display: none;
 }
 
 
 
 .overflow {
-    overflow: hidden;
-    height: 100vh;
+	overflow: hidden;
+	height: 100vh;
 }
 
 
@@ -20,79 +20,79 @@ body {
 
 
 .indhold {
-    margin: 8vw 5vw;
+	margin: 8vw 5vw;
 }
 
 
 
 .undervisningsforløb_title {
-    margin-top: 15vw;
-    font-weight: 100;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-family: 'limestoneregular';
-    line-height: 7vh;
-    border-bottom: 5px solid #38728C;
-    width: 290px;
+	margin-top: 15vw;
+	font-weight: 100;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-family: 'limestoneregular';
+	line-height: 7vh;
+	border-bottom: 5px solid #38728C;
+	width: 290px;
 }
 
 .undervisningsforløb_tekst {
-    font-family: 'Assistant', sans-serif;
+	font-family: 'Assistant', sans-serif;
 }
 
 
 .undervisningsforløb_boks {
 
 
-    margin: 2vw 8vw 8vw 8vw;
-    padding: 1.5vw;
-    text-align: center;
-    background: #3482A9;
+	margin: 2vw 8vw 8vw 8vw;
+	padding: 1.5vw;
+	text-align: center;
+	background: #3482A9;
 
-    height: 300px;
-    box-shadow: 2px 5px 5px #888888;
+	height: 300px;
+	box-shadow: 2px 5px 5px #888888;
 
 }
 
 
 .undervisningsforløb_boks h2 {
 
-    font-weight: 500;
-    font-size: 37px;
-    text-transform: uppercase;
-    font-family: 'Assistant', sans-serif;
-    width: 100%;
-    color: white;
-    line-height: 7vh;
+	font-weight: 500;
+	font-size: 37px;
+	text-transform: uppercase;
+	font-family: 'Assistant', sans-serif;
+	width: 100%;
+	color: white;
+	line-height: 7vh;
 
 
-    border-bottom: 3px solid #ffffff;
-    width: 90%;
-    margin: 4vw auto 0 auto;
+	border-bottom: 3px solid #ffffff;
+	width: 90%;
+	margin: 4vw auto 0 auto;
 
 }
 
 
 
 .undervisningsforløb_boks h3 {
-    margin-top: 7vw;
+	margin-top: 7vw;
 
-    font-weight: 500;
-    font-size: 25px;
-    font-family: 'Assistant', sans-serif;
-    width: 100%;
+	font-weight: 500;
+	font-size: 25px;
+	font-family: 'Assistant', sans-serif;
+	width: 100%;
 
-    color: white;
+	color: white;
 }
 
 
 
 .undervisningsforløb_fag,
 .undervisningsforløb_malgruppe {
-    font-family: 'Assistant', sans-serif;
-    color: white;
-    font-size: 15px;
-    font-weight: 200;
+	font-family: 'Assistant', sans-serif;
+	color: white;
+	font-size: 15px;
+	font-weight: 200;
 
 
 }
@@ -105,38 +105,38 @@ body {
 
 
 @font-face {
-    font-family: 'limestonebold';
-    src: url('../LimeStone_font/limestone_bold-webfont.woff2') format('woff2'),
-        url('../LimeStone_font/limestone_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'limestonebold';
+	src: url('../LimeStone_font/limestone_bold-webfont.woff2') format('woff2'),
+		url('../LimeStone_font/limestone_bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'limestoneheavy';
-    src: url('../LimeStone_font/limestone_heavy-webfont.woff2') format('woff2'),
-        url('../LimeStone_font/limestone_heavy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'limestoneheavy';
+	src: url('../LimeStone_font/limestone_heavy-webfont.woff2') format('woff2'),
+		url('../LimeStone_font/limestone_heavy-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'limestonelight';
-    src: url('../LimeStone_font/limestone_light-webfont.woff2') format('woff2'),
-        url('../LimeStone_font/limestone_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'limestonelight';
+	src: url('../LimeStone_font/limestone_light-webfont.woff2') format('woff2'),
+		url('../LimeStone_font/limestone_light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'limestoneregular';
-    src: url('../LimeStone_font/limestone_regular-webfont.woff2') format('woff2'),
-        url('../LimeStone_font/limestone_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'limestoneregular';
+	src: url('../LimeStone_font/limestone_regular-webfont.woff2') format('woff2'),
+		url('../LimeStone_font/limestone_regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
 
@@ -147,51 +147,51 @@ body {
 
 
 .grid_skabelon {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
 }
 
 
 .header {
-    grid-column: 1/5;
-    z-index: 1;
-    height: 3.5em;
+	grid-column: 1/5;
+	z-index: 1;
+	height: 3.5em;
 }
 
 .content {
-    grid-column: 1/5;
+	grid-column: 1/5;
 }
 
 .footer {
-    grid-column: 1/5;
-    background-color: #016383;
-    color: white;
+	grid-column: 1/5;
+	background-color: #016383;
+	color: white;
 }
 
 .container > div {
-    padding: 3rem;
+	padding: 3rem;
 }
 
 @media only screen and (max-width:600px) {
-    .grid_skabelon {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
+	.grid_skabelon {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
 
-    .header,
-    .content,
-    .footer {
-        grid-column: 1/2;
-        grid-template-columns: repeat(1, 1fr);
-    }
+	.header,
+	.content,
+	.footer {
+		grid-column: 1/2;
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 @media only screen and (min-width:600px) {
 
-    .header {
-        grid-column: 1/5;
-    }
+	.header {
+		grid-column: 1/5;
+	}
 }
 
 
@@ -201,148 +201,148 @@ body {
 /***************************************************** HEADER START ********************************************************/
 
 .logo img {
-    position: absolute;
-    height: auto;
-    top: 18px;
-    left: 15px;
+	position: absolute;
+	height: auto;
+	top: 18px;
+	left: 15px;
 }
 
 /*burgermenu start*/
 
 .hidden {
-    transform: scale(0);
+	transform: scale(0);
 }
 
 .menu {
-    position: absolute;
+	position: absolute;
 }
 
 #mySearch {
-    width: 100%;
-    font-size: 0.5em;
-    padding: 8px;
-    border: 1px solid #ddd;
-    color: #387288;
-    margin-bottom: 20px;
+	width: 100%;
+	font-size: 0.5em;
+	padding: 8px;
+	border: 1px solid #ddd;
+	color: #387288;
+	margin-bottom: 20px;
 }
 
 #sidebox11 {
-    background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 2em;
+	background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 2em;
 
-    height: 16vh;
-    width: 8em;
-    box-shadow: 1px 1px 4px #255060;
+	height: 16vh;
+	width: 8em;
+	box-shadow: 1px 1px 4px #255060;
 }
 
 #sidebox1 {
-    background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 10em;
+	background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 10em;
 
-    height: 16vh;
-    width: 8em;
-    background-color: #387288;
+	height: 16vh;
+	width: 8em;
+	background-color: #387288;
 
 }
 
 #sidebox2 {
-    background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 18em;
+	background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 18em;
 
-    height: 16vh;
-    width: 8em;
-    background-color: #0082AD;
-    box-shadow: 1px 1px 4px #016383;
+	height: 16vh;
+	width: 8em;
+	background-color: #0082AD;
+	box-shadow: 1px 1px 4px #016383;
 }
 
 #sidebox3 {
-    background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 26em;
+	background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 26em;
 
-    height: 16vh;
-    width: 8em;
-    background-color: #19A6A2;
-    box-shadow: 1px 1px 4px #0c6966;
+	height: 16vh;
+	width: 8em;
+	background-color: #19A6A2;
+	box-shadow: 1px 1px 4px #0c6966;
 }
 
 #sidebox4 {
-    background-image: url(/Koldkrigsmuseum/billeder/nyere_kultur-sidebar.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 34em;
+	background-image: url(/Koldkrigsmuseum/billeder/nyere_kultur-sidebar.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 34em;
 
-    height: 16vh;
-    width: 8em;
-    background-color: #88B52D;
-    box-shadow: 1px 1px 4px #506c17;
+	height: 16vh;
+	width: 8em;
+	background-color: #88B52D;
+	box-shadow: 1px 1px 4px #506c17;
 }
 
 
 #menuknap {
-    display: inline-block;
-    position: fixed;
-    right: 0em;
-    font-size: 1.8em;
-    top: 0em;
-    padding: 0.7em;
-    padding-top: 0.3em;
-    color: white;
-    z-index: 2;
-    cursor: pointer;
+	display: inline-block;
+	position: fixed;
+	right: 0em;
+	font-size: 1.8em;
+	top: 0em;
+	padding: 0.7em;
+	padding-top: 0.3em;
+	color: white;
+	z-index: 2;
+	cursor: pointer;
 
 }
 
 #menu {
-    position: fixed;
-    background-color: #38728C;
-    top: -1em;
-    list-style-type: None;
-    width: 100%;
-    height: 100%;
-    box-shadow: 1px 1px 3px #6d5050;
-    font-family: limestone;
-    z-index: 1;
+	position: fixed;
+	background-color: #38728C;
+	top: -1em;
+	list-style-type: None;
+	width: 100%;
+	height: 100%;
+	box-shadow: 1px 1px 3px #6d5050;
+	font-family: limestone;
+	z-index: 1;
 
 }
 
 .undermenu {
-    position: absolute;
-    top: 8em;
-    right: 3em;
-    margin: 2px;
-    text-align: right;
+	position: absolute;
+	top: 8em;
+	right: 3em;
+	margin: 2px;
+	text-align: right;
 }
 
 #menu a {
-    position: relative;
-    text-decoration: none;
-    color: white;
+	position: relative;
+	text-decoration: none;
+	color: white;
 }
 
 .menupunkter {
 
-    line-height: 6.5;
-    font-size: 0.8em;
+	line-height: 6.5;
+	font-size: 0.8em;
 }
 
 
 .some-burger {
-    position: relative;
-    top: 40.5em;
-    left: 5.8em;
+	position: relative;
+	top: 40.5em;
+	left: 5.8em;
 }
 
 
@@ -350,7 +350,7 @@ body {
 /*Desktop menu*/
 
 .mainnav {
-    display: none;
+	display: none;
 }
 
 
@@ -366,171 +366,171 @@ body {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-    position: relative;
-    height: 5vh;
-    margin-left: 32%;
-    margin-top: 1em;
+	position: relative;
+	height: 5vh;
+	margin-left: 32%;
+	margin-top: 1em;
 }
 
 
 
 .footer p {
-    font-family: 'Assistant', sans-serif;
-    text-align: center;
-    color: #f7fbff;
+	font-family: 'Assistant', sans-serif;
+	text-align: center;
+	color: #f7fbff;
 
 }
 
 .footer p:nth-child(1) {
-    font-family: 'Assistant', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+	font-family: 'Assistant', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .footer p:nth-child(2) {
-    font-family: 'Assistant', sans-serif;
-    font-weight: 100;
-    font-size: 0.6em;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 100;
+	font-size: 0.6em;
 }
 
 .footer p:nth-child(3) {
-    font-weight: 100;
-    font-size: 0.8em;
+	font-weight: 100;
+	font-size: 0.8em;
 
 }
 
 
 
 .fa {
-    padding: 0.5em;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0em 0em 1em;
-    border-radius: 50%;
+	padding: 0.5em;
+	width: 15px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0em 0em 1em;
+	border-radius: 50%;
 }
 
 .fa:hover {
-    opacity: 0.7;
+	opacity: 0.7;
 }
 
 .fa-facebook {
-    color: white;
-    margin-left: 40%;
+	color: white;
+	margin-left: 40%;
 }
 
 .fa-instagram {
-    color: white;
+	color: white;
 }
 
 /***************************************************** FOOTER SLUT ********************************************************/
 @media only screen and (min-width: 700px) {
 
 
-    .logo-footer img {
-        margin-left: 40%;
-    }
+	.logo-footer img {
+		margin-left: 40%;
+	}
 
-    .fa-facebook {
-        margin-left: 46%;
-    }
+	.fa-facebook {
+		margin-left: 46%;
+	}
 
-    .logo-footer img {
-        width: 150px;
-        left: 20px;
-        z-index: 2;
-    }
-
-
-
-    /*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
-
-
-    .indhold {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 1em;
-        width: 100%;
-
-
-        margin: 0vw 0vw;
-        padding: 1vw;
-
-    }
-
-
-    .undervisningsforløb {
-        margin: 1vw 3vw;
-
-    }
-
-    .undervisningsforløb_title {
-        margin-top: 5vw;
-        font-weight: 100;
-        font-size: 22px;
-        text-transform: uppercase;
-        font-family: 'limestoneregular';
-        line-height: 7vh;
-        border-bottom: 5px solid #38728C;
-        width: 290px;
-    }
-
-    .undervisningsforløb_tekst {
-        font-family: 'Assistant', sans-serif;
-    }
-
-
-    .undervisningsforløb_boks {
-        margin: 20vw 0vw;
-        text-align: center;
-        background: #3482A9;
-
-        height: 400px;
-        box-shadow: 2px 5px 5px #888888;
-
-    }
-
-
-    .undervisningsforløb_boks h2 {
-
-        font-weight: 500;
-        font-size: 37px;
-        text-transform: uppercase;
-        font-family: 'Assistant', sans-serif;
-        color: white;
-        line-height: 7vh;
-
-
-        border-bottom: 3px solid #ffffff;
-        width: 100%;
-        margin: 0vw auto 0 auto;
-
-    }
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+	}
 
 
 
-    .undervisningsforløb_boks h3 {
-        margin-top: 7vw;
-
-        font-weight: 500;
-        font-size: 25px;
-        font-family: 'Assistant', sans-serif;
-        width: 100%;
-
-        color: white;
-    }
+	/*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
 
 
-
-    .undervisningsforløb_fag,
-    .undervisningsforløb_malgruppe {
-        font-family: 'Assistant', sans-serif;
-        color: white;
-        font-size: 15px;
-        font-weight: 200;
+	.indhold {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		width: 100%;
 
 
-    }
+		margin: 0vw 0vw;
+		padding: 1vw;
+
+	}
+
+
+	.undervisningsforløb {
+		margin: 1vw 3vw;
+
+	}
+
+	.undervisningsforløb_title {
+		margin-top: 5vw;
+		font-weight: 100;
+		font-size: 22px;
+		text-transform: uppercase;
+		font-family: 'limestoneregular';
+		line-height: 7vh;
+		border-bottom: 5px solid #38728C;
+		width: 290px;
+	}
+
+	.undervisningsforløb_tekst {
+		font-family: 'Assistant', sans-serif;
+	}
+
+
+	.undervisningsforløb_boks {
+		margin: 20vw 0vw;
+		text-align: center;
+		background: #3482A9;
+
+		height: 400px;
+		box-shadow: 2px 5px 5px #888888;
+
+	}
+
+
+	.undervisningsforløb_boks h2 {
+
+		font-weight: 500;
+		font-size: 37px;
+		text-transform: uppercase;
+		font-family: 'Assistant', sans-serif;
+		color: white;
+		line-height: 7vh;
+
+
+		border-bottom: 3px solid #ffffff;
+		width: 100%;
+		margin: 0vw auto 0 auto;
+
+	}
+
+
+
+	.undervisningsforløb_boks h3 {
+		margin-top: 7vw;
+
+		font-weight: 500;
+		font-size: 25px;
+		font-family: 'Assistant', sans-serif;
+		width: 100%;
+
+		color: white;
+	}
+
+
+
+	.undervisningsforløb_fag,
+	.undervisningsforløb_malgruppe {
+		font-family: 'Assistant', sans-serif;
+		color: white;
+		font-size: 15px;
+		font-weight: 200;
+
+
+	}
 
 
 
@@ -541,272 +541,272 @@ body {
 @media only screen and (min-width: 1000px) {
 
 
-    .logo img {
-        position: absolute;
-        height: auto;
-        top: 40px;
-        left: 15px;
-        width: 17em;
+	.logo img {
+		position: absolute;
+		height: auto;
+		top: 40px;
+		left: 15px;
+		width: 17em;
 
-    }
+	}
 
-    .burgermenu {
-        display: none;
-    }
+	.burgermenu {
+		display: none;
+	}
 
-    .logo-footer img {
-        margin-left: 44%;
+	.logo-footer img {
+		margin-left: 44%;
 
-    }
-
-
-    .fa-facebook {
-        margin-left: 47%;
-    }
-
-    .mainnav {
-        position: fixed;
-        display: block;
-        text-align: right;
-        line-height: 1.5rem;
-        right: 0vw;
-        z-index: 2;
-        top: 2.5vw;
-
-    }
-
-    .mainnav a {
-        color: #38728C;
-        text-decoration: none;
-        padding: 0vw 2vw 0 2vw;
-        display: inline-block;
-        font-family: helvetica;
-        font-size: 14.5px;
-        font-weight: 800;
-    }
-
-    .mainnav li {
-        list-style-type: none;
-        text-align: right;
-    }
-
-    .mainnav a:hover {
-        color: #9fbbc7;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    #btn1 {
-        top: 150px;
-        background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
+	}
 
 
-    }
+	.fa-facebook {
+		margin-left: 47%;
+	}
 
-    #btn2 {
-        top: 265px;
-        background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
-    }
+	.mainnav {
+		position: fixed;
+		display: block;
+		text-align: right;
+		line-height: 1.5rem;
+		right: 0vw;
+		z-index: 2;
+		top: 2.5vw;
 
-    #btn3 {
-        top: 380px;
-        background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
+	}
 
-    }
+	.mainnav a {
+		color: #016383;
+		text-decoration: none;
+		padding: 0vw 2vw 0 2vw;
+		display: inline-block;
+		font-family: helvetica;
+		font-size: 14.5px;
+		font-weight: 800;
+	}
 
-    #btn4 {
-        top: 495px;
-        background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
+	.mainnav li {
+		list-style-type: none;
+		text-align: right;
+	}
+
+	.mainnav a:hover {
+		color: #9fbbc7;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	#btn1 {
+		top: 150px;
+		background-image: url(/Koldkrigsmuseum/billeder/kalklandet-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
-    }
+	}
 
-    #btn5 {
-        top: 610px;
-        background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
-        background-size: cover;
-        box-shadow: 1px 1px 4px #4d4d4d;
+	#btn2 {
+		top: 265px;
+		background-image: url(/Koldkrigsmuseum/billeder/kold-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
+	}
 
-    }
+	#btn3 {
+		top: 380px;
+		background-image: url(/Koldkrigsmuseum/billeder/geo-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
+
+	}
+
+	#btn4 {
+		top: 495px;
+		background-image: url(/Koldkrigsmuseum/billeder/stevns-sidebar-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
 
-    div.button {
-        display: flex;
+	}
 
-        box-sizing: border-box;
+	#btn5 {
+		top: 610px;
+		background-image: url(/Koldkrigsmuseum/billeder/nyere-kultur-desktop.svg);
+		background-size: cover;
+		box-shadow: 1px 1px 4px #4d4d4d;
 
-        border: none;
+	}
 
-        width: 22vh;
-        height: 14vh;
-        /*
+
+	div.button {
+		display: flex;
+
+		box-sizing: border-box;
+
+		border: none;
+
+		width: 22vh;
+		height: 14vh;
+		/*
         width: 185px;
         height: 115px;
 */
 
-        position: absolute;
-        left: -65px;
+		position: absolute;
+		left: -65px;
 
-        transition: .5s ease;
-        text-align: center;
-        z-index: 3;
-    }
-
-
-
-    div.button:hover {
-        left: 0px;
-    }
-
-
-    #btn4 {
-        left: 0px;
-    }
-
-    .desktop_sidebar {
-        position: relative;
-        background-color: aqua;
-        top: 300px;
-        z-index: 111;
-    }
-
-
-    .rotate {
-        transform: rotate(270deg);
-    }
-
-
-    .background1 {
-        background-color: rgba(255, 160, 100, 0.13);
-        width: 100%;
-        height: 100%;
-    }
-
-
-    .background2 {
-        background-color: rgba(56, 114, 136, 0.5);
-        width: 100%;
-        height: 100%;
-    }
-
-    .background3 {
-        background-color: rgba(26, 167, 162, 0.5);
-        width: 100%;
-        height: 100%;
-    }
-
-    .background4 {
-        background-color: rgba(1, 130, 173, 0.5);
-        width: 100%;
-        height: 100%;
-    }
-
-    .background5 {
-        background-color: rgba(136, 181, 45, 0.3);
-        width: 100%;
-        height: 100%;
-
-    }
+		transition: .5s ease;
+		text-align: center;
+		z-index: 3;
+	}
 
 
 
+	div.button:hover {
+		left: 0px;
+	}
 
 
-    /*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
+	#btn4 {
+		left: 0px;
+	}
+
+	.desktop_sidebar {
+		position: relative;
+		background-color: aqua;
+		top: 300px;
+		z-index: 111;
+	}
 
 
-    .indhold {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 1em;
-        width: 100%;
-        margin: 0 0 0 0vw;
-    }
+	.rotate {
+		transform: rotate(270deg);
+	}
 
 
-    .undervisningsforløb {
-        margin-left: 5vw;
-    }
-
-    .undervisningsforløb_title {
-        margin-top: 2vw;
-        font-weight: 100;
-        font-size: 22px;
-        text-transform: uppercase;
-        font-family: 'limestoneregular';
-        line-height: 7vh;
-        border-bottom: 5px solid #38728C;
-        width: 290px;
-    }
-
-    .undervisningsforløb_tekst {
-        font-family: 'Assistant', sans-serif;
-    }
+	.background1 {
+		background-color: rgba(255, 160, 100, 0.13);
+		width: 100%;
+		height: 100%;
+	}
 
 
-    .undervisningsforløb_boks {
-        margin: 5vw 0vw;
-        padding: 1vw;
-        text-align: center;
-        background: #3482A9;
+	.background2 {
+		background-color: rgba(56, 114, 136, 0.5);
+		width: 100%;
+		height: 100%;
+	}
 
-        height: 400px;
-        box-shadow: 2px 5px 5px #888888;
+	.background3 {
+		background-color: rgba(26, 167, 162, 0.5);
+		width: 100%;
+		height: 100%;
+	}
 
-    }
+	.background4 {
+		background-color: rgba(1, 130, 173, 0.5);
+		width: 100%;
+		height: 100%;
+	}
 
+	.background5 {
+		background-color: rgba(136, 181, 45, 0.3);
+		width: 100%;
+		height: 100%;
 
-    .undervisningsforløb_boks h2 {
-
-        font-weight: 500;
-        font-size: 37px;
-        text-transform: uppercase;
-        font-family: 'Assistant', sans-serif;
-        width: 100%;
-        color: white;
-        line-height: 7vh;
-
-
-        border-bottom: 3px solid #ffffff;
-        width: 90%;
-        margin: 0vw auto 0 auto;
-
-    }
+	}
 
 
 
-    .undervisningsforløb_boks h3 {
-        margin-top: 3vw;
-
-        font-weight: 500;
-        font-size: 31px;
-        font-family: 'Assistant', sans-serif;
-        width: 100%;
-
-        color: white;
-    }
 
 
-
-    .undervisningsforløb_fag,
-    .undervisningsforløb_malgruppe {
-        font-family: 'Assistant', sans-serif;
-        color: white;
-        font-size: 18px;
-        font-weight: 200;
+	/*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
 
 
-    }
+	.indhold {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		width: 100%;
+		margin: 0 0 0 0vw;
+	}
+
+
+	.undervisningsforløb {
+		margin-left: 5vw;
+	}
+
+	.undervisningsforløb_title {
+		margin-top: 2vw;
+		font-weight: 100;
+		font-size: 22px;
+		text-transform: uppercase;
+		font-family: 'limestoneregular';
+		line-height: 7vh;
+		border-bottom: 5px solid #38728C;
+		width: 290px;
+	}
+
+	.undervisningsforløb_tekst {
+		font-family: 'Assistant', sans-serif;
+	}
+
+
+	.undervisningsforløb_boks {
+		margin: 5vw 0vw;
+		padding: 1vw;
+		text-align: center;
+		background: #3482A9;
+
+		height: 400px;
+		box-shadow: 2px 5px 5px #888888;
+
+	}
+
+
+	.undervisningsforløb_boks h2 {
+
+		font-weight: 500;
+		font-size: 37px;
+		text-transform: uppercase;
+		font-family: 'Assistant', sans-serif;
+		width: 100%;
+		color: white;
+		line-height: 7vh;
+
+
+		border-bottom: 3px solid #ffffff;
+		width: 90%;
+		margin: 0vw auto 0 auto;
+
+	}
+
+
+
+	.undervisningsforløb_boks h3 {
+		margin-top: 3vw;
+
+		font-weight: 500;
+		font-size: 31px;
+		font-family: 'Assistant', sans-serif;
+		width: 100%;
+
+		color: white;
+	}
+
+
+
+	.undervisningsforløb_fag,
+	.undervisningsforløb_malgruppe {
+		font-family: 'Assistant', sans-serif;
+		color: white;
+		font-size: 18px;
+		font-weight: 200;
+
+
+	}
 
 
 }

@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="kalklandet-kontakt.css">
+	<meta charset="UTF-8">
+	<title>Kontakt</title>
+	<link rel="stylesheet" href="kalklandet-kontakt.css">
 </head>
 
 <body>
@@ -12,156 +12,155 @@
 
 
 
-    <div class="grid-container">
+	<div class="grid-container">
 
-        <div class="item1">
-
-
-            <div class="siteheader">
-                <div class="siteheaderflexcontainer">
-                    <div class="logo"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-kalklandet.svg" alt="logo"></a></div>
+		<div class="item1">
 
 
-                    <div class="menu_desktop">
-                        <a href="/Kalklandet/index.html#det_sker">DET SKER</a>
-                        <a href="/Kalklandet/index.html#om_os">HVEM ER VI?</a>
-                        <a href="/Kalklandet/kalklandet-kontakt.html">KONTAKT</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu_mobil">
-                <div class="menuknap">☰</div>
+			<div class="siteheader">
+				<div class="siteheaderflexcontainer">
+					<div class="logo"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/kalklogo-kalklandet.svg" alt="logo"></a></div>
 
 
-                <ul class="menu">
-                    <li><a href="/Kalklandet/index.html#det_sker">Det sker</a> </li>
-                    <li><a href="/Kalklandet/index.html#om_os">Hvem er vi?</a>
-                    <li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
-                </ul>
+					<div class="menu_desktop">
+						<a href="/Kalklandet/index.html#det_sker">DET SKER</a>
+						<a href="/Kalklandet/index.html#om_os">HVEM ER VI</a>
+						<a href="/Kalklandet/kalklandet-kontakt.html">KONTAKT</a>
+					</div>
+				</div>
+			</div>
 
-            </div>
-
-        </div>
-
-        <div class="item2">
-
-            <div class="nested">
-
-                <div class="nested-item1">
-
-                    <h1 class="titel"></h1>
-                    <br>
-                    <p class="text"></p>
-                    <br>
-
-                    <p class="firmanavn"></p>
-
-                    <p class="adresse"></p>
-                    <br>
-
-                    <p class="tlf">
-                    </p>
+			<div class="menu_mobil">
+				<div class="menuknap">☰</div>
 
 
-                    <p class="åbningstider"></p>
-                    <br>
-                    <p class="mail"></p>
-                    <br>
+				<ul class="menu">
+					<li><a href="/Kalklandet/index.html#det_sker">Det sker</a> </li>
+					<li><a href="/Kalklandet/index.html#om_os">Hvem er vi</a>
+					<li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
+				</ul>
 
-                </div>
+			</div>
 
-                <div class="nested-item2">
+		</div>
 
-                    <div class="container">
-                        <form id="contact" action="" method="post">
-                            <h3>Skriftlig kontakt</h3>
+		<div class="item2">
 
-                            <fieldset>
-                                <input placeholder="Navn" type="text" tabindex="1" required autofocus>
-                            </fieldset>
-                            <fieldset>
-                                <input placeholder="Email" type="email" tabindex="2" required>
-                            </fieldset>
-                            <fieldset>
-                                <input placeholder="Telefonnummer" type="tel" tabindex="3" required>
-                            </fieldset>
-                            <fieldset>
-                                <textarea placeholder="Din besked ..." tabindex="5" required></textarea>
-                            </fieldset>
-                            <fieldset>
-                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
-                            </fieldset>
-                        </form>
+			<div class="nested">
 
+				<div class="nested-item1">
 
-                    </div>
+					<h1 class="titel"></h1>
+					<br>
+					<p class="text"></p>
+					<br>
 
-                </div>
+					<p class="firmanavn"></p>
+
+					<p class="adresse"></p>
+					<br>
+
+					<p class="tlf">
+					</p>
 
 
-            </div>
+					<p class="åbningstider"></p>
+					<br>
+					<p class="mail"></p>
+					<br>
 
-        </div>
+				</div>
+
+				<div class="nested-item2">
+
+					<div class="container">
+						<form id="contact" action="" method="post">
+							<h3>Skriftlig kontakt</h3>
+
+							<fieldset>
+								<input placeholder="Navn" type="text" tabindex="1" required autofocus>
+							</fieldset>
+							<fieldset>
+								<input placeholder="Email" type="email" tabindex="2" required>
+							</fieldset>
+							<fieldset>
+								<input placeholder="Telefonnummer" type="tel" tabindex="3" required>
+							</fieldset>
+							<fieldset>
+								<textarea placeholder="Din besked ..." tabindex="5" required></textarea>
+							</fieldset>
+							<fieldset>
+								<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+							</fieldset>
+						</form>
 
 
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
 
 
 
 
 
 
-    </div>
+
+
+	</div>
 
 
 
 
 
-    <script>
-        "use strict"
-        let kontaktInformationer = [];
+	<script>
+		"use strict"
+		let kontaktInformationer = [];
 
-        document.addEventListener("DOMContentLoaded", hentJson);
+		document.addEventListener("DOMContentLoaded", hentJson);
 
-        console.log("hent json  - test");
+		console.log("hent json  - test");
 
-        async function hentJson() {
+		async function hentJson() {
 
-            console.log("hent json");
+			console.log("hent json");
 
-            let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
+			let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
 
-            let myJson = await fetch(url);
+			let myJson = await fetch(url);
 
-            kontaktInformationer = await myJson.json();
+			kontaktInformationer = await myJson.json();
 
-            visKontaktInformationer();
-        }
-
-
-        function visKontaktInformationer() {
-            console.log("VIS KONTAKTINFORMATIONER");
+			visKontaktInformationer();
+		}
 
 
-            document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
-            document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
-            document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
-            document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
-            document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
-            document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
-            document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
+		function visKontaktInformationer() {
+			console.log("VIS KONTAKTINFORMATIONER");
 
 
-            hentJson();
+			document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
+			document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
+			document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
+			document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
+			document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
+			document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
+			document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
 
 
-        }
-
-    </script>
+			hentJson();
 
 
+		}
+	</script>
 
-    <script src="/Kalklandet/kalklandet.js"></script>
+
+
+	<script src="/Kalklandet/kalklandet.js"></script>
 
 </body>
 
