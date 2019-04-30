@@ -24,7 +24,7 @@ body {
 
 .om_titel {
     color: #3e474a;
-    font-family: 'limestone', sans-serif;
+    font-family: 'limestoneregular';
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
@@ -345,7 +345,7 @@ body {
 .footer p:nth-child(2) {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
-    font-size: 0.6em;
+    font-size: 0.9em;
 }
 
 .footer p:nth-child(3) {
@@ -600,7 +600,6 @@ body {
         font-weight: 600;
         font-size: 20px;
         text-transform: uppercase;
-        font-family: 'limestone', sans-serif;
         line-height: 7vh;
         border-bottom: 5px solid #00A5A3;
         width: 290px;

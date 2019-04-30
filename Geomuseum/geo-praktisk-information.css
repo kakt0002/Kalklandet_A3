@@ -279,12 +279,16 @@ body {
 
 /****WORDPRESS****/
 
+
 .praktisk_info {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 1em;
 
+    margin-top: 5vw;
 }
+
+
 
 .priser,
 .åbningstider,
@@ -296,11 +300,13 @@ body {
 .priser_guidet_tur4 {
     padding: 1em;
     min-height: 1em;
+
+    margin: 0 2vw;
 }
 
 .praktisk_info h2 {
     color: #3e474a;
-    font-family: 'limestone', sans-serif;
+    font-family: 'limestoneregular';
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
@@ -349,7 +355,7 @@ body {
 .footer p:nth-child(2) {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
-    font-size: 0.6em;
+    font-size: 0.9em;
 }
 
 .footer p:nth-child(3) {
@@ -603,7 +609,7 @@ body {
     .find_vej {
         padding: 1em;
         height: 12em;
-        width: 22em;
+        /*        width: 22em;*/
     }
 
 
