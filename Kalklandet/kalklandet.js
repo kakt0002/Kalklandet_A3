@@ -1,26 +1,35 @@
         document.addEventListener("DOMContentLoaded", sidenVises);
 
+
         function sidenVises() {
+            console.log("siden vises");
 
+            document.querySelector(".menu").classList.add("hidden");
 
-
-            var burgerknap = document.querySelector('.burgerknap');
-            var mobilmenu = document.querySelector('nav');
-            burgerknap.addEventListener("click", function () {
-                if (mobilmenu.style.display == 'none' || mobilmenu.style.display == '') {
-                    mobilmenu.style.display = 'flex';
-                } else {
-                    mobilmenu.style.display = 'none';
-                }
-            });
-
+            document.querySelector(".menuknap").addEventListener("click", toggleMenu);
 
         }
 
 
+
+        function toggleMenu() {
+            console.log("toggle menu");
+
+            document.querySelector(".menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector(".menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector(".menuknap").textContent = "☰";
+            } else {
+                document.querySelector(".menuknap").textContent = "X";
+            }
+        }
+
+
+
+
         start();
-
-
 
 
         function start() {
@@ -150,4 +159,33 @@
 
             hentJson3();
 
+        }
+
+
+
+        window.addEventListener("load", sidenVises);
+
+        function sidenVises() {
+            console.log("siden vises");
+
+            document.querySelector(".menu").classList.add("hidden");
+
+            document.querySelector(".menuknap").addEventListener("click", toggleMenu);
+
+        }
+
+
+
+        function toggleMenu() {
+            console.log("toggle menu");
+
+            document.querySelector(".menu").classList.toggle("hidden");
+
+            let erSkjult = document.querySelector(".menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector(".menuknap").textContent = "☰";
+            } else {
+                document.querySelector(".menuknap").textContent = "X";
+            }
         }
