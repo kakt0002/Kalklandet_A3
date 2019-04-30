@@ -676,6 +676,7 @@ body {
 
 
 
+
     /*--- SPECIFIKT FOR OM-CONTENT CSS ----*/
 
 
@@ -695,10 +696,6 @@ body {
         margin-top: 2vw;
         font-weight: 100;
         font-size: 22px;
-        text-transform: uppercase;
-        font-family: 'limestoneregular';
-        line-height: 7vh;
-        border-bottom: 5px solid #38728C;
         width: 290px;
     }
 
