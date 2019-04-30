@@ -126,7 +126,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
-    width: 15rem;
+    width: 16rem;
 }
 
 .pil {
@@ -433,7 +433,7 @@ body {
 
 /***************************************************** FOOTER SLUT ********************************************************/
 
-@media only screen and (max-width:780px) {
+@media only screen and (max-width:720px) {
     .header {
         background-image: url(/Kalklandet/billeder/nyere_tid_foto_mobil.png);
         background-repeat: no-repeat;
@@ -641,21 +641,12 @@ body {
 
     div.button {
         display: flex;
-
         box-sizing: border-box;
-
         border: none;
-
         width: 22vh;
         height: 14vh;
-        /*
-        width: 185px;
-        height: 115px;
-*/
-
         position: absolute;
         left: -65px;
-
         transition: .5s ease;
         text-align: center;
         z-index: 3;
