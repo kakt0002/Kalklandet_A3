@@ -136,7 +136,32 @@ body {
     width: 11rem;
 }
 
+.parent_pil {
+	position: absolute;
+	top: 400px;
+	left: 50%;
+}
+
 .pil {
+<<<<<<< HEAD
+	position: relative;
+
+
+	animation: bounce 1s infinite ease-in-out;
+}
+
+
+
+@keyframes bounce {
+
+	0% {
+		bottom: 0;
+	}
+
+	50% {
+		bottom: 1vw;
+	}
+=======
     position: relative;
     left: 52%;
 
@@ -151,12 +176,17 @@ body {
     50% {
         bottom: 0.7vw;
     }
+>>>>>>> origin/master
 
     100% {
         bottom: 0;
     }
 }
 
+.bounce {
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+}
 
 /***************************************************** HEADER START ********************************************************/
 
@@ -717,10 +747,17 @@ body {
 
     }
 
+<<<<<<< HEAD
+	#basic_info {
+		left: 28.5vw;
+		top: 350px;
+	}
+=======
     #basic_info {
         left: 28.5vw;
         top: 380px;
     }
+>>>>>>> origin/master
 
     #laes_mere {
         color: #e5e1e1;
@@ -731,10 +768,18 @@ body {
         width: 700px;
     }
 
+<<<<<<< HEAD
+	.parent_pil {
+		position: absolute;
+		top: 220px;
+		left: 35%;
+	}
+=======
 
     .pil {
         left: 42%;
     }
+>>>>>>> origin/master
 
 
 
