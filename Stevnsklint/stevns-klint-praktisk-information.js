@@ -1,10 +1,10 @@
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
-    console.log("siden vises!");
+    console.log("siden vises");
     // registrer klik på menu-knap
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-    document.querySelector("#knap_laes_mere").addEventListener("click", down);
+    start();
 }
 
 function toggleMenu() {
@@ -16,23 +16,37 @@ function toggleMenu() {
     if (erSkjult == true) {
         //menuen er nu skjult - ændr menuknap til lll
         document.querySelector("#menuknap").textContent = "☰";
+        document.querySelector(".logo").classList.remove("hidden");
+        document.querySelector("#indhold").classList.remove("hidden");
+        document.querySelector(".footer").classList.remove("hidden");
     } else {
         //menuen er nu vist - ændr menuknap til x
-        document.querySelector("#menuknap").textContent = "☰"
+        document.querySelector("#menuknap").innerHTML = "&times";
+        document.querySelector(".logo").classList.add("hidden");
+        document.querySelector("#indhold").classList.add("hidden");
+        document.querySelector(".footer").classList.add("hidden");
     }
 }
 
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
 
-function down() {
-    console.log("vis læs mere");
-
-    document.querySelector("#knap_laes_mere").removeEventListener("click", down);
-    document.querySelector(".viewport").classList.remove(".overflow");
-
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
 
-start();
 
 function start() {
     async function hentJson() {
@@ -74,8 +88,6 @@ function start() {
     hentJson();
 
 
-
-
     async function hentJson3() {
 
         console.log("hent json 3");
@@ -93,13 +105,9 @@ function start() {
     function visIndhold3() {
         console.log("VIS TEKST ÅBNINGSTIDER");
 
-
         document.querySelector(".find_vej h2").innerHTML = indhold3.title.rendered;
         document.querySelector(".find_vej p").innerHTML = indhold3.content.rendered;
-
-
     }
 
     hentJson3();
-
 }

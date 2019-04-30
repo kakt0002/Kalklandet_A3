@@ -27,27 +27,60 @@ HEADER START
                 <nav class="burgermenu">
                     <div id="menuknap">☰</div>
                     <div id="menu" class="hidden">
-                        <div class="sidebox">
-                            <div id="sidebox11"><a href="/Kalklandet/index.html"></a></div>
-                            <div id="sidebox1"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"></a></div>
-                            <div id="sidebox2"><a href="/Geomuseum/geo-forside.html"></a></div>
-                            <div id="sidebox3"><a href="/Stevnsklint/stevns-forside.html"></a></div>
-                            <div id="sidebox4"><a href="/nyere-tids-kultur-forside.html"></a></div>
-                        </div>
+                        <div class="logoboxe">
 
-                        <div class="undermenu">
-                            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Søg her..." title="Type in a category">
-                            <li><a class="menupunkter" href="/Koldkrigsmuseum/3.om/koldkrigs-om.html">Om kalk og kridt</a></li>
-                            <li><a class="menupunkter" href="/Koldkrigsmuseum/1.praktisk/koldkrigs-praktisk.html">Praktisk information</a></li>
-                            <li><a class="menupunkter" href="/Koldkrigsmuseum/2.undervisning/koldkrigs-undervisning.html">Undervisning</a></li>
-                            <li><a class="menupunkter" href="/Koldkrigsmuseum/4.kontakt/koldkrigs-kontakt.html">Kontakt</a></li>
-                        </div>
-                        <div class="some-burger">
-                            <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
-                            <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
+                            <div class="accordion" id="kalkland_logo"></div>
+                            <div class="panel">
+                                <ul class="open_kalklandet">
+                                    <li><a href="/Kalklandet/index.html">Forside</a></li>
+                                    <li><a href="/Kalklandet/index.html#det_sker">Det sker</a></li>
+                                    <li><a href="/Kalklandet/index.html#om_os">Om os</a></li>
+                                    <li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="accordion" id="koldkrig_logo"></div>
+                            <div class="panel">
+                                <ul class="open_koldkrig">
+                                    <li><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html">Forside</a></li>
+                                    <li><a href="/Koldkrigsmuseum/1.praktisk/koldkrigs-praktisk.html">Praktisk information</a></li>
+                                    <li><a href="/Koldkrigsmuseum/2.undervisning/koldkrigs-undervisning.html">Undervisning</a></li>
+                                    <li><a href="/Koldkrigsmuseum/3.om/koldkrigs-om.html">Om Den Kolde Krig</a></li>
+                                    <li><a href="/Koldkrigsmuseum/4.kontakt/koldkrigs-kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="accordion" id="stevns_logo"></div>
+                            <div class="panel">
+                                <ul class="open_stevns">
+                                    <li><a href="/Stevnsklint/stevns-forside.html">Forside</a></li>
+                                    <li><a href="/Stevnsklint/stevns-klint-praktisk-information.html">Praktisk information</a></li>
+                                    <li><a href="/Stevnsklint/stevns-klint-undervisning.html">Undervisning</a></li>
+                                    <li><a href="/Stevnsklint/stevns-klint-om.html">Om kalk og kridt</a></li>
+                                    <li><a href="/Stevnsklint/stevns-klint-kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="accordion" id="geo_logo"></div>
+                            <div class="panel panel_open">
+                                <ul class="open_geo">
+                                    <li><a href="/Geomuseum/geo-forside.html">Forside</a></li>
+                                    <li><a href="/Geomuseum/geo-praktisk-information.html">Praktisk information</a></li>
+                                    <li><a href="/Geomuseum/geo-undervisning.html">Undervisning</a></li>
+                                    <li><a href="/Geomuseum/geo-om.html">Om kalk og kridt</a></li>
+                                    <li><a href="/Geomuseum/geo-kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="accordion" id="nyeretid_logo"></div>
+                            <div class="panel">
+                                <ul class="open_nyeretid">
+                                    <li><a href="nyere-tids-kultur-forside.html">Forside</a></li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-
                 </nav>
 
                 <div class="mainnav">
@@ -114,66 +147,48 @@ CONTENT START
             </div>
 
 
-
             <div class="indhold">
-
-
-
                 <section class="undervisningsforløb" id="singleview">
                     <h1 class="undervisningsforløb_title"></h1>
 
                     <p class="undervisningsforløb_tekst"></p>
-
-                    <div class="undervisningsforløb_boks">
-
-                        <h2>Information</h2>
-
-                        <h3>Fag</h3>
-                        <p class="undervisningsforløb_fag"></p>
-
-                        <h3>Målgruppe</h3>
-                        <p class="undervisningsforløb_malgruppe"></p>
-
-                    </div>
-
-
                 </section>
-
-
             </div>
 
 
+            <div class="indhold2">
+                <div class="undervisningsforløb_boks">
+
+                    <!--                    <h2>Information</h2>-->
+
+                    <h3>Varighed</h3>
+                    <p class="undervisningsforløb_varighed"></p>
+
+                    <h3>Max antal elever</h3>
+                    <p class="undervisningsforløb_antal"></p>
+
+                </div>
+            </div>
 
 
             <!--
 CONTENT SLUT
 -->
-
-
             <div class="footer">
-                <div class="logo-footer"><a href="index.html"><img src="/Koldkrigsmuseum/billeder/logo-koldkrig-footer.svg" alt="logo"></a></div>
-                <p>Korsnæbsvej 60 • 4673 Rødvig • Stevnsfort@oesm.dk
+                <div class="logo-footer"><a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html"><img src="/Geomuseum/billeder/logo-footer-geo.svg" alt="logo"></a></div>
+                <p>Østervej 2 • 4640 Faxe • Geomuseum@oesm.dk
                     • +45 56 50 28 06 </p>
-                <p>Åbent alle dage kl. 10-17</p>
+                <p>Åbent mandag til fredag kl. 9-15</p>
                 <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
                 <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
 
             </div>
 
-
         </div>
-
-
-
-
-
-
-
-
-        <script src="/Geomuseum/geo-undervisning-single.js"></script>
 
     </div>
 
+    <script src="/Geomuseum/geo-undervisning-single.js"></script>
 
 </body>
 
