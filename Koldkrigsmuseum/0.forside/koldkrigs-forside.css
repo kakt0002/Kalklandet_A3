@@ -422,7 +422,7 @@ body {
 .footer p:nth-child(2) {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
-    font-size: 0.6em;
+    font-size: 0.9em;
 }
 
 .footer p:nth-child(3) {
@@ -566,8 +566,7 @@ body {
         z-index: 2;
     }
 
-
-    .fa-facebook {
+    f .fa-facebook {
         margin-left: 47%;
     }
 
