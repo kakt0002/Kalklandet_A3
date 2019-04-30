@@ -333,9 +333,9 @@ body {
     color: white;
     left: 6vh;
     font-family: 'Assistant', sans-serif;
-    top: 10em;
+    top: 18em;
     line-height: 4vh;
-    max-width: 250px;
+    max-width: 260px;
 
 }
 
@@ -379,8 +379,6 @@ body {
 
 }
 
-
-
 #laes_mere {
     color: #e5e1e1;
     font-weight: 100;
@@ -415,7 +413,6 @@ body {
     margin-left: 32%;
     margin-top: 2em;
 }
-
 
 
 .footer p {
