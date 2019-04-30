@@ -49,7 +49,7 @@ body {
     text-align: center;
     background: #3482A9;
 
-    height: 300px;
+    height: 250px;
     box-shadow: 2px 5px 5px #888888;
 
 }
@@ -91,7 +91,7 @@ body {
 .undervisningsforløb_antal {
     font-family: 'Assistant', sans-serif;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 200;
 
 
@@ -734,7 +734,7 @@ body {
 
 
     .undervisningsforløb {
-        margin-left: 5vw;
+        margin-left: 0vw;
     }
 
     .undervisningsforløb_title {
