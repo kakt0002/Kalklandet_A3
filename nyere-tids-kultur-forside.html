@@ -24,6 +24,65 @@ HEADER START
 
 				<div class="logo"><a href="nyere-tids-kultur-forside.html"><img src="/Kalklandet/billeder/nyere_tid_logo.svg" alt="logo"></a></div>
 
+				<nav class="burgermenu">
+					<div id="menuknap">☰</div>
+					<div id="menu" class="hidden">
+						<div class="logoboxe">
+
+							<div class="accordion" id="kalkland_logo"></div>
+							<div class="panel">
+								<ul class="open_kalklandet">
+									<li><a href="/Kalklandet/index.html">Forside</a></li>
+									<li><a href="/Kalklandet/index.html#det_sker">Det sker</a></li>
+									<li><a href="/Kalklandet/index.html#om_os">Om os</a></li>
+									<li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
+								</ul>
+							</div>
+
+							<div class="accordion" id="koldkrig_logo"></div>
+							<div class="panel">
+								<ul class="open_koldkrig">
+									<li><a href="/Koldkrigsmuseum/koldkrigs-forside.html">Forside</a></li>
+									<li><a href="/Koldkrigsmuseum/koldkrigs-praktisk.html">Praktisk information</a></li>
+									<li><a href="/Koldkrigsmuseum/koldkrigs-undervisning.html">Undervisning</a></li>
+									<li><a href="/Koldkrigsmuseum/koldkrigs-om.html">Om Den Kolde Krig</a></li>
+									<li><a href="/Koldkrigsmuseum/koldkrigs-kontakt.html">Kontakt</a></li>
+								</ul>
+							</div>
+
+							<div class="accordion" id="stevns_logo"></div>
+							<div class="panel">
+								<ul class="open_stevns">
+									<li><a href="/Stevnsklint/stevns-forside.html">Forside</a></li>
+									<li><a href="/Stevnsklint/stevns-klint-praktisk-information.html">Praktisk information</a></li>
+									<li><a href="/Stevnsklint/stevns-klint-undervisning.html">Undervisning</a></li>
+									<li><a href="/Stevnsklint/stevns-klint-om.html">Om kalk og kridt</a></li>
+									<li><a href="/Stevnsklint/stevns-klint-kontakt.html">Kontakt</a></li>
+								</ul>
+							</div>
+
+							<div class="accordion" id="geo_logo"></div>
+							<div class="panel">
+								<ul class="open_geo">
+									<li><a href="/Geomuseum/geo-forside.html">Forside</a></li>
+									<li><a href="/Geomuseum/geo-praktisk-information.html">Praktisk information</a></li>
+									<li><a href="/Geomuseum/geo-undervisning.html">Undervisning</a></li>
+									<li><a href="/Geomuseum/geo-om.html">Om kalk og kridt</a></li>
+									<li><a href="/Geomuseum/geo-kontakt.html">Kontakt</a></li>
+								</ul>
+							</div>
+
+							<div class="accordion" id="nyeretid_logo"></div>
+							<div class="panel">
+								<ul class="open_nyeretid">
+									<li><a href="nyere-tids-kultur-forside.html">Forside</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</nav>
+
 
 				<section id="basic_info">
 					<div>
@@ -63,7 +122,7 @@ CONTENT START
 				</a>
 
 
-				<a href="/Koldkrigsmuseum/0.forside/koldkrigs-forside.html">
+				<a href="/Koldkrigsmuseum/koldkrigs-forside.html">
 					<div id="btn2" class="button">
 						<div class="background2">
 
@@ -130,7 +189,60 @@ CONTENT START
 	<!--
 CONTENT SLUT
 -->
+	<script>
+		window.addEventListener("load", sidenVises);
 
+		function sidenVises() {
+			console.log("siden vises");
+			// registrer klik på menu-knap
+			document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+		}
+
+		function toggleMenu() {
+			console.log("Toggle menu");
+			document.querySelector("#menu").classList.toggle("hidden");
+
+			let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+			if (erSkjult == true) {
+				//menuen er nu skjult - ændr menuknap til lll
+				document.querySelector("#menuknap").textContent = "☰";
+				document.querySelector(".logo").classList.remove("hidden");
+				document.querySelector("#basic_info").classList.remove("hidden");
+				document.querySelector(".parent_pil").classList.remove("hidden");
+				document.querySelector("#laes_mere").classList.remove("hidden");
+				document.querySelector(".footer").classList.remove("hidden");
+			} else {
+				//menuen er nu vist - ændr menuknap til x
+				document.querySelector("#menuknap").innerHTML = "&times";
+				document.querySelector(".logo").classList.add("hidden");
+				document.querySelector("#basic_info").classList.add("hidden");
+				document.querySelector(".parent_pil").classList.add("hidden");
+				document.querySelector("#laes_mere").classList.add("hidden");
+				document.querySelector(".footer").classList.add("hidden");
+			}
+		}
+
+
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>

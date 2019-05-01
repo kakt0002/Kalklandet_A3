@@ -174,7 +174,7 @@ body {
 }
 
 .logoboxe {
-	background-color: #fe6400;
+	background-color: #1d1d1d;
 	height: 101vh;
 }
 
@@ -231,7 +231,7 @@ body {
 	top: 0em;
 	padding: 0.9em;
 	padding-top: 0.8em;
-	color: white;
+	color: #537689;
 	z-index: 2;
 
 }
@@ -280,7 +280,7 @@ ul.open_koldkrig {
 
 
 .open_kalklandet {
-	background-color: #fe6400;
+	background-color: #B5A984;
 	list-style-type: none;
 	margin: 0;
 }
@@ -302,6 +302,8 @@ li:hover {
 	font-size: 1rem;
 	padding: 1rem;
 	font-family: 'limestoneregular';
+	;
+	font-weight: 500;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -328,9 +330,6 @@ li:hover {
 .panel_open {
 	display: block;
 }
-
-/** burgermenu  slut**/
-
 
 .mainnav {
 	display: none;

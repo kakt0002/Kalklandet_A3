@@ -1,3 +1,39 @@
+@media only screen and (min-width: 700px) {
+	.logo-footer img {
+		width: 150px;
+		left: 20px;
+		z-index: 2;
+		margin-top: 2em;
+	}
+
+	.some-burger {
+
+		margin-left: 10em;
+
+	}
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+	.praktisk_info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1em;
+		margin-left: 12em;
+		margin-top: 2.7em;
+
+	}
+
+
+
+}
+
+/*--------- OM TEKST WORDPRESS SLUT----------*/
+
 body {
 	margin: 0;
 	background-color: #F2F2F2;
@@ -113,9 +149,6 @@ body {
 
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
-
-/***************************************************** HEADER START ********************************************************/
-
 .logo img {
 	position: absolute;
 	height: auto;
@@ -123,6 +156,32 @@ body {
 	left: 15px;
 }
 
+.pil {
+	position: relative;
+	left: 50%;
+	top: 99%;
+	animation: bouncing 1s infinite ease-in-out;
+}
+
+@keyframes bouncing {
+	0% {
+		bottom: 0;
+	}
+
+	50% {
+		bottom: 0.7vw;
+	}
+
+	100% {
+		bottom: 0;
+	}
+}
+
+
+/***************************************************** HEADER START ********************************************************/
+
+
+/*burgermenu start*/
 /*burgermenu start*/
 
 .hidden {
@@ -134,8 +193,8 @@ body {
 }
 
 .logoboxe {
-	background-color: #fe6400;
-	height: 100vh;
+	background-color: #1d1d1d;
+	height: 101vh;
 }
 
 #menuknap {
@@ -191,7 +250,7 @@ body {
 	top: 0em;
 	padding: 0.9em;
 	padding-top: 0.8em;
-	color: white;
+	color: #537689;
 	z-index: 2;
 
 }
@@ -240,7 +299,7 @@ ul.open_koldkrig {
 
 
 .open_kalklandet {
-	background-color: #fe6400;
+	background-color: #B5A984;
 	list-style-type: none;
 	margin: 0;
 }
@@ -262,6 +321,7 @@ li:hover {
 	font-size: 1rem;
 	padding: 1rem;
 	font-family: 'limestoneregular';
+	font-weight: 500;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -289,53 +349,34 @@ li:hover {
 	display: block;
 }
 
-/** burgermenu  slut**/
-
-
 .mainnav {
 	display: none;
 }
 
 
 /***************************************************** HEADER SLUT ********************************************************/
+.intro {
+	font-family: 'Assistant', sans-serif;
+	font-weight: 100;
+	/*	margin: 70px 200px 100px 200px;*/
+	color: #3e474a;
+	margin: 2em;
 
-
-/***************************************************** CONTENT START ********************************************************/
-
-
-.kontakt_tekst {
-	margin: 8vw 5vw;
 }
 
+.intro h2 {
 
-
-.kontakt_tekst h1 {
+	font-weight: 800;
 	color: #3e474a;
 	font-family: 'limestoneregular';
-
 	font-weight: 600;
 	font-size: 20px;
 	text-transform: uppercase;
-
 	line-height: 7vh;
-	border-bottom: 5px solid #38728C;
 	width: 290px;
+
 }
 
-.kontakt_tekst p {
-	color: #3e474a;
-	font-family: 'Assistant', sans-serif;
-	font-weight: 100;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
-
-
-
-/****WORDPRESS****/
-
-/***************************************************** CONTENT SLUT  ********************************************************/
 
 
 /***************************************************** FOOTER START ********************************************************/
@@ -401,96 +442,88 @@ li:hover {
 @media only screen and (min-width: 700px) {
 
 
-	.viewport {
-		height: 100vh;
-	}
-
-
-
 	.logo-footer img {
 		margin-left: 40%;
+		margin-top: 2em;
 	}
 
 	.fa-facebook {
-		margin-left: 46%;
+		margin-left: 47%;
 	}
 
-	.logo-footer img {
-		width: 150px;
-		left: 20px;
-		z-index: 2;
-	}
-
-
-	.grid_skabelon {
-		grid-template-columns: 1fr;
-		height: 82%;
-	}
-
-	.kontakt_tekst {
-		margin: 8vw 5vw;
+	.some-burger {
+		left: 18.5em;
 	}
 
 
-	.kontakt_tekst h1 {
-		color: #3e474a;
+	#basic_info {
+		color: white;
+		left: 8vh;
+		font-family: 'Assistant', sans-serif;
+		top: 20rem;
+		line-height: 4vh;
+		max-width: 650px;
+	}
+
+	#basic_info h2 {
+		font-weight: 100;
+		font-size: 1rem;
+		text-transform: uppercase;
+		font-family: 'Assistant', sans-serif;
+		line-height: 7vh;
+	}
+
+	#basic_info h1 {
+		font-weight: 800;
+		font-size: 2.5rem;
+		font-family: 'limestoneregular';
+		text-transform: uppercase;
+		margin-bottom: 2px;
+	}
+
+	#basic_info p {
+		font-weight: 100;
+		font-size: 1rem;
+		line-height: 3.5vh;
+	}
+
+	#basic_info a {
 		font-weight: 600;
 		font-size: 20px;
-		text-transform: uppercase;
-		font-family: 'limestoneregular';
-		line-height: 7vh;
-		border-bottom: 5px solid #38728C;
-		width: 290px;
+		line-height: 2vh;
+		color: white;
+		text-decoration: none;
 	}
 
-	.kontakt_tekst p {
-		color: #3e474a;
-		font-family: 'Assistant', sans-serif;
+	#basic_info a:hover {
+		color: #d9d6d6;
+
+	}
+
+
+	#laes_mere {
+		color: #e5e1e1;
 		font-weight: 100;
-		font-size: 16px;
-		line-height: 1.6;
+		font-family: 'Assistant', sans-serif;
+		padding-left: 12vw;
+		padding-bottom: 7vw;
+		width: 600px;
 	}
 
+	#laes_mere h2 {
+		font-size: 4rem;
+		margin: 0;
+		padding: 0;
+		left: -0.05em;
+	}
 
-
+	#laes_mere p {
+		font-size: 1rem;
+	}
 
 }
 
-
 @media only screen and (min-width: 1000px) {
-
-
-	.grid_skabelon {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		height: 100%;
-
-	}
-
-	.kontakt_tekst {
-		margin: -40px -5px 30px 12px;
-	}
-
-
-	.kontakt_tekst h1 {
-		color: #3e474a;
-		font-family: 'limestoneregular';
-		font-weight: 600;
-		font-size: 20px;
-		text-transform: uppercase;
-		line-height: 7vh;
-		border-bottom: 5px solid #38728C;
-		width: 290px;
-	}
-
-	x .kontakt_tekst p {
-		color: #3e474a;
-		font-family: 'Assistant', sans-serif;
-		font-weight: 100;
-		font-size: 16px;
-		line-height: 1.6;
-	}
-
-
 
 
 	.logo img {
@@ -516,6 +549,7 @@ li:hover {
 		left: 20px;
 		z-index: 2;
 	}
+
 
 
 	.fa-facebook {
@@ -552,10 +586,18 @@ li:hover {
 		color: #9fbbc7;
 	}
 
+	#basic_info h1 {
+		margin: 0;
+		font-size: 2.8rem;
+	}
+
+	#basic_info p {
+		font-size:
+	}
+
 	a {
 		text-decoration: none;
 	}
-
 
 
 	#btn1 {
@@ -677,4 +719,207 @@ li:hover {
 		height: 100%;
 
 	}
+
+	#basic_info {
+		left: 28.5vw;
+		top: 445px;
+	}
+
+	#laes_mere {
+		color: #e5e1e1;
+		font-weight: 100;
+		font-family: 'Assistant', sans-serif;
+		padding-left: 17.3vw;
+		padding-bottom: 7vw;
+		width: 700px;
+	}
+
+
+	.pil {
+		left: 40%;
+	}
+
+
+
+}
+
+
+/********************Wordpress****************/
+
+
+.undervisningsforløb {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 0em;
+	position: relative;
+
+}
+
+
+.undervisningsforløb_box {
+
+	height: 8em;
+}
+
+.undervisningsforløb h1 {
+	color: #3e474a;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 1.5;
+
+}
+
+
+
+.undervisningsforløb p {
+
+	color: #3e474a;
+	font-family: 'limestoneregular';
+	font-weight: 600;
+	font-size: 17px;
+	text-transform: uppercase;
+	border-bottom: 5px solid #38728C;
+	width: 290px;
+	padding-bottom: 1em;
+}
+
+
+
+/*
+.undervisningsforløb h1 {
+	color: #588295;
+	font-family: limestone;
+	font-weight: 100;
+	padding-bottom: 0.2em;
+	padding: 20px;
+	font-size: 12px;
+	text-align: left;
+	border-top: 5px solid #275160;
+}
+
+.undervisningsforløb p {
+	color: #275160;
+	font-family: 'Assistant', sans-serif;
+	font-weight: bolder;
+	padding-bottom: 0.2em;
+	padding-bottom: 10px;
+	font-size: 12px;
+	text-align: right;
+	font-weight: 700;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+*/
+
+
+.undervisningsforløb_knap {
+	font-weight: 600;
+	color: white;
+	cursor: pointer;
+	margin: 1.5vw;
+	height: 25px;
+	text-align: center;
+	border: none;
+	background-color: #86a8b7;
+	background-size: 300% 100%;
+	position: relative;
+	justify-self: end;
+	top: -6vh;
+	left: 64.5vw;
+	box-shadow: 1px 1px 1px #39606d;
+	letter-spacing: -2px;
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	font-size: 15px;
+
+}
+
+.undervisningsforløb_knap:hover {
+	background-color: #275160;
+}
+
+@media only screen and (min-width: 700px) {
+	.undervisningsforløb {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 0em;
+		left: 0em;
+
+	}
+
+	.undervisningsforløb_box {
+		padding: 1em;
+		width: 20em;
+	}
+
+	.intro-tekst {
+		margin-left: 2vw;
+	}
+
+	.undervisningsforløb_knap {
+
+		top: -6.1vh;
+		left: 78%;
+
+	}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+	.undervisningsforløb {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 0em;
+		left: 4.2vw;
+
+	}
+
+	.undervisningsforløb_box {
+		padding: 1em;
+		width: 20em;
+	}
+
+
+
+	.undervisningsforløb h1 {
+		margin-left: 0.5rem;
+		/*		font-size: 20px;*/
+
+	}
+
+	.undervisningsforløb p {
+		/*		font-size: 10px;*/
+		margin: 0.5em;
+		font-family: 'limestoneregular';
+		font-size: 17px;
+	}
+
+
+	.undervisningsforløb_knap {
+
+		top: -3.5rem;
+
+		left: 78%;
+
+	}
+
+	.intro-tekst {
+		margin-left: 10vw;
+		width: 570px;
+	}
+
+	.intro {
+		margin: 60px 200px 100px 77px;
+
+	}
+
 }
