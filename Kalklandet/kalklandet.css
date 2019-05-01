@@ -285,7 +285,6 @@ h2 {
 .footer {
 	grid-column: 1/5;
 	background-color: #B5A984;
-
 	color: white;
 }
 
@@ -302,6 +301,7 @@ h2 {
 	text-align: center;
 	color: #f7fbff;
 	font-size: 0.8em;
+	font-family: 'Assistant', sans-serif;
 }
 
 /*
@@ -443,7 +443,7 @@ h2 {
 /** attraktioner hover **/
 
 
-/* Shine */
+/*
 .item3 {
 	position: relative;
 }
@@ -480,7 +480,7 @@ h2 {
 	}
 }
 
-/* Shine */
+/* Shine
 .item4 {
 	position: relative;
 }
@@ -518,7 +518,7 @@ h2 {
 }
 
 
-/* Shine */
+/* Shine
 .item5 {
 	position: relative;
 }
@@ -555,7 +555,7 @@ h2 {
 	}
 }
 
-/* Shine */
+/* Shine
 .item6 {
 	position: relative;
 }
@@ -622,6 +622,7 @@ h2 {
 	background-image: url(/Koldkrigsmuseum/billeder/kalkforside.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-bottom: 5px;
 
 }
 
@@ -648,11 +649,11 @@ h2 {
 
 }
 
-/*
+
 .item3:hover {
 	transform: scale(1.15);
 }
-*/
+
 
 
 
@@ -669,11 +670,11 @@ h2 {
 	transition: all 0.5s ease;
 }
 
-/*
+
 .item4:hover {
 	transform: scale(1.15);
 }
-*/
+
 
 .item5 {
 	background-image: url(billeder/geo_faxe_mobilfoto_lille.png);
@@ -688,11 +689,11 @@ h2 {
 	transition: all 0.5s ease;
 }
 
-/*
+
 .item5:hover {
 	transform: scale(1.15);
 }
-*/
+
 
 .item6 {
 	background-image: url(billeder/nyere_kultur_mobilfoto_lille.png);
@@ -709,11 +710,11 @@ h2 {
 
 }
 
-/*
+
 .item6:hover {
 	transform: scale(1.15);
 }
-*/
+
 }
 
 
@@ -1014,7 +1015,6 @@ p {
 
 
 	.item3 {
-		border-top: 5px solid white;
 		background-image: url(billeder/koldkrig_mobilfoto.png);
 		min-height: 26.8vw;
 
@@ -1022,20 +1022,17 @@ p {
 	}
 
 	.item4 {
-		border-top: 5px solid white;
 		background-image: url(billeder/stevnsklint_mobilfoto.png);
 		min-height: 26.8vw;
 	}
 
 	.item5 {
-		border-top: 5px solid white;
 		background-image: url(billeder/geo_faxe_mobilfoto.png);
 		min-height: 26.8vw;
 
 	}
 
 	.item6 {
-		border-top: 5px solid white;
 		background-image: url(billeder/nyere_kultur_mobilfoto.png);
 		min-height: 26.8vw;
 	}

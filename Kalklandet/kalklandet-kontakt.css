@@ -80,6 +80,7 @@ p {
 	text-align: center;
 	color: #f7fbff;
 	font-size: 0.8em;
+	font-family: 'Assistant', sans-serif;
 }
 
 
@@ -416,6 +417,8 @@ h2 {
 	}
 
 
+
+
 }
 
 
@@ -426,21 +429,27 @@ h2 {
 		margin-left: 44%;
 
 	}
+
+	#contact {
+		background: #f1ebe3;
+		padding: 25px;
+		margin-top: 110px;
+	}
 }
 
 /* -------- CONTACT FORMULAR ------ */
 
 /* https://codepen.io/ssbalakumar/pen/uzDIA */
 
-/*
+
 .container {
 	max-width: 600px;
 	width: 100%;
 	/*    margin: 0 auto;*/
-/*    position: relative;*/
+	/*    position: relative;*/
 }
 
-/*
+
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -457,7 +466,7 @@ h2 {
 }
 
 #contact h3 {
-	color: #fa6400;
+	color: #7b7050;
 	display: block;
 	font-size: 25px;
 	font-weight: 400;
@@ -482,7 +491,7 @@ fieldset {
 #contact input[type="url"],
 #contact textarea {
 	width: 100%;
-	border: 1px solid #CCC;
+	border: 1px solid #B5A984;
 	background: #FFF;
 	margin: 0 0 5px;
 	padding: 10px;
@@ -509,7 +518,7 @@ fieldset {
 	cursor: pointer;
 	width: 110%;
 	border: none;
-	background: #fa6400;
+	background: #7b7050;
 	color: #FFF;
 	margin: 0 0 5px;
 	padding: 10px;
@@ -548,7 +557,6 @@ fieldset {
 :-ms-input-placeholder {
 	color: #888;
 }
+
 */
-
-
 /* https://codepen.io/ssbalakumar/pen/uzDIA */
