@@ -1,16 +1,16 @@
 @media only screen and (min-width: 700px) {
-	.logo-footer img {
-		width: 150px;
-		left: 20px;
-		z-index: 2;
-		margin-top: 2em;
-	}
+    .logo-footer img {
+        width: 150px;
+        left: 20px;
+        z-index: 2;
+        margin-top: 2em;
+    }
 
-	.some-burger {
+    .some-burger {
 
-		margin-left: 10em;
+        margin-left: 10em;
 
-	}
+    }
 
 
 
@@ -19,14 +19,14 @@
 
 @media only screen and (min-width: 1000px) {
 
-	.praktisk_info {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 1em;
-		margin-left: 12em;
-		margin-top: 2.7em;
+    .praktisk_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+        margin-left: 12em;
+        margin-top: 2.7em;
 
-	}
+    }
 
 
 
@@ -35,19 +35,19 @@
 /*--------- OM TEKST WORDPRESS SLUT----------*/
 
 body {
-	margin: 0;
-	background-color: #F2F2F2;
+    margin: 0;
+    background-color: #F2F2F2;
 }
 
 .hide {
-	display: none;
+    display: none;
 }
 
 
 
 .overflow {
-	overflow: hidden;
-	height: 100vh;
+    overflow: hidden;
+    height: 100vh;
 }
 
 /*--------- FONT ----------*/
@@ -57,38 +57,38 @@ body {
 
 
 @font-face {
-	font-family: 'limestonebold';
-	src: url('../LimeStone_font/limestone_bold-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'limestonebold';
+    src: url('../LimeStone_font/limestone_bold-webfont.woff2') format('woff2'),
+        url('../LimeStone_font/limestone_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-	font-family: 'limestoneheavy';
-	src: url('../LimeStone_font/limestone_heavy-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_heavy-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'limestoneheavy';
+    src: url('../LimeStone_font/limestone_heavy-webfont.woff2') format('woff2'),
+        url('../LimeStone_font/limestone_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-	font-family: 'limestonelight';
-	src: url('../LimeStone_font/limestone_light-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_light-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'limestonelight';
+    src: url('../LimeStone_font/limestone_light-webfont.woff2') format('woff2'),
+        url('../LimeStone_font/limestone_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-	font-family: 'limestoneregular';
-	src: url('../LimeStone_font/limestone_regular-webfont.woff2') format('woff2'),
-		url('../LimeStone_font/limestone_regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'limestoneregular';
+    src: url('../LimeStone_font/limestone_regular-webfont.woff2') format('woff2'),
+        url('../LimeStone_font/limestone_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -99,82 +99,82 @@ body {
 
 
 .grid_skabelon {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 
 .header {
-	grid-column: 1/5;
-	z-index: 1;
-	height: 3.5em;
+    grid-column: 1/5;
+    z-index: 1;
+    height: 3.5em;
 }
 
 .content {
-	grid-column: 1/5;
+    grid-column: 1/5;
 }
 
 .footer {
-	grid-column: 1/5;
-	background-color: #38728C;
-	color: white;
+    grid-column: 1/5;
+    background-color: #38728C;
+    color: white;
 }
 
 .container > div {
-	padding: 3rem;
+    padding: 3rem;
 }
 
 @media only screen and (max-width:600px) {
-	.grid_skabelon {
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-	}
+    .grid_skabelon {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 
-	.header,
-	.content,
-	.footer {
-		grid-column: 1/2;
-		grid-template-columns: repeat(1, 1fr);
-	}
+    .header,
+    .content,
+    .footer {
+        grid-column: 1/2;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media only screen and (min-width:600px) {
 
-	.header {
-		grid-column: 1/5;
-	}
+    .header {
+        grid-column: 1/5;
+    }
 }
 
 
 /***************************************************** GRID CONTAINER SLUT ********************************************************/
 
 .logo img {
-	position: absolute;
-	height: auto;
-	top: 18px;
-	left: 15px;
+    position: absolute;
+    height: auto;
+    top: 18px;
+    left: 15px;
 }
 
 .pil {
-	position: relative;
-	left: 50%;
-	top: 99%;
-	animation: bouncing 1s infinite ease-in-out;
+    position: relative;
+    left: 50%;
+    top: 99%;
+    animation: bouncing 1s infinite ease-in-out;
 }
 
 @keyframes bouncing {
-	0% {
-		bottom: 0;
-	}
+    0% {
+        bottom: 0;
+    }
 
-	50% {
-		bottom: 0.7vw;
-	}
+    50% {
+        bottom: 0.7vw;
+    }
 
-	100% {
-		bottom: 0;
-	}
+    100% {
+        bottom: 0;
+    }
 }
 
 
@@ -185,195 +185,195 @@ body {
 /*burgermenu start*/
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 .burgermenu {
-	z-index: 10;
+    z-index: 10;
 }
 
 .logoboxe {
-	background-color: #1d1d1d;
-	height: 101vh;
+    background-color: #1d1d1d;
+    height: 101vh;
 }
 
 #menuknap {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #koldkrig_logo {
-	background-image: url(/billeder_logo/koldkrig_menu_logo.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 22vw;
+    background-image: url(/billeder_logo/koldkrig_menu_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 22vw;
 }
 
 #stevns_logo {
-	background-image: url(/billeder_logo/stevns_klint_menu_logo.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 22vw;
+    background-image: url(/billeder_logo/stevns_klint_menu_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 22vw;
 }
 
 #geo_logo {
-	background-image: url(/billeder_logo/geo_museum_menu_logo.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 22vw;
+    background-image: url(/billeder_logo/geo_museum_menu_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 22vw;
 }
 
 #nyeretid_logo {
-	background-image: url(/billeder_logo/nyere_tid_menu_logo.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 22vw;
+    background-image: url(/billeder_logo/nyere_tid_menu_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 22vw;
 }
 
 #kalkland_logo {
-	background-image: url(/billeder_logo/kalklandet_menu_logo.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 100%;
-	height: 22vw;
+    background-image: url(/billeder_logo/kalklandet_menu_logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 22vw;
 }
 
 
 #menuknap {
-	display: inline-block;
-	position: fixed;
-	right: 0em;
-	font-size: 1.8em;
-	top: 0em;
-	padding: 0.9em;
-	padding-top: 0.8em;
-	color: #537689;
-	z-index: 2;
+    display: inline-block;
+    position: fixed;
+    right: 0em;
+    font-size: 1.8em;
+    top: 0em;
+    padding: 0.9em;
+    padding-top: 0.8em;
+    color: #537689;
+    z-index: 2;
 
 }
 
 /*--- FARVE TIL ÅBEN MENU ---*/
 
 ul li {
-	padding: 0.4em;
+    padding: 0.4em;
 }
 
 ul {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
 ul.open_koldkrig {
-	background-color: #537689;
-	list-style-type: none;
-	margin: 0;
+    background-color: #537689;
+    list-style-type: none;
+    margin: 0;
 }
 
 
 
 .open_stevns {
-	background-color: #2D7B9F;
-	list-style-type: none;
-	margin: 0;
+    background-color: #2D7B9F;
+    list-style-type: none;
+    margin: 0;
 }
 
 
 
 .open_geo {
-	background-color: #549996;
-	list-style-type: none;
-	margin: 0;
+    background-color: #549996;
+    list-style-type: none;
+    margin: 0;
 }
 
 
 .open_nyeretid {
-	background-color: #95A94E;
-	list-style-type: none;
-	margin: 0;
+    background-color: #95A94E;
+    list-style-type: none;
+    margin: 0;
 }
 
 
 
 .open_kalklandet {
-	background-color: #B5A984;
-	list-style-type: none;
-	margin: 0;
+    background-color: #B5A984;
+    list-style-type: none;
+    margin: 0;
 }
 
 */ ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
 }
 
 li:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #menu a {
-	text-decoration: none;
-	color: white;
-	line-height: 2.4rem;
-	font-size: 1rem;
-	padding: 1rem;
-	font-family: 'limestoneregular';
-	font-weight: 500;
+    text-decoration: none;
+    color: white;
+    line-height: 2.4rem;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'limestoneregular';
+    font-weight: 500;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-	cursor: pointer;
-	transition: 1s;
+    cursor: pointer;
+    transition: 1s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
 .active,
 .accordion:hover {
-	opacity: 1;
-	/*    ELLER SCALE? KAKTUS DU HAR KODE TIL DET?*/
+    opacity: 1;
+    /*    ELLER SCALE? KAKTUS DU HAR KODE TIL DET?*/
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-	display: none;
-	/*    overflow: hidden;*/
+    display: none;
+    /*    overflow: hidden;*/
 }
 
 /*Sættes på den side/logo-billede man er på*/
 .panel_open {
-	display: block;
+    display: block;
 }
 
 .mainnav {
-	display: none;
+    display: none;
 }
 
 
 /***************************************************** HEADER SLUT ********************************************************/
 .intro {
-	font-family: 'Assistant', sans-serif;
-	font-weight: 100;
-	/*	margin: 70px 200px 100px 200px;*/
-	color: #3e474a;
-	margin: 2em;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    /*	margin: 70px 200px 100px 200px;*/
+    color: #3e474a;
+    margin: 2em;
 
 }
 
 .intro h2 {
 
-	font-weight: 800;
-	color: #3e474a;
-	font-family: 'limestoneregular';
-	font-weight: 600;
-	font-size: 20px;
-	text-transform: uppercase;
-	line-height: 7vh;
-	width: 290px;
+    font-weight: 800;
+    color: #3e474a;
+    font-family: 'limestoneregular';
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 7vh;
+    width: 290px;
 
 }
 
@@ -381,299 +381,303 @@ li:hover {
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
-	position: relative;
-	height: 5vh;
-	margin-left: 32%;
-	margin-top: 2em;
+    position: relative;
+    height: 5vh;
+    margin-left: 32%;
+    margin-top: 2em;
 }
 
 
 
 .footer p {
-	font-family: 'Assistant', sans-serif;
-	text-align: center;
-	color: #f7fbff;
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    color: #f7fbff;
 
 }
 
 .footer p:nth-child(1) {
-	font-family: 'Assistant', sans-serif;
-	text-transform: uppercase;
-	font-weight: 600;
+    font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .footer p:nth-child(2) {
-	font-family: 'Assistant', sans-serif;
-	font-weight: 100;
-	font-size: 0.9em;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
 }
 
 .footer p:nth-child(3) {
-	font-weight: 100;
-	font-size: 0.8em;
+    font-weight: 100;
+    font-size: 0.8em;
 
 }
 
 
 
 .fa {
-	padding: 0.5em;
-	width: 15px;
-	text-align: center;
-	text-decoration: none;
-	margin: 0em 0em 1em;
-	border-radius: 50%;
+    padding: 0.5em;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0em 0em 1em;
+    border-radius: 50%;
 }
 
 .fa:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
 .fa-facebook {
-	color: white;
-	margin-left: 40%;
+    color: white;
+    margin-left: 40%;
 }
 
 .fa-instagram {
-	color: white;
+    color: white;
 }
 
 /***************************************************** FOOTER SLUT ********************************************************/
 @media only screen and (min-width: 700px) {
 
 
-	.logo-footer img {
-		margin-left: 40%;
-		margin-top: 2em;
-	}
+    .logo-footer img {
+        margin-left: 40%;
+        margin-top: 2em;
+    }
 
-	.fa-facebook {
-		margin-left: 47%;
-	}
+    .fa-facebook {
+        margin-left: 47%;
+    }
 
-	.some-burger {
-		left: 18.5em;
-	}
-
-
-	#basic_info {
-		color: white;
-		left: 8vh;
-		font-family: 'Assistant', sans-serif;
-		top: 20rem;
-		line-height: 4vh;
-		max-width: 650px;
-	}
-
-	#basic_info h2 {
-		font-weight: 100;
-		font-size: 1rem;
-		text-transform: uppercase;
-		font-family: 'Assistant', sans-serif;
-		line-height: 7vh;
-	}
-
-	#basic_info h1 {
-		font-weight: 800;
-		font-size: 2.5rem;
-		font-family: 'limestoneregular';
-		text-transform: uppercase;
-		margin-bottom: 2px;
-	}
-
-	#basic_info p {
-		font-weight: 100;
-		font-size: 1rem;
-		line-height: 3.5vh;
-	}
-
-	#basic_info a {
-		font-weight: 600;
-		font-size: 20px;
-		line-height: 2vh;
-		color: white;
-		text-decoration: none;
-	}
-
-	#basic_info a:hover {
-		color: #d9d6d6;
-
-	}
+    .some-burger {
+        left: 18.5em;
+    }
 
 
-	#laes_mere {
-		color: #e5e1e1;
-		font-weight: 100;
-		font-family: 'Assistant', sans-serif;
-		padding-left: 12vw;
-		padding-bottom: 7vw;
-		width: 600px;
-	}
+    #basic_info {
+        color: white;
+        left: 8vh;
+        font-family: 'Assistant', sans-serif;
+        top: 20rem;
+        line-height: 4vh;
+        max-width: 650px;
+    }
 
-	#laes_mere h2 {
-		font-size: 4rem;
-		margin: 0;
-		padding: 0;
-		left: -0.05em;
-	}
+    #basic_info h2 {
+        font-weight: 100;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: 'Assistant', sans-serif;
+        line-height: 7vh;
+    }
 
-	#laes_mere p {
-		font-size: 1rem;
-	}
+    #basic_info h1 {
+        font-weight: 800;
+        font-size: 2.5rem;
+        font-family: 'limestoneregular';
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+
+    #basic_info p {
+        font-weight: 100;
+        font-size: 1rem;
+        line-height: 3.5vh;
+    }
+
+    #basic_info a {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 2vh;
+        color: white;
+        text-decoration: none;
+    }
+
+    #basic_info a:hover {
+        color: #d9d6d6;
+
+    }
+
+
+    #laes_mere {
+        color: #e5e1e1;
+        font-weight: 100;
+        font-family: 'Assistant', sans-serif;
+        padding-left: 12vw;
+        padding-bottom: 7vw;
+        width: 600px;
+    }
+
+    #laes_mere h2 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        left: -0.05em;
+    }
+
+    #laes_mere p {
+        font-size: 1rem;
+    }
 
 }
 
 @media only screen and (min-width: 1000px) {
 
 
-	.logo img {
-		position: absolute;
-		height: auto;
-		top: 40px;
-		left: 15px;
-		width: 17em;
+    .logo img {
+        position: absolute;
+        height: auto;
+        top: 40px;
+        left: 15px;
+        width: 17em;
 
-	}
+    }
 
-	.burgermenu {
-		display: none;
-	}
+    .burgermenu {
+        display: none;
+    }
 
-	.logo-footer img {
-		margin-left: 44%;
+    .logo-footer img {
+        margin-left: 44%;
 
-	}
+    }
 
-	.logo-footer img {
-		width: 150px;
-		left: 20px;
-		z-index: 2;
-	}
-
-
-
-	.fa-facebook {
-		margin-left: 47%;
-	}
-
-	.mainnav {
-		position: fixed;
-		display: block;
-		text-align: right;
-		line-height: 1.5rem;
-		right: 0vw;
-		z-index: 2;
-		top: 2.5vw;
-
-	}
-
-	.mainnav a {
-		color: #38728C;
-		text-decoration: none;
-		padding: 0vw 2vw 0 2vw;
-		display: inline-block;
-		font-family: helvetica;
-		font-size: 14.5px;
-		font-weight: 800;
-	}
-
-	.mainnav li {
-		list-style-type: none;
-		text-align: right;
-	}
-
-	.mainnav a:hover {
-		color: #9fbbc7;
-	}
-
-	#basic_info h1 {
-		margin: 0;
-		font-size: 2.8rem;
-	}
-
-	#basic_info p {
-		font-size:
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-
-	#btn1 {
-		top: 150px;
-		background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
-		background-size: cover;
-
-	}
-
-	#btn2 {
-		top: 265px;
-		background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
-		background-size: cover;
-
-	}
-
-
-	#btn3 {
-		top: 380px;
-		background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
-		background-size: cover;
-
-	}
-
-	#btn4 {
-		top: 495px;
-		background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
-		background-size: cover;
+    .logo-footer img {
+        width: 150px;
+        left: 20px;
+        z-index: 2;
+    }
 
 
 
+    .fa-facebook {
+        margin-left: 47%;
+    }
 
-	}
+    .mainnav {
+        position: fixed;
+        display: block;
+        text-align: right;
+        line-height: 1.5rem;
+        right: 0vw;
+        z-index: 2;
+        top: 2.5vw;
 
-	#btn5 {
-		top: 610px;
-		background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
-		background-size: cover;
-	}
+    }
 
-	/****** LOGOER_SIDEBAR billeder SLUT*****/
+    .mainnav a {
+        color: #38728C;
+        text-decoration: none;
+        padding: 0vw 2vw 0 2vw;
+        display: inline-block;
+        font-family: helvetica;
+        font-size: 14.5px;
+        font-weight: 800;
+    }
+
+    */ ul {
+        list-style-type: none;
+    }
+
+    .mainnav li {
+        list-style-type: none;
+        text-align: right;
+    }
+
+    .mainnav a:hover {
+        color: #9fbbc7;
+    }
+
+    #basic_info h1 {
+        margin: 0;
+        font-size: 2.8rem;
+    }
+
+    #basic_info p {
+        font-size:
+    }
+
+    a {
+        text-decoration: none;
+    }
 
 
-	div.button {
-		/*        display: flex;*/
-		box-sizing: border-box;
-		border: none;
+    #btn1 {
+        top: 150px;
+        background-image: url(/billeder_logo/kalklandet-sidebar-desktop.svg);
+        background-size: cover;
 
-		width: 185px;
-		height: 115px;
+    }
 
-		position: absolute;
-		left: -65px;
+    #btn2 {
+        top: 265px;
+        background-image: url(/billeder_logo/kold-sidebar-desktop.svg);
+        background-size: cover;
 
-		transition: .5s ease;
-		/*        text-align: center;*/
-		z-index: 3;
-	}
-
-	div.button:hover {
-		left: 0px;
-	}
+    }
 
 
-	#btn2 {
-		left: 0px;
-	}
+    #btn3 {
+        top: 380px;
+        background-image: url(/billeder_logo/stevns-sidebar-desktop.svg);
+        background-size: cover;
 
-	.desktop_sidebar {
-		position: absolute;
-		/*        background-color: aqua;*/
-		/*        top: 300px;*/
-		z-index: 11;
-	}
+    }
 
-	/*
+    #btn4 {
+        top: 495px;
+        background-image: url(/billeder_logo/geo-sidebar-desktop.svg);
+        background-size: cover;
+
+
+
+
+    }
+
+    #btn5 {
+        top: 610px;
+        background-image: url(/billeder_logo/nyere-kultur-desktop.svg);
+        background-size: cover;
+    }
+
+    /****** LOGOER_SIDEBAR billeder SLUT*****/
+
+
+    div.button {
+        /*        display: flex;*/
+        box-sizing: border-box;
+        border: none;
+
+        width: 185px;
+        height: 115px;
+
+        position: absolute;
+        left: -65px;
+
+        transition: .5s ease;
+        /*        text-align: center;*/
+        z-index: 3;
+    }
+
+    div.button:hover {
+        left: 0px;
+    }
+
+
+    #btn2 {
+        left: 0px;
+    }
+
+    .desktop_sidebar {
+        position: absolute;
+        /*        background-color: aqua;*/
+        /*        top: 300px;*/
+        z-index: 11;
+    }
+
+    /*
     .desktop_sidebar {
         position: relative;
         background-color: aqua;
@@ -682,62 +686,62 @@ li:hover {
     }
 */
 
-	.rotate {
-		transform: rotate(270deg);
-	}
+    .rotate {
+        transform: rotate(270deg);
+    }
 
 
-	.background1 {
-		background-color: rgba(255, 160, 100, 0.13);
-		width: 100%;
-		height: 100%;
-	}
+    .background1 {
+        background-color: rgba(255, 160, 100, 0.13);
+        width: 100%;
+        height: 100%;
+    }
 
 
-	.background2 {
-		background-color: rgba(56, 114, 136, 0.5);
-		width: 100%;
-		height: 100%;
-	}
+    .background2 {
+        background-color: rgba(56, 114, 136, 0.5);
+        width: 100%;
+        height: 100%;
+    }
 
-	.background3 {
-		background-color: rgba(1, 130, 173, 0.5);
+    .background3 {
+        background-color: rgba(1, 130, 173, 0.5);
 
-		width: 100%;
-		height: 100%;
-	}
+        width: 100%;
+        height: 100%;
+    }
 
-	.background4 {
-		background-color: rgba(26, 167, 162, 0.5);
-		width: 100%;
-		height: 100%;
-	}
+    .background4 {
+        background-color: rgba(26, 167, 162, 0.5);
+        width: 100%;
+        height: 100%;
+    }
 
-	.background5 {
-		background-color: rgba(136, 181, 45, 0.3);
-		width: 100%;
-		height: 100%;
+    .background5 {
+        background-color: rgba(136, 181, 45, 0.3);
+        width: 100%;
+        height: 100%;
 
-	}
+    }
 
-	#basic_info {
-		left: 28.5vw;
-		top: 445px;
-	}
+    #basic_info {
+        left: 28.5vw;
+        top: 445px;
+    }
 
-	#laes_mere {
-		color: #e5e1e1;
-		font-weight: 100;
-		font-family: 'Assistant', sans-serif;
-		padding-left: 17.3vw;
-		padding-bottom: 7vw;
-		width: 700px;
-	}
+    #laes_mere {
+        color: #e5e1e1;
+        font-weight: 100;
+        font-family: 'Assistant', sans-serif;
+        padding-left: 17.3vw;
+        padding-bottom: 7vw;
+        width: 700px;
+    }
 
 
-	.pil {
-		left: 40%;
-	}
+    .pil {
+        left: 40%;
+    }
 
 
 
@@ -748,25 +752,25 @@ li:hover {
 
 
 .undervisningsforløb {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-row-gap: 0em;
-	position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0em;
+    position: relative;
 
 }
 
 
 .undervisningsforløb_box {
 
-	height: 8em;
+    height: 8em;
 }
 
 .undervisningsforløb h1 {
-	color: #3e474a;
-	font-family: 'Assistant', sans-serif;
-	font-weight: 100;
-	font-size: 16px;
-	line-height: 1.5;
+    color: #3e474a;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
 
 }
 
@@ -774,14 +778,14 @@ li:hover {
 
 .undervisningsforløb p {
 
-	color: #3e474a;
-	font-family: 'limestoneregular';
-	font-weight: 600;
-	font-size: 17px;
-	text-transform: uppercase;
-	border-bottom: 5px solid #38728C;
-	width: 290px;
-	padding-bottom: 1em;
+    color: #3e474a;
+    font-family: 'limestoneregular';
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #38728C;
+    width: 290px;
+    padding-bottom: 1em;
 }
 
 
@@ -814,57 +818,57 @@ li:hover {
 
 
 .undervisningsforløb_knap {
-	font-weight: 600;
-	color: white;
-	cursor: pointer;
-	margin: 1.5vw;
-	height: 25px;
-	text-align: center;
-	border: none;
-	background-color: #86a8b7;
-	background-size: 300% 100%;
-	position: relative;
-	justify-self: end;
-	top: -6vh;
-	left: 64.5vw;
-	box-shadow: 1px 1px 1px #39606d;
-	letter-spacing: -2px;
-	moz-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin: 1.5vw;
+    height: 25px;
+    text-align: center;
+    border: none;
+    background-color: #86a8b7;
+    background-size: 300% 100%;
+    position: relative;
+    justify-self: end;
+    top: -6vh;
+    left: 64.5vw;
+    box-shadow: 1px 1px 1px #39606d;
+    letter-spacing: -2px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    font-size: 15px;
 
 }
 
 .undervisningsforløb_knap:hover {
-	background-color: #275160;
+    background-color: #275160;
 }
 
 @media only screen and (min-width: 700px) {
-	.undervisningsforløb {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 0em;
-		left: 0em;
+    .undervisningsforløb {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0em;
+        left: 0em;
 
-	}
+    }
 
-	.undervisningsforløb_box {
-		padding: 1em;
-		width: 20em;
-	}
+    .undervisningsforløb_box {
+        padding: 1em;
+        width: 20em;
+    }
 
-	.intro-tekst {
-		margin-left: 2vw;
-	}
+    .intro-tekst {
+        margin-left: 2vw;
+    }
 
-	.undervisningsforløb_knap {
+    .undervisningsforløb_knap {
 
-		top: -6.1vh;
-		left: 78%;
+        top: -6.1vh;
+        left: 78%;
 
-	}
+    }
 
 
 
@@ -875,51 +879,51 @@ li:hover {
 @media only screen and (min-width: 1000px) {
 
 
-	.undervisningsforløb {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 0em;
-		left: 4.2vw;
+    .undervisningsforløb {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0em;
+        left: 4.2vw;
 
-	}
+    }
 
-	.undervisningsforløb_box {
-		padding: 1em;
-		width: 20em;
-	}
-
-
-
-	.undervisningsforløb h1 {
-		margin-left: 0.5rem;
-		/*		font-size: 20px;*/
-
-	}
-
-	.undervisningsforløb p {
-		/*		font-size: 10px;*/
-		margin: 0.5em;
-		font-family: 'limestoneregular';
-		font-size: 17px;
-	}
+    .undervisningsforløb_box {
+        padding: 1em;
+        width: 20em;
+    }
 
 
-	.undervisningsforløb_knap {
 
-		top: -3.5rem;
+    .undervisningsforløb h1 {
+        margin-left: 0.5rem;
+        /*		font-size: 20px;*/
 
-		left: 78%;
+    }
 
-	}
+    .undervisningsforløb p {
+        /*		font-size: 10px;*/
+        margin: 0.5em;
+        font-family: 'limestoneregular';
+        font-size: 17px;
+    }
 
-	.intro-tekst {
-		margin-left: 10vw;
-		width: 570px;
-	}
 
-	.intro {
-		margin: 60px 200px 100px 77px;
+    .undervisningsforløb_knap {
 
-	}
+        top: -3.5rem;
+
+        left: 78%;
+
+    }
+
+    .intro-tekst {
+        margin-left: 10vw;
+        width: 570px;
+    }
+
+    .intro {
+        margin: 60px 200px 100px 77px;
+
+    }
 
 }
