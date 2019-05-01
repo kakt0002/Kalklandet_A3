@@ -448,9 +448,6 @@ li:hover {
         line-height: 1.6;
     }
 
-
-
-
 }
 
 
@@ -530,6 +527,10 @@ li:hover {
         font-family: helvetica;
         font-size: 14.5px;
         font-weight: 800;
+    }
+
+    */ ul {
+        list-style-type: none;
     }
 
     .mainnav li {

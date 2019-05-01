@@ -487,6 +487,10 @@ li:hover {
         font-weight: 800;
     }
 
+    */ ul {
+        list-style-type: none;
+    }
+
     .mainnav li {
         list-style-type: none;
         text-align: right;
