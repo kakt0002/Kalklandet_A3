@@ -154,6 +154,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
+    height: 3.2rem;
 }
 
 .pil {
@@ -361,11 +362,9 @@ li:hover {
     /*	margin: 70px 200px 100px 200px;*/
     color: #3e474a;
     margin: 2em;
-
 }
 
 .intro h2 {
-
     font-weight: 800;
     color: #3e474a;
     font-family: 'limestoneregular';
@@ -374,9 +373,7 @@ li:hover {
     text-transform: uppercase;
     line-height: 7vh;
     width: 290px;
-
 }
-
 
 
 /***************************************************** FOOTER START ********************************************************/
@@ -386,7 +383,6 @@ li:hover {
     margin-left: 32%;
     margin-top: 2em;
 }
-
 
 
 .footer p {
@@ -413,7 +409,6 @@ li:hover {
     font-size: 0.8em;
 
 }
-
 
 
 .fa {
@@ -497,7 +492,6 @@ li:hover {
 
     #basic_info a:hover {
         color: #d9d6d6;
-
     }
 
 
@@ -531,7 +525,7 @@ li:hover {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 17em;
+        height: 4rem;
 
     }
 

@@ -126,7 +126,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
-    width: 16rem;
+    height: 3.5rem;
 }
 
 
@@ -575,14 +575,12 @@ li:hover {
 
 @media only screen and (min-width: 1000px) {
 
-
     .logo img {
         position: absolute;
         height: auto;
         top: 40px;
         left: 15px;
-        width: 17em;
-
+        height: 4rem;
     }
 
     .burgermenu {

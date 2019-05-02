@@ -154,6 +154,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
+    height: 3.2rem;
 }
 
 .pil {
@@ -532,7 +533,7 @@ li:hover {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 17em;
+        height: 4rem;
 
     }
 

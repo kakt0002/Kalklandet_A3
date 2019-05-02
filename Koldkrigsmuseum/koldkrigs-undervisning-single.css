@@ -187,6 +187,7 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
+    height: 3.2rem;
 }
 
 /*burgermenu start*/
@@ -502,7 +503,6 @@ li:hover {
     }
 
 
-
     .undervisningsforløb_varighed,
     .undervisningsforløb_antal {
         font-family: 'Assistant', sans-serif;
@@ -512,11 +512,6 @@ li:hover {
 
 
     }
-
-
-
-
-
 }
 
 
@@ -528,7 +523,7 @@ li:hover {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 17em;
+        height: rem;
 
     }
 
