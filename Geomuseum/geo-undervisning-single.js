@@ -80,7 +80,7 @@ function start() {
     function visUndervisning() {
         console.log("VIS UNDERVISNINGSFORLØB");
 
-        document.querySelector(".undervisningsforløb_title").innerHTML = undervisningForlob.titel;
+        document.querySelector(".undervisningsforløb_title").innerHTML = undervisningForlob.title.rendered;
         document.querySelector(".undervisningsforløb_tekst").innerHTML = undervisningForlob.content.rendered;
 
         document.querySelector(".undervisningsforløb_varighed").innerHTML = undervisningForlob.varighed;
