@@ -1155,10 +1155,7 @@ p {
 
     }
 
-    .item2 div {
-        margin: 0 15vw 0 15vw;
 
-    }
 
     .item3 {
         background-image: url(billeder/koldkrig_foto.png);
@@ -1255,5 +1252,10 @@ p {
         background-image: url(/Koldkrigsmuseum/billeder/kalkforside.png);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .item2 div {
+        margin: 5vw 40vw 0vw 0vw;
+
     }
 }
