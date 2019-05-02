@@ -138,11 +138,12 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
+    height: 3.2rem;
 }
 
 .parent_pil {
     position: absolute;
-    top: 400px;
+    top: 545px;
     left: 50%;
 }
 
@@ -573,7 +574,7 @@ li:hover {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 17em;
+        height: 4rem;
 
     }
 
@@ -788,7 +789,7 @@ li:hover {
 
     .parent_pil {
         position: absolute;
-        top: 630px;
+        top: 600px;
         left: 50%;
     }
 

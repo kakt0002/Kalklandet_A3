@@ -121,7 +121,7 @@ body {
     height: auto;
     top: 40px;
     left: 15px;
-    width: 14em;
+    height: 3.2rem;
 
 }
 
@@ -449,8 +449,7 @@ li:hover {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 13em;
-
+        height: 4rem;
     }
 
     .burgermenu {
@@ -664,7 +663,6 @@ li:hover {
     .priser {
         height: 16em;
         margin-bottom: 4em;
-
     }
 
     .logo-footer img {
@@ -674,13 +672,8 @@ li:hover {
     }
 
     .some-burger {
-
         margin-left: 10em;
-
     }
-
-
-
 }
 
 
@@ -700,6 +693,4 @@ li:hover {
         padding: 0px;
 
     }
-
-
 }

@@ -126,13 +126,13 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
-    width: 16rem;
+    height: 3.5rem;
 }
 
 
 .parent_pil {
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 50%;
 }
 
@@ -565,18 +565,22 @@ li:hover {
         font-size: 1rem;
     }
 
+    .parent_pil {
+        position: absolute;
+        top: 520px;
+        left: 50%;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
-
 
     .logo img {
         position: absolute;
         height: auto;
         top: 40px;
         left: 15px;
-        width: 17em;
-
+        height: 4rem;
     }
 
     .burgermenu {

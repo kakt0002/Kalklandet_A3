@@ -96,6 +96,7 @@ body {
     padding: 3rem;
 }
 
+
 @media only screen and (max-width:600px) {
     .grid_skabelon {
         grid-template-columns: 1fr;
@@ -133,18 +134,17 @@ body {
     height: auto;
     top: 18px;
     left: 15px;
-    width: 11rem;
+    height: 3.2rem;
 }
 
 .parent_pil {
     position: absolute;
-    top: 400px;
+    top: 560px;
     left: 50%;
 }
 
 .pil {
     position: relative;
-
     animation: bounce 1s infinite ease-in-out;
 }
 
@@ -572,7 +572,7 @@ li:hover {
         height: auto;
         top: 40px;
         left: 15px;
-        width: 14em;
+        height: 4rem;
 
     }
 
@@ -781,7 +781,6 @@ li:hover {
         top: 590px;
         left: 50%;
     }
-
 
 }
 
