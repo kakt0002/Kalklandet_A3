@@ -132,7 +132,7 @@ body {
 
 .parent_pil {
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 50%;
 }
 
@@ -563,6 +563,12 @@ li:hover {
 
     #laes_mere p {
         font-size: 1rem;
+    }
+
+    .parent_pil {
+        position: absolute;
+        top: 520px;
+        left: 50%;
     }
 
 }
