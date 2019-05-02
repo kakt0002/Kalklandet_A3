@@ -472,8 +472,8 @@ li:hover {
         line-height: 1.5rem;
         right: 0vw;
         z-index: 2;
-        top: 2.5vw;
-
+        /*        top: 2.5vw;
+*/
     }
 
     .mainnav a {
