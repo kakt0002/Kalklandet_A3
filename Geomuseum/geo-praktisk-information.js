@@ -169,7 +169,7 @@ function start() {
         console.log("VIS TEKST GUIDET TUR 1");
 
 
-        document.querySelector(".pris_tekst_guidet_tur1").innerHTML = guidet_turIndhold.tekst;
+        document.querySelector(".pris_tekst_guidet_tur1").innerHTML = guidet_turIndhold.content.rendered;
 
         document.querySelector(".pris_voksne_guidet_tur1").innerHTML = `Pris for voksne: ` + guidet_turIndhold.pris_for_voksne;
 
@@ -205,7 +205,7 @@ function start() {
         console.log("VIS TEKST GUIDET TUR 2");
 
 
-        document.querySelector(".pris_tekst_guidet_tur2").innerHTML = guidet_turIndhold.tekst;
+        document.querySelector(".pris_tekst_guidet_tur2").innerHTML = guidet_turIndhold.content.rendered;
 
         document.querySelector(".pris_voksne_guidet_tur2").innerHTML = `Pris for voksne: ` + guidet_turIndhold.pris_for_voksne;
 
@@ -241,7 +241,7 @@ function start() {
         console.log("VIS TEKST GUIDET TUR 3");
 
 
-        document.querySelector(".pris_tekst_guidet_tur3").innerHTML = guidet_turIndhold.tekst;
+        document.querySelector(".pris_tekst_guidet_tur3").innerHTML = guidet_turIndhold.content.rendered;
 
         document.querySelector(".pris_voksne_guidet_tur3").innerHTML = `Pris for voksne: ` + guidet_turIndhold.pris_for_voksne;
 
@@ -277,7 +277,7 @@ function start() {
         console.log("VIS TEKST GUIDET TUR 4");
 
 
-        document.querySelector(".pris_tekst_guidet_tur4").innerHTML = guidet_turIndhold.tekst;
+        document.querySelector(".pris_tekst_guidet_tur4").innerHTML = guidet_turIndhold.content.rendered;
 
         document.querySelector(".pris_voksne_guidet_tur4").innerHTML = `Pris for voksne: ` + guidet_turIndhold.pris_for_voksne;
 

@@ -71,12 +71,8 @@ function visKontaktInformationer() {
     console.log("VIS KONTAKTINFORMATIONER");
 
     document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
-    document.querySelector(".text").innerHTML = kontaktInformationer.tekst;
-    document.querySelector(".firmanavn").innerHTML = kontaktInformationer.firmaets_navn;
-    document.querySelector(".adresse").innerHTML = kontaktInformationer.adresse;
-    document.querySelector(".åbningstider").innerHTML = `Telefontid: ` + kontaktInformationer.telefontid;
-    document.querySelector(".tlf").innerHTML = `Tlf: ` + kontaktInformationer.tlf;
-    document.querySelector(".mail").innerHTML = `Mail: ` + kontaktInformationer.mail;
+    document.querySelector(".text").innerHTML = kontaktInformationer.content.rendered;
+
 
     hentJson();
 }
