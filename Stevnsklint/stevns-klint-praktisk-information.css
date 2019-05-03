@@ -315,20 +315,16 @@ li:hover {
 .priser,
 .handicapforhold,
 .priser_guidet_tur,
-<<<<<<< HEAD
-.find_vej {
-	padding: 1em;
-	min-height: 1em;
-=======
+
 .find_vej,
 .åbningstider {
 
-    padding: 1em;
-    min-height: 1em;
-    width: 20em;
-    margin: 0 2vw;
+	padding: 1em;
+	min-height: 1em;
+	width: 20em;
+	margin: 0 2vw;
 
->>>>>>> origin/master
+
 
 }
 
@@ -336,25 +332,16 @@ li:hover {
 
 
 .praktisk_info h2 {
-<<<<<<< HEAD
+
 	color: #3e474a;
-	font-family: 'limestone', sans-serif;
+	font-family: 'limestoneregular', sans-serif;
 	font-weight: 600;
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 7vh;
 	border-bottom: 5px solid #3482A9;
 	width: 290px;
-=======
-    color: #3e474a;
-    font-family: 'limestoneregular', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    line-height: 7vh;
-    border-bottom: 5px solid #3482A9;
-    width: 290px;
->>>>>>> origin/master
+
 }
 
 .praktisk_info p {
@@ -484,18 +471,6 @@ li:hover {
 	.fa-facebook {
 		margin-left: 47%;
 	}
-
-<<<<<<< HEAD
-=======
-    .mainnav {
-        position: fixed;
-        display: block;
-        text-align: right;
-        line-height: 1.5rem;
-        right: 0vw;
-        z-index: 2;
-        /*        top: 2.5vw;*/
->>>>>>> origin/master
 
 	.mainnav {
 		position: static;
