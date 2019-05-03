@@ -149,7 +149,7 @@
 
                 console.log("hent json 3");
 
-                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/begivenhed/?orderby=date&order=asc";
+                let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/begivenhed/";
 
                 let myJson = await fetch(url);
                 detSker = await myJson.json();
