@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Kalklandet</title>
-	<link rel="stylesheet" href="kalklandet-kontakt.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="keywords" content="kalklandet, museum, attraktioner, historie, natur, kolde krig, klint, østsjælland, stevns, oplevelser, udflugt, kontakt, faxe">
+    <meta charset="UTF-8">
+    <title>Kontakt | Kalklandet</title>
+    <link rel="stylesheet" href="kalklandet-kontakt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="kalklandet, museum, attraktioner, historie, natur, kolde krig, klint, østsjælland, stevns, oplevelser, udflugt, kontakt, faxe">
 </head>
 
 <body>
@@ -14,139 +14,139 @@
 
 
 
-	<div class="grid-container">
+    <div class="grid-container">
 
-		<div class="item1">
-
-
-
-			<div class="siteheader">
-				<div class="logo"><a href="index.html"><img src="/Kalklandet/billeder/kalklogo-ost.svg" alt="logo"></a></div>
-
-
-				<div class="mainnav">
-					<a href="/Kalklandet/index.html#det_sker">Det sker</a>
-					<a href="/Kalklandet/index.html#om_os">Hvem er vi</a>
-					<a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="item2">
-
-			<div class="nested">
-
-				<div class="nested-item1">
-
-					<h1 class="titel"></h1>
-					<br>
-					<p class="text"></p>
-					<br>
-
-
-				</div>
-
-				<div class="nested-item2">
-
-					<div class="container">
-						<form id="contact" action="" method="post">
-							<h3>Skriftlig kontakt</h3>
-
-							<fieldset>
-								<input placeholder="Navn" type="text" tabindex="1" required autofocus>
-							</fieldset>
-							<fieldset>
-								<input placeholder="Email" type="email" tabindex="2" required>
-							</fieldset>
-							<fieldset>
-								<input placeholder="Telefonnummer" type="tel" tabindex="3" required>
-							</fieldset>
-							<fieldset>
-								<textarea placeholder="Din besked ..." tabindex="5" required></textarea>
-							</fieldset>
-							<fieldset>
-								<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
-							</fieldset>
-						</form>
-
-
-					</div>
-
-				</div>
+        <div class="item1">
 
 
 
-			</div>
-
-		</div>
-
+            <div class="siteheader">
+                <div class="logo"><a href="index.html"><img src="/Kalklandet/billeder/kalklogo-ost.svg" alt="logo"></a></div>
 
 
-		<div class="footer">
-			<div class="logo-footer"><a href="/Kalklandet/index.html"><img src="billeder/kalklogo-kalklandet-footer.svg" alt="logo"></a></div>
-			<p>Rådhusvej 2 • 4640 Faxe • museum@oesm.dk
-				• +45 56 50 28 06 </p>
-			<p>Åbent mandag til fredag kl. 9-15</p>
-			<a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
-			<a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
+                <div class="mainnav">
+                    <a href="/Kalklandet/index.html#det_sker">Det sker</a>
+                    <a href="/Kalklandet/index.html#om_os">Hvem er vi</a>
+                    <a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a>
 
-		</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="item2">
+
+            <div class="nested">
+
+                <div class="nested-item1">
+
+                    <h1 class="titel"></h1>
+                    <br>
+                    <p class="text"></p>
+                    <br>
+
+
+                </div>
+
+                <div class="nested-item2">
+
+                    <div class="container">
+                        <form id="contact" action="" method="post">
+                            <h3>Skriftlig kontakt</h3>
+
+                            <fieldset>
+                                <input placeholder="Navn" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Email" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="Telefonnummer" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea placeholder="Din besked ..." tabindex="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+                            </fieldset>
+                        </form>
+
+
+                    </div>
+
+                </div>
 
 
 
+            </div>
+
+        </div>
 
 
-	</div>
+
+        <div class="footer">
+            <div class="logo-footer"><a href="/Kalklandet/index.html"><img src="billeder/kalklogo-kalklandet-footer.svg" alt="logo"></a></div>
+            <p>Rådhusvej 2 • 4640 Faxe • museum@oesm.dk
+                • +45 56 50 28 06 </p>
+            <p>Åbent mandag til fredag kl. 9-15</p>
+            <a href="https://www.facebook.com/stevnsklint/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/oestsjaellandsmuseum/" class="fa fa-instagram"></a>
+
+        </div>
 
 
 
 
 
-	<script>
-		"use strict"
-		let kontaktInformationer = [];
-
-		document.addEventListener("DOMContentLoaded", hentJson);
-
-		console.log("hent json  - test");
-
-		async function hentJson() {
-
-			console.log("hent json");
-
-			let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
-
-			let myJson = await fetch(url);
-
-			kontaktInformationer = await myJson.json();
-
-			visKontaktInformationer();
-		}
-
-
-		function visKontaktInformationer() {
-			console.log("VIS KONTAKTINFORMATIONER");
-
-
-			document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
-
-			document.querySelector(".text").innerHTML = kontaktInformationer.content.rendered;
+    </div>
 
 
 
-			hentJson();
 
 
-		}
+    <script>
+        "use strict"
+        let kontaktInformationer = [];
 
-	</script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        console.log("hent json  - test");
+
+        async function hentJson() {
+
+            console.log("hent json");
+
+            let url = "http://sophiasvane.dk/kea/07-cms/kalklandet_a3/wordpress/wp-json/wp/v2/kontakt_os/72";
+
+            let myJson = await fetch(url);
+
+            kontaktInformationer = await myJson.json();
+
+            visKontaktInformationer();
+        }
+
+
+        function visKontaktInformationer() {
+            console.log("VIS KONTAKTINFORMATIONER");
+
+
+            document.querySelector(".titel").innerHTML = kontaktInformationer.title.rendered;
+
+            document.querySelector(".text").innerHTML = kontaktInformationer.content.rendered;
 
 
 
-	<!--    <script src="/Kalklandet/kalklandet.js"></script>-->
+            hentJson();
+
+
+        }
+
+    </script>
+
+
+
+    <!--    <script src="/Kalklandet/kalklandet.js"></script>-->
 
 </body>
 
