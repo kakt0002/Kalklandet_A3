@@ -75,7 +75,7 @@ body {
 
 .header {
     grid-column: 1/5;
-    background-image: url(/Kalklandet/billeder/nyere_tid_foto.jpeg);
+    background-image: url(/Kalklandet/billeder/nyere_tid_foto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 180vh;
