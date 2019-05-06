@@ -259,7 +259,7 @@ h2 {
 .logo-footer img {
 	position: relative;
 	height: 5vh;
-	margin-left: 32%;
+	margin-left: 38%;
 	margin-top: 1em;
 	margin-bottom: 0;
 }
@@ -268,7 +268,7 @@ h2 {
 .footer p {
 	text-align: center;
 	color: #f7fbff;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	font-family: 'Assistant', sans-serif;
 }
 
@@ -309,7 +309,7 @@ h2 {
 
 .fa-facebook {
 	color: white;
-	margin-left: 50%;
+	margin-left: 40%;
 }
 
 .fa-instagram {
@@ -1135,10 +1135,6 @@ p {
 
 	}
 
-}
-
-.logo-footer img {
-	margin-left: 40%;
 }
 
 

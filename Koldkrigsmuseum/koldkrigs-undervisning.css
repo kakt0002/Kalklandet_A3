@@ -389,7 +389,6 @@ li:hover {
 	font-family: 'Assistant', sans-serif;
 	text-align: center;
 	color: #f7fbff;
-
 }
 
 .footer p:nth-child(1) {
@@ -401,13 +400,12 @@ li:hover {
 .footer p:nth-child(2) {
 	font-family: 'Assistant', sans-serif;
 	font-weight: 100;
-	font-size: 0.9em;
+	font-size: 0.7em;
 }
 
 .footer p:nth-child(3) {
 	font-weight: 100;
 	font-size: 0.8em;
-
 }
 
 
@@ -534,7 +532,7 @@ li:hover {
 	}
 
 	.logo-footer img {
-		margin-left: 44%;
+		margin-left: 42%;
 
 	}
 

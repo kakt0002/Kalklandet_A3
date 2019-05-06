@@ -375,12 +375,10 @@ li:hover {
 .logo-footer img {
 	position: relative;
 	height: 5vh;
-	margin-left: 32%;
+	margin-left: 30%;
 	margin-top: 1em;
-}
-
-.footer {
-	margin-top: 3rem;
+	position: relative;
+	margin-top: 2em;
 }
 
 
@@ -398,11 +396,9 @@ li:hover {
 }
 
 .footer p:nth-child(2) {
-
 	font-family: 'Assistant', sans-serif;
 	font-weight: 100;
-	font-size: 0.9em;
-
+	font-size: 0.7em;
 }
 
 .footer p:nth-child(3) {
@@ -410,7 +406,6 @@ li:hover {
 	font-size: 0.8em;
 
 }
-
 
 
 .fa {
