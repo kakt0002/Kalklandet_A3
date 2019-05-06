@@ -427,6 +427,10 @@ li:hover {
 	font-size: 1em;
 }
 
+#basic_info a {
+	font-family: 'limestoneregular';
+	text-transform: uppercase;
+}
 
 /***************************************************** FOOTER START ********************************************************/
 .logo-footer img {
@@ -541,7 +545,7 @@ li:hover {
 
 	#basic_info a {
 		font-weight: 600;
-		font-size: 20px;
+		font-size: 15px;
 		line-height: 2vh;
 		color: white;
 		text-decoration: none;
@@ -776,7 +780,7 @@ li:hover {
 
 	#basic_info {
 		left: 15vw;
-		top: 140px;
+		top: 80px;
 	}
 
 	#laes_mere {

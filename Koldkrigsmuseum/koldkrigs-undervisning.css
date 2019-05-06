@@ -761,14 +761,15 @@ li:hover {
 
 .undervisningsforløb p {
 
-	color: #3e474a;
-	font-family: 'limestoneregular';
-	font-weight: 600;
-	font-size: 17px;
+	color: #38728C;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 700;
+	text-align: right;
+	font-size: 13px;
 	text-transform: uppercase;
 	border-bottom: 5px solid #38728C;
 	width: 290px;
-	padding-bottom: 1em;
+
 }
 
 
@@ -886,8 +887,7 @@ li:hover {
 	.undervisningsforløb p {
 		/*		font-size: 10px;*/
 		margin: 0.5em;
-		font-family: 'limestoneregular';
-		font-size: 17px;
+		font-size: 13px;
 	}
 
 
