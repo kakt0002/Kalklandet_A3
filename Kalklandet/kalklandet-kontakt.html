@@ -22,6 +22,18 @@
 
         <div class="item1">
 
+            <div class="menu_mobil">
+                <div class="menuknap">☰</div>
+
+
+                <ul class="menu">
+                    <li><a href="#det_sker">Det sker</a> </li>
+                    <li><a href="#om_os">Hvem er vi</a>
+                    <li><a href="/Kalklandet/kalklandet-kontakt.html">Kontakt</a></li>
+                </ul>
+
+            </div>
+
 
 
             <div class="siteheader">
@@ -110,6 +122,29 @@
 
 
     <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+
+
+
+
         "use strict"
         let kontaktInformationer = [];
 
@@ -145,7 +180,6 @@
 
 
         }
-
     </script>
 
 
