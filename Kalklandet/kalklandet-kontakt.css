@@ -132,10 +132,10 @@ p {
 
 .logo img {
     position: absolute;
-    width: 200px;
+    width: 180px;
     height: auto;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
 
 }
 
