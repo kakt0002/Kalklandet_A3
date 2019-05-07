@@ -32,6 +32,7 @@ function toggleMenu() {
     }
 }
 
+// Denne nedenstående kode er taget fra W3Schools under How to -> Menus -> Accordion
 
 var acc = document.getElementsByClassName("accordion");
 var i;
