@@ -69,7 +69,6 @@
             document.querySelector(".foto").src = indhold.billede.guid;
 
 
-
             hentJson();
 
 
