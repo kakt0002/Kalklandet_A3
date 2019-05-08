@@ -305,7 +305,7 @@ li:hover {
     color: white;
     line-height: 2.4rem;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 3rem;
     font-family: helvetica;
     font-weight: 500;
 }
@@ -608,10 +608,11 @@ li:hover {
     .mainnav a {
         color: white;
         text-decoration: none;
+        text-transform: uppercase;
         padding: 0vw 0vw 0 2vw;
         display: inline-block;
         font-family: 'limestoneregular';
-        font-size: 14.5px;
+        font-size: 17px;
         font-weight: 800;
     }
 
